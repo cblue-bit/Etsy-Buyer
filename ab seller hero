@@ -1,0 +1,78 @@
+<!--  HERO MODULE CONTENT------------------------------------------------------------------ --> 
+     
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top; ">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background_purpleDarker darkmode_font_primary" align="center" style="text-align:left;  padding: 0 16px 40px; background-color: #DED3E8; box-sizing: border-box;">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; background-color: #DED3E8;">
+        <tbody>
+         <tr>
+           <td class="hero_headline_pad darkmode_background_purpleDarker darkmode_font_primary"  style=" color: #{{fonthex}}; padding:0 6px 12px; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: center; background-color: #DED3E8;">
+               <!-- EDIT Headline + link -->
+               <a href="{{herolink}}{{hero_parameter}}lid={{${cblid}}}&utm_content=hero" universal="true" class="darkmode_font_primary"  style="text-decoration:none; color:#{{fonthex}};"><h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:center;" >This seller’s got impressive stats</h1></a>
+               <!-- END EDIT Headline + link -->
+            </td>  
+            </tr>  
+         <tr>
+            <td   style="color:#{{fonthex}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding: 0 0 32px; ">
+            <!-- EDIT body text + link -->
+            <a href="{{herolink}}{{hero_parameter}}lid={{${cblid}}}&utm_content=hero" class="darkmode_font_primary"  universal="true" style="text-decoration:none; color:#{{fonthex}};">
+           It’s time to learn about the person behind your latest order. </a>
+            <!-- END EDIT body text + link -->
+            </td>
+         </tr>
+         <tr>
+           <td style="padding:0 0 8px;" align="center" >
+           <!-- EDIT IMG 600x400 + LINK -->
+           <a href="{{herolink}}{{hero_parameter}}lid=9xxvh0jdvwh4&utm_content=hero" universal="true" width="88" style="border:0;">
+           <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e4160b47906b00638fd1fb/original.png?1759778314" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; height: auto; height: 88px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; width: 88px; border:1px solid #E0DAD6;"
+           alt="">
+           </a>
+           <!-- END EDIT IMG 600x400 + LINK -->
+           </td>
+         </tr>
+           <tr>
+            <td class="darkmode_font_primary" style="color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding: 0 0 4px;background-color: #DED3E8;">
+              <!-- Inline content: icon + text -->
+              <span style="display:inline-block; vertical-align:middle;">MaisonBerber</span>
+              <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e6cfd37e8a9f0063a2cc94/original.png?1759956947" width="24" height="24" alt="icon" style="display:inline-block; vertical-align:middle; border:0; outline:none; text-decoration:none;">
+            </td>
+         </tr>
+          <tr>
+            <td   style="color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding:0 0 4px; ">
+            <!-- EDIT body text + link -->
+            <a href="{{herolink}}{{hero_parameter}}lid={{${cblid}}}&utm_content=hero" universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{fonthex}};">
+            London, United Kingdom <span> </span></a>
+            <!-- END EDIT body text + link -->
+            </td>
+         </tr>
+          <tr>
+            <td   style="color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding: 0 0 32px; ">
+            <!-- EDIT body text + link -->
+            <a href="{{herolink}}{{hero_parameter}}lid={{${cblid}}}&utm_content=hero" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
+            4.8 &#x2605; (10k reviews)<span style="color:#665E5C; padding: 0 8px 0;">|</span>46.8k sales</a>
+            <!-- END EDIT body text + link -->
+            </td>
+         </tr>
+          <tr>
+            <td align="center" class="primary_button_pad" style="padding: 0 6px 0; ">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{herolink}}{{hero_parameter}}lid={{${cblid}}}&utm_content=hero" class="darkmode_button_primary"  style="background-color: #332F2E; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #FAF8F5; border: 2px solid #332F2E; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">Visit their shop</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link --> 
+            </td>           
+         </tr>
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+
+<!-- CLOSE HERO MODULE CONTENT------------------------------------------------------------------ --> 
