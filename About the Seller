@@ -74,7 +74,7 @@ color: inherit !important;
         width:50% !important;
       }   
       .secondary_container_pad {
-        padding: 0 20px 40px !important;
+        padding: 0 20px 24px !important;
       }
       .secondary_headline_pad{
         padding:0 12px 24px !important;
@@ -87,6 +87,9 @@ color: inherit !important;
       }
       .tertiary_container_pad {
         padding: 0 20px 16px !important;
+      }
+      .banner_container_pad {
+        padding: 40px 32px !important;
       }
       .disclaimer_container_pad{
         padding: 0 32px 24px !important;
@@ -114,7 +117,8 @@ color: inherit !important;
     .darkmode_font-promote { color: #A3D277 !important; }
     .darkmode_icon_review { color: #FFBA26 !important; }
     .darkmode_icon_favorite { color: #F36F85 !important; }
-    .darkmode_banner {}    
+    .darkmode_banner_background{ background-color: #2F203C !important;}  
+    .darkmode_background_purpleDarker { background-color: #2F203C !important; } 
 }
 @media screen and (max-width: 460px) {
       .listing_container_width{
@@ -190,34 +194,36 @@ color: inherit !important;
 			<td>
 			<![endif]-->
       <!--CONTENT -->
-			<table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="border-collapse: collapse; border-spacing: 0; max-width: 600px; width: 100%;" width="100%">
+			<table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="border-collapse: collapse; border-spacing: 0; max-width: 600px; width: 100%; " width="100%">
 				<tbody>
 					<tr>
-						<td class="darkmode_background darkmode_font_primary" style="background-color:#FAF8F5;">
+						<td class="darkmode_background darkmode_font_primary" style="background-color:#FAF8F5; ">
 														
 												
 <!-- NAV-------------------------------------------------------------------------- -->
-<table align="left" width="100%"  border="0" cellpadding="0" cellspacing="0" class="darkmode_background"  style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top; background-color: #DED3E8;">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+  <table align="left" class="darkmode_background"   border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;  margin: 0;  background-color: #DED3E8; width:100%; " >
      <tr>
-        <td class="darkmode_background"  style="padding:0 0 24px; background-color: #DED3E8; " >
+        <td class="darkmode_background_purpleDarker"  style="padding:0 0 24px; background-color: #DED3E8; " >
           {{content_blocks.${Global_NAV_Buyer_VizID}}}
         </td>
     </tr>
 </table>
+ <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 <!-- END NAV------------------------------------------------------------------ -->
 											
 <!--  HERO MODULE CONTENT------------------------------------------------------------------ --> 
      
-<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
-<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top; ">
   <tbody>
     <tr>
-      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="center" style="text-align:left; padding: 0 16px 40px; background-color: #DED3E8;">
-        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+      <td class="primary_container_pad darkmode_background_purpleDarker darkmode_font_primary" align="center" style="text-align:left;  padding: 0 16px 40px; background-color: #DED3E8; box-sizing: border-box;">
+        <!--[if (gte mso 9)|(IE)]><table  align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
         <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
         <tbody>
          <tr>
-           <td class="hero_headline_pad darkmode_background darkmode_font_primary"  style=" color: #{{fonthex}}; padding:0 6px 12px; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: center; ">
+           <td class="hero_headline_pad darkmode_background_purpleDarker darkmode_font_primary"  style=" color: #{{fonthex}}; padding:0 6px 12px; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: center; ">
                <!-- EDIT Headline + link -->
                <a href="{{herolink}}{{hero_parameter}}lid={{${cblid}}}&utm_content=hero" universal="true" class="darkmode_font_primary"  style="text-decoration:none; color:#{{fonthex}};"><h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:center;" >This seller’s got impressive stats</h1></a>
                <!-- END EDIT Headline + link -->
@@ -235,24 +241,22 @@ color: inherit !important;
          <tr>
            <td style="padding:0 0 8px;" align="center" >
            <!-- EDIT IMG 600x400 + LINK -->
-           <a href="{{herolink}}{{hero_parameter}}lid=9xxvh0jdvwh4&utm_content=hero" universal="true" style="border:0;">
-           <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e4160b47906b00638fd1fb/original.png?1759778314" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; height: auto; height: 88px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; width: 88px;"
+           <a href="{{herolink}}{{hero_parameter}}lid=9xxvh0jdvwh4&utm_content=hero" universal="true" width="88" style="border:0;">
+           <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e4160b47906b00638fd1fb/original.png?1759778314" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; height: auto; height: 88px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; width: 88px; border:1px solid #E0DAD6;"
            alt="">
            </a>
            <!-- END EDIT IMG 600x400 + LINK -->
            </td>
          </tr>
-         <tr>
-            <td class="darkmode_font_primary" style="color:#{{fonthex}}; font-family: 'ABC Diatype',
-            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding: 0; ">
+           <tr>
+            <td class="darkmode_font_primary" style="color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding: 0 0 4px;">
               <!-- Inline content: icon + text -->
-              <span style="display:inline-block; vertical-align:middle;">MaisonBerber</span>
-              <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e6cfd37e8a9f0063a2cc94/original.png?1759956947" width="24" height="24" alt="icon" style="display:inline-block; vertical-align:middle; border:0; outline:none; text-decoration:none;">
+              <span style="display:inline-block; vertical-align:middle; ">MaisonBerber</span>
+              <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e6cfd37e8a9f0063a2cc94/original.png?1759956947" width="24" height="24" alt="icon" style="display:inline-block; vertical-align:middle; border:0; outline:none; text-decoration:none;  ">
             </td>
          </tr>
           <tr>
-            <td   style="color:#{{fonthex}}; font-family: 'ABC Diatype',
-            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding:0; ">
+            <td   style="color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding:0 0 4px;  ">
             <!-- EDIT body text + link -->
             <a href="{{herolink}}{{hero_parameter}}lid={{${cblid}}}&utm_content=hero" universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{fonthex}};">
             London, United Kingdom <span> </span></a>
@@ -260,11 +264,10 @@ color: inherit !important;
             </td>
          </tr>
           <tr>
-            <td   style="color:#{{fonthex}}; font-family: 'ABC Diatype',
-            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding: 0 0 24px; ">
+            <td   style="color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; padding: 0 0 32px; ">
             <!-- EDIT body text + link -->
             <a href="{{herolink}}{{hero_parameter}}lid={{${cblid}}}&utm_content=hero" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
-            4.8 &#x2605; (10k reviews) | 46.8k sales</a>
+            4.8 &#x2605; (10k reviews)<span style="color:#665E5C; padding: 0 8px 0;">|</span>46.8k sales</a>
             <!-- END EDIT body text + link -->
             </td>
          </tr>
@@ -289,13 +292,13 @@ color: inherit !important;
 <!-- CLOSE HERO MODULE CONTENT------------------------------------------------------------------ --> 
 <!--  PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
 <!-- BEST SELLER GRID------------------------------------------------------------------ -->  
-<div class="spacer" style="line-height:40px;height:40px;mso-line-height-rule:exactly;">&nbsp;</div>    
-<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+ <div class="spacer" style="line-height:40px;height:40px;mso-line-height-rule:exactly;">&nbsp;</div>    
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
   <tbody>
     <tr>
-      <td class="secondary_container_pad darkmode_background darkmode_font_primary" align="center" style="text-align:center; padding: 0 10px 40px; background-color: #{{bghex}};">
-        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+      <td class="secondary_container_pad darkmode_background darkmode_font_primary" align="center" style="text-align:center; padding: 0 10px 24px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
         <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
         <tbody>         
          <tr>
@@ -320,7 +323,7 @@ color: inherit !important;
             {% endif %}
             <!-- LIQUID NOTES: Runs for loop to display a 2 or 4 listing blocks  ---------------- -->	 
             {% for listing in listings  %}
-            <!--[if mso]><table role="presentation" width="100%"><tr><td style="width:50%;padding:10px;" valign="middle"><![endif]-->
+             <!--[if mso]><table align="left" width="33.333%" ><tr><td valign="middle"><![endif]-->
               <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top;">
                 <div class="secondary_listing_pad" style="padding:0 6px 12px">
                 <a href="https://www.etsy.com/search?lid=3iym3vnq7wqb&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 30 }}&anchor_listing_id={{ listing.listing_id }}&utm_content=4listingsmodule" universal="true">
@@ -353,17 +356,17 @@ color: inherit !important;
     </tr>   
   </tbody>
 </table>
-<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                         
 <!-- ClOSE BEST SELLER GRID------------------------------------------------------------------ -->
 <!-- CLOSE PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
 <!--  SECONDARY MODULE CONTENT------------------------------------------------------------------ --> 
 <!-- STATS ------------------------------------------------------------------ -->      
-<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
   <tbody>
     <tr>
       <td class="tertiary_container_pad darkmode_background darkmode_font_primary" align="center" style="text-align:center; padding: 0 4px 28px; background-color: #{{bghex}};">
-        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
         <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
         <tbody>         
          <tr>
@@ -377,12 +380,12 @@ color: inherit !important;
             {% if heroheadline != blank %}
 	        <tr>
             <td align="center" style="padding:0 12px;">
-<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 			<table align="center" border="0" cellpadding="0" cellspacing="0"  style="Margin: 0 auto; border-collapse: collapse;  width: 100%;">
 				<tbody>
 					<tr>
 						<td align="center" style="border-radius: 12px; padding: 1px; background-color: #EFECEA; ">
-              <!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+              <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 									<table align="center" border="0" cellpadding="0" cellspacing="0"  style="Margin: 0 auto; border-collapse: collapse;  width: 100%;">
 										<tbody>
 											<tr>
@@ -423,14 +426,16 @@ color: inherit !important;
           </tr> 
           {% endif %}
           <tr>
-            <td>
-              <div  style="text-align:center;font-size:0;">	
+            <td align="center">
+              <div  style="text-align:center; font-size:0;">	
   <!--STAT #1--> 
-            <!--[if mso]><table role="presentation" width="50%"><tr><td style="width:50%;padding:10px;" valign="middle"><![endif]-->
+
+            <!--[if mso]><table align="left"  width="49%"><tr><td style="padding:8px" valign="middle"><![endif]-->
               <div class="listing_container_width listing_container_pad" style="width:100%; max-width:280px; display:inline-block;vertical-align:top; padding:0 12px 12px; box-sizing: border-box">
+                <!--[if mso]><table align="center" ><tr><td style="padding:24px 12px; background-color: #EFECEA;" valign="middle"><![endif]-->
                 <div class="darkmode_background-e1" style="padding:24px 12px; border-radius: 12px;  background-color: #EFECEA; ">
                 <div  style="max-width: 100%; overflow:hidden; padding:0 0 8px; text-align: center;">
-                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e7c8c99421a000639a2eb2/original.png?1760020680" style="border: none; clear: both; display: block; width: 32px; max-height: 32px;  object-fit: cover; object-position: center center; outline: none; overflow: hidden; text-decoration: none; margin:0 auto;" alt="">
+                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e7c8c99421a000639a2eb2/original.png?1760020680" width="32" style="border: none; clear: both; display: block; width: 32px; max-height: 32px;  object-fit: cover; object-position: center center; outline: none; overflow: hidden; text-decoration: none; margin:0 auto;" alt="">
                 </div>
                 <div  style="max-width: 100%; overflow:hidden; padding:0 0 4px; text-align: center;">
                 <!-- EDIT Headline--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; " class=" darkmode_font_primary ">9 years</h2><!-- END EDIT Headline -->
@@ -442,14 +447,16 @@ color: inherit !important;
             <!-- END EDIT body text -->
             </div>
                 </div>
+                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->  
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->  
 <!--STAT #2-->  
-             <!--[if mso]><table role="presentation" width="50%"><tr><td style="width:50%;padding:10px;" valign="middle"><![endif]-->
+             <!--[if mso]><table align="left"  width="49%"><tr><td style="padding:8px" valign="middle"><![endif]-->
               <div class="listing_container_width listing_container_pad" style="width:100%; max-width:280px; display:inline-block;vertical-align:top; padding:0 12px 12px; box-sizing: border-box">
+                <!--[if mso]><table align="center" ><tr><td style="padding:24px 12px; background-color: #EFECEA;" valign="middle"><![endif]-->
                 <div class="darkmode_background-e1" style="padding:24px 12px; border-radius: 12px;  background-color: #EFECEA; ">
                 <div  style="max-width: 100%; overflow:hidden; padding:0 0 8px; text-align: center;">
-                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e7c8c9ebdd38006382647c/original.png?1760020680" style="border: none; clear: both; display: block; width: 32px; max-height: 32px; max-width: 32px; object-fit: cover; object-position: center center; outline: none; overflow: hidden; text-decoration: none;  margin:0 auto;" alt="">
+                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e7c8c9ebdd38006382647c/original.png?1760020680" width="32" style="border: none; clear: both; display: block; width: 32px; max-height: 32px; max-width: 32px; object-fit: cover; object-position: center center; outline: none; overflow: hidden; text-decoration: none;  margin:0 auto;" alt="">
                 </div>
                 <div  style="max-width: 100%; overflow:hidden; padding:0 0 4px; text-align: center;">
                 <!-- EDIT Headline--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; " class=" darkmode_font_primary ">8.5k reviews</h2><!-- END EDIT Headline -->
@@ -461,14 +468,16 @@ color: inherit !important;
             <!-- END EDIT body text -->
             </div>
                 </div>
+                 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->      
 <!--STAT #3-->  
-             <!--[if mso]><table role="presentation" width="50%"><tr><td style="width:50%;padding:10px;" valign="middle"><![endif]-->
+             <!--[if mso]><table align="left" width="49%"><tr><td style="padding:8px" valign="middle"><![endif]-->
               <div class="listing_container_width listing_container_pad" style="width:100%; max-width:280px; display:inline-block;vertical-align:top; padding:0 12px 12px; box-sizing: border-box">
+                <!--[if mso]><table align="center" ><tr><td style="padding:24px 20px;  background-color: #EFECEA;" valign="middle"><![endif]-->
                 <div class="darkmode_background-e1" style="padding:24px 12px; border-radius: 12px;  background-color: #EFECEA; ">
                 <div  style="max-width: 100%; overflow:hidden; padding:0 0 8px; text-align: center;">
-                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e7c8c924bf3c00637bb081/original.png?1760020680" style="border: none; clear: both; display: block; width: 32px; max-height: 32px; max-width: 32px; object-fit: cover; object-position: center center; outline: none; overflow: hidden; text-decoration: none;  margin:0 auto;" alt="">
+                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e7c8c924bf3c00637bb081/original.png?1760020680" width="32" style="border: none; clear: both; display: block; width: 32px; max-height: 32px; max-width: 32px; object-fit: cover; object-position: center center; outline: none; overflow: hidden; text-decoration: none;  margin:0 auto;" alt="">
                 </div>
                 <div  style="max-width: 100%; overflow:hidden; padding:0 0 4px; text-align: center;">
                 <!-- EDIT Headline--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; " class=" darkmode_font_primary ">120 items</h2><!-- END EDIT Headline -->
@@ -476,29 +485,32 @@ color: inherit !important;
                   <div class="darkmode_font_primary"  style="color:#{{fonthex}}; font-family: 'ABC Diatype',
             'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; ">
             <!-- EDIT body text  -->
-           Special is most definitely in stock. 
+            Special is most definitely in stock.
             <!-- END EDIT body text -->
             </div>
                 </div>
+                 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 <!--STAT #4-->  
-             <!--[if mso]><table role="presentation" width="50%"><tr><td style="width:50%;padding:10px;" valign="middle"><![endif]-->
+             <!--[if mso]><table align="left" width="49%"><tr><td style="padding:8px" valign="middle"><![endif]-->
               <div class="listing_container_width listing_container_pad" style="width:100%; max-width:280px; display:inline-block;vertical-align:top; padding:0 12px 12px; box-sizing: border-box">
+                <!--[if mso]><table align="center" ><tr><td style="padding:24px 12px;  background-color: #EFECEA;" valign="middle"><![endif]-->
                 <div class="darkmode_background-e1" style="padding:24px 12px; border-radius: 12px;  background-color: #EFECEA; ">
                 <div  style="max-width: 100%; overflow:hidden; padding:0 0 8px; text-align: center;">
-                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e7c8c98d099100634554ea/original.png?1760020680" style="border: none; clear: both; display: block; width: 32px; max-height: 32px; max-width: 32px; object-fit: cover; object-position: center center; outline: none; overflow: hidden; text-decoration: none;  margin:0 auto;" alt="">
+                <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68e7c8c98d099100634554ea/original.png?1760020680" width="32" style="border: none; clear: both; display: block; width: 32px; max-height: 32px; max-width: 32px; object-fit: cover; object-position: center center; outline: none; overflow: hidden; text-decoration: none;  margin:0 auto;" alt="">
                 </div>
                 <div  style="max-width: 100%; overflow:hidden; padding:0 0 4px; text-align: center;">
-                <!-- EDIT Headline--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; " class=" darkmode_font_primary ">8 countries</h2><!-- END EDIT Headline -->
+                <!-- EDIT Headline--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; " class="darkmode_font_primary">8 countries</h2><!-- END EDIT Headline -->
                 </div>
-                  <div  style="color:#{{fonthex}}; font-family: 'ABC Diatype',
+                  <div class="darkmode_font_primary" style="color:#{{fonthex}}; font-family: 'ABC Diatype',
             'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: center; ">
             <!-- EDIT body text  -->
            This shop has officially gone global. 
             <!-- END EDIT body text -->
             </div>
                 </div>
+                 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                        
             </div>
