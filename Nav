@@ -1,0 +1,41 @@
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tbody><tr><td class="outsidegutter" align="left" style="direction:ltr;text-align:left; padding: 11px 17px 11px 17px;">       		
+<!--[if (gte mso 9)|(IE)]>
+<table width="504" align="left" cellpadding="0" cellspacing="0" border="0">
+   <tr>
+      <td width="196">
+         <![endif]-->
+         <table border="0" cellpadding="0" cellspacing="0" class="e5of12" style="border-collapse: collapse; display: inline-block; max-width: 196px; vertical-align: middle; width: 100%;"><tbody><tr><td style="direction:ltr;text-align:left;background-color: #ffffff; padding-left: 0; padding-right: 0px;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border-collapse: collapse; table-layout: fixed; width: 100%;"><tbody><tr><td style="direction:ltr;text-align:left;padding-top:7px; padding-bottom: 7px;">
+                        <!-- EDIT Logo + link -->   
+                        <a href="https://etsy.com?utm_content=RD-H-Nav1_Etsy_image&lid={{${cblid} | lid: 'p0nppz7lr8lj'}}&utm_content=nav-bar" universal="true" style="border:0;">
+                        <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/60adcf652a533e5cdc32607c/original.png?1622003557" width="30" height="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; height: auto; max-width: 48px; outline: none; text-decoration: none; width: 100%;" border="0" alt="Etsy"></a>
+                        <!-- END EDIT Logo + link -->
+                     </td>
+                     </tr></tbody></table></td>
+            </tr></tbody></table><!--[if (gte mso 9)|(IE)]>
+      </td>
+      <td width="308">
+         <![endif]--><table border="0" cellpadding="0" cellspacing="0" class="e7of12" style="border-collapse: collapse; display: inline-block; max-width: 308px; vertical-align: middle; width: 100%;"><tbody><tr><td style="direction:ltr;text-align:left;padding-bottom: 7px; padding-left:0px; padding-right:8px; padding-top: 7px;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border-collapse: collapse; table-layout: fixed; width: 100%;"><tbody><tr><td class="navlink" style="direction:ltr;text-align:left;">
+
+                        <!-- EDIT LINK 1-->   
+                        <a href="https://www.etsy.com/trends?lid={{${cblid} | lid: 'lrnki13wum1y'}}&utm_content=nav-bar"  style="color: #000000; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; padding-bottom: 7px; padding-right: 24px; padding-top: 7px;">{{content_blocks.${navbar_trends_2024} | id: 'cb2'}}</a>
+                        <!-- END EDIT LINK 1-->
+
+                        <!-- EDIT LINK 2-->
+                        <a href="https://www.etsy.com/gift-mode?lid={{${cblid} | lid: '5aipo4ljnz1q'}}&utm_content=nav-bar" universal="true" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 18px; padding-bottom: 7px; padding-right: 24px; padding-top: 7px;">{{content_blocks.${INTL_NAV_Gifts}}}</a>
+                        <!-- END EDIT LINK 2-->
+
+                        <!-- EDIT LINK 3-->
+                        <a href="https://www.etsy.com/featured/hub/sales?lid={{${cblid} | lid: '0upi2c4ustss'}}&utm_content=nav-bar" universal="true" style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 18px; padding-bottom: 7px; padding-right: 24px; padding-top: 7px;">{{content_blocks.${navbar_deals_2024} | id: 'cb3'}}</a>
+                        <!-- END EDIT LINK 3-->
+                        </td>
+                     </tr></tbody></table></td>
+            </tr></tbody></table><!--[if (gte mso 9)|(IE)]>
+      </td>
+   </tr>
+</table>
+<![endif]--></td>
+          
+   </tr></tbody></table>
