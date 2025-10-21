@@ -1,0 +1,98 @@
+<!--  TERTIARY #3 MODULE CONTENT------------------------------------------------------------------ --> 
+<div class="spacer" style="line-height:40px;height:40px;mso-line-height-rule:exactly; background-color:#ffffff; text-align:center; color:#ccc;">SPACER</div> 
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="secondary_hero_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+         <tr>
+            <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
+               <!-- EDIT Headline + link -->
+                 <a href="{{listing.branch_listing_url}}{{ branch_utms }}?lid={{${cblid} | lid: 'bekuee9anch3'}}&utm_content=UpdatesHasListingBanner" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><!--[if mso]><span style="display:none"><![endif]--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_background darkmode_font_primary "><!--[if mso]></span><![endif]-->{{content_blocks.${buyer_nbc_perso_secondary_view_updates} | id: 'cb1'}}<!--[if mso]><span style="display:none"><![endif]--></h2><!--[if mso]></span><![endif]--></a>
+               <!-- END EDIT Headline + link -->
+            </td>  
+            </tr>
+            <tr>
+              <td style="padding:0 0 24px;" align="left" >
+              <!--[if mso]><table align="left" width="80" ><tr><td style=" width:80px; padding:0 12px 0 0;" valign="middle"><![endif]-->
+              <div style="width:80px; display:inline-block; padding:0 12px 0 0; vertical-align: middle">
+                <a href="{{listing.branch_listing_url}}{{ branch_utms }}?lid={{${cblid} | lid: 'l8jdzybq3lvr'}}&utm_content=UpdatesHasListingBanner" universal="true">
+                <img src="{{ listing.image }}" width="171" style="-ms-interpolation-mode: bicubic; border:1px solid #E0DAD6; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </a>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+              <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; paddinng:0 0 4px; ">{{ listing.shop_name }}</div>
+            <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; "><span style="color:#FFBA26;">&#x2605;</span> 4.9 (1.4k reviews)</div>
+              </div>
+             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+              </td>
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- 6 IMG GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="secondary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+       <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	         <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center;font-size:0;">	
+            <!-- LIQUID NOTES: Runs for loop to display  listing blocks  ---------------- -->	 
+            {% comment %}{% raw %}
+             Use this to offset the images so we can use the first image as the hero
+            {%  for listing in listings offset: 1 limit: {{limitsize}} %}{% endraw %}
+            {% endcomment %}
+            {% assign limitsize = 3 %}
+            {%  for listing in listing limit: {{limitsize}} %}
+             <!--[if mso]><table align="left" width="33%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
+              <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top;">
+                <div class="secondary_listing_pad" style="padding:0 6px 12px">
+                <a href="{{listing.branch_listing_url}}{{ branch_utms }}?lid={{${cblid} | lid: '4swgo1fzxzee'}}&utm_content=UpdatesHasListingBanner" universal="true">
+                <div  style="max-width: 100%; overflow:hidden">
+                <img src="{{ listing.image }}" width="171" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            {% endfor %}                            
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="secondary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{listing.branch_listing_url}}{{ branch_utms }}?lid={{${cblid} | lid: '4adrsi2l712z'}}&utm_content=UpdatesHasListingBanner" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{content_blocks.${buyer_nbc_tertiary_view_updates_cta} | id: 'cb2'}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE 6 IMG GRID------------------------------------------------------------------ -->
+<!--
