@@ -4,7 +4,8 @@
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RepeatPurchase_Default_Banner_Stash_redesign_vz} | id: 'cb4'}}
 <!-- cross sell -->
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][1] %}
+{% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${CrossSell_Qualified_Banner_redesign_vz} | id: 'cb5'}}
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${CrossSell_Default_Banner_Stash_redesign_vz} | id: 'cb6'}}
