@@ -13,7 +13,7 @@
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${AbandonedCart_Default_Banner_Stash_redesign_vz} | id: 'cb8'}}
 <!-- updates -->
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'] [0]%}
     {{content_blocks.${Updates_HasListing_Banner_redesign_vz} | id: 'cb11'}}
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${Updates_Default_Banner_Stash_redesign_vz} | id: 'cb12'}}
