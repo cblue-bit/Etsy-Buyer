@@ -1,0 +1,16 @@
+{% assign shop_and_listings = eligible_data[0]['external_content_modules'][0]['shop_and_listings'] %}
+    {{content_blocks.${FavoriteShop_Browse_Hero_MultiListing_Lisitngs_redesign_vz} | id: 'cb32'}}
+
+{% assign shop_and_listings = eligible_data[0]['external_content_modules'][0]['shop_and_listings'] %}
+
+    {{content_blocks.${FavoriteShop_Default_Hero_MultiListing_Stash_redesign_vz} | id: 'cb33'}}
+<!-- favorite shop -->
+{% assign shop_and_listings = eligible_data[1]['external_content_modules'][0]['shop_and_listings'] %}
+    {{content_blocks.${Favoriteshop_Browse_Secondary_MultiListing_Listings_redesign_vz} | id: 'cb43'}}
+{% assign shop_and_listings = eligible_data[1]['external_content_modules'][0]['shop_and_listings'] %}
+    {{content_blocks.${FavoriteShop_Default_Secondary_MultiListing_Stash_redesign_vz} | id: 'cb44'}}
+<!-- favorite shop -->
+{% assign shop_and_listings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'] %}
+    {{content_blocks.${FavoriteShop_Browse_Banner_redesign_vz} | id: 'cb15'}}
+{% assign shop_and_listings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'] %}
+    {{content_blocks.${FavoriteShop_Default_Banner_Stash_redesign_vz} | id: 'cb16'}}
