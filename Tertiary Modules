@@ -27,10 +27,10 @@
     {{content_blocks.${FavoriteListing_Default_Banner_Stash_redesign_vz} | id: 'cb14'}}
 <!-- favorite shop -->
 {% assign shop_and_listings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2] %}
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'] %}
+{% assign multilistings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2]['listings'] %}
     {{content_blocks.${FavoriteShop_Browse_Banner_redesign_vz} | id: 'cb15'}}
 {% assign shop_and_listings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2] %}
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'] %}
+{% assign multilistings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2]['listings']  %}
     {{content_blocks.${FavoriteShop_Default_Banner_Stash_redesign_vz} | id: 'cb16'}}
 <!-- recently favorited -->  
 {% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %} 
