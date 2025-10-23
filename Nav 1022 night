@@ -1,0 +1,52 @@
+<!-- Must include .nav_container_pad{padding: 0 32px 0 !important;} in your style tag for desktop padding --->
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+	{% assign navbar = 1 %}	
+{% if navbar == 1 %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tbody><tr><td align="left" class="nav_container_links_pad" style="text-align:left; padding: 0 16px 0 0;">  
+  <div style="max-width:98px;display:inline-block;vertical-align:middle;">
+      <table border="0" cellpadding="0" cellspacing="0" class="e5of12" style="border-collapse: collapse; display: inline-block; max-width: 98px; vertical-align: middle; width: 100%;">
+     <tr>
+        <td class="nav_container_pad" style="padding:0 8px 0 16px;" >
+          <a href="https://etsy.com?utm_content=RD-H-Nav1_Etsy_image&lid={{${cblid} | lid: '5p89mxn50o3r'}}&utm_content=nav-bar" universal="true" style="border:0;">
+          <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68c190e17c507e0064a9a366/original.png?1757516001" width="50"  style="  height: auto; max-width: 50px; outline: none; text-decoration: none; width: 50px; display:block" border="0" alt="Etsy"></a>
+        </td>
+    </tr>
+</table>
+</div>
+<div class="nav_container_links_right_pad" style="max-width:466px;display:inline-block;vertical-align:middle;">
+<table border="0" cellpadding="0" cellspacing="0" align="right" style="border-collapse: collapse; display: inline-block; max-width: 466px; vertical-align: middle;"><tbody><tr><td style="text-align:right;  padding-left:0px;   table-layout: fixed; ">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border-collapse: collapse; table-layout: fixed; width: 100%;"><tbody><tr><td style="text-align:right;">
+
+                        <!-- EDIT LINK 1-->   
+                        <a href="https://www.etsy.com/trends?lid={{${cblid} | lid: '77xymp249wh1'}}&utm_content=nav-bar"  style="color: #332F2E; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly;  padding-right: 24px; ">{{content_blocks.${navbar_trends_2024} | id: 'cb6'}}</a>
+                        <!-- END EDIT LINK 1-->
+
+                        <!-- EDIT LINK 2-->
+                        <a href="https://www.etsy.com/gift-mode?lid={{${cblid} | lid: '9ukrq10ega7c'}}&utm_content=nav-bar" universal="true" style="color: #332F2E; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly;  padding-right: 24px; ">{{content_blocks.${INTL_NAV_Gifts}}}</a>
+                        <!-- END EDIT LINK 2-->
+
+                        <!-- EDIT LINK 3-->
+                        <a href="https://www.etsy.com/featured/hub/sales?lid={{${cblid} | lid: 'hdfrm6sf3hcv'}}&utm_content=nav-bar" universal="true" style="color: #332F2E; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly;   ">{{content_blocks.${navbar_deals_2024} | id: 'cb7'}}</a>
+                        <!-- END EDIT LINK 3-->
+                        </td>
+                     </tr></tbody></table></td>
+            </tr></tbody></table>
+            </div>
+            </td>
+    </tr>
+</table>
+{% else %}
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<table align="left" width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: middle;">
+     <tr>
+        <td class="nav_container_pad" style="padding:0 16px;" >
+          <a href="https://etsy.com?utm_content=RD-H-Nav1_Etsy_image&lid={{${cblid} | lid: 'cumqzsd1gj51'}}&utm_content=nav-bar" universal="true" style="border:0;">
+          <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/68c190e17c507e0064a9a366/original.png?1757516001" width="50"  style="  height: auto; max-width: 50px; outline: none; text-decoration: none; width: 50px; display:block" border="0" alt="Etsy"></a>
+        </td>
+    </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+{% endif %}
