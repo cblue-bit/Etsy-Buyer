@@ -1,64 +1,39 @@
 <!-- HERO -->
 {% assign hero_content_block_name = eligible_data[0]['name'] %}
 <!-- repeat -->
-
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Hero_MultiListing_redesign_vz} | id: 'cb20'}}
-
 {% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
-
     {{content_blocks.${RepeatPurchase_Default_Hero_MultiListing_Stash_redesign_vz} | id: 'cb21'}}
 <!-- cross sell -->
-
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-
     {{content_blocks.${CrossSell_Qualified_Hero_MultiListing_redesign_vz} | id: 'cb22'}}
-
 {% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
-
     {{content_blocks.${CrossSell_Default_Hero_MultiListing_Stash_redesign_vz} | id: 'cb23'}}
 <!-- abandoned_cart -->
-
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'][0] %}
-
     {{content_blocks.${AbandonedCart_Item_Hero_redesign_vz} | id: 'cb24'}}
-
 {% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
-
     {{content_blocks.${AbandonedCart_Default_Hero_MultiListing_Stash_redesign_vz} | id: 'cb25'}}
 <!-- updates -->
-
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'][0] %}
-
     {{content_blocks.${Updates_HasListing_Hero_redesign_vz} | id: 'cb28'}}
-
 {% assign listings = eligible_data[0]['external_content_modules'][0]['listings']  %} 
-
     {{content_blocks.${Updates_Default_Hero_MultiListing_redesign_vz} | id: 'cb29'}}
 <!-- favorite listing -->
-
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-
     {{content_blocks.${FavoriteListing_Views_Hero_MultiListing_redesign_vz} | id: 'cb30'}}
-
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-
     {{content_blocks.${FavoriteListing_Default_Hero_MultiLIsting_Stash_redesign_vz} | id: 'cb31'}}
 <!-- favorite shop -->
-
 {% assign shop_and_listings = eligible_data[0]['external_content_modules'][0]['shop_and_listings'] %}
     {{content_blocks.${FavoriteShop_Browse_Hero_MultiListing_Lisitngs_redesign_vz} | id: 'cb32'}}
-
 {% assign shop_and_listings = eligible_data[0]['external_content_modules'][0]['shop_and_listings'] %}
-
     {{content_blocks.${FavoriteShop_Default_Hero_MultiListing_Stash_redesign_vz} | id: 'cb33'}}
 <!-- recently favorited -->  
-
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RecentlyFavorited_MultiListing_Hero_vz} | id: 'cb34'}}
 <!-- similar to your collection -->
-
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${SimilarToYourCollections_MultiListing_Hero_vz} | id: 'cb35'}}
-
 <!-- END HERO -->
