@@ -1,0 +1,126 @@
+{% assign module_link = "https://www.etsy.com/search?q=halloween+costume&is_merch_library=true&instant_download=true&anchor_listing_id=612860379" %}
+
+{% assign module_image = "https://braze-images.com/appboy/communication/assets/image_assets/images/68fa2e60eee6130063993c0a/original.gif?1761226336" %}
+
+{% capture module_headline %}
+   {{content_blocks.${HEADER_GLOBAL_halloween_102825_secondary} | id: 'cb1'}}
+{% endcapture %}
+
+{% capture module_body %}
+   {{content_blocks.${BODY_GLOBAL_halloween_102825_secondary} | id: 'cb2'}}
+{% endcapture %}
+
+{% capture module_cta %}
+  {{content_blocks.${CTA_GLOBAL_halloween_102825_secondary} | id: 'cb3'}}
+{% endcapture %}
+
+{% assign utmcontent = 'banner' %}	
+
+{% assign bg_color = 'F1641E' %}	
+
+{% assign font_color = 'FFFFFF' %}	
+
+<style>
+<style>
+/* Desktop styles for this email */
+  @media screen and (min-width: 460px) {
+      .banner_container_pad  {
+        padding: 40px 20px !important;
+      }
+      .banner_image_pad{
+        padding: 0 12px !important;
+      }
+      .banner_text_width{
+        max-width:256px !important;
+      }
+      .banner_text_align{
+        text-align:left !important;
+      }
+}
+@media screen and (max-width: 460px) {
+      .banner_text_center{
+        text-align:center !important;
+      }
+
+    }
+    /* Dark Mode Styles */
+  @media (prefers-color-scheme: dark) {
+    /* Dark Mode Class Here If Needed */
+   }
+</style>
+
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="left" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;" >
+   <tbody><tr>
+      <td class="banner_container_pad darkmode_background_banner"  style="text-align:center;background-color: #{{bg_color}}; padding: 40px 4px;">
+         
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="left" cellpadding="0" cellspacing="0" border="0">
+   <tr>
+      <td width="280" valign="top">
+         <![endif]-->
+         <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; display: inline-block; max-width: 280px; vertical-align: middle; width: 100%;">
+            <tbody><tr>
+               <td class="banner_image_pad" style="text-align:left; padding:0 12px 24px;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border-collapse: collapse; table-layout: fixed; width: 100%;">
+                     <tbody><tr>
+                        <td align="center">
+<!-- EDIT IMG_1 240x240 + LINK -->
+<a href="{{module_link}}?lid={{${cblid} | lid: 'q2u3o1c3orqo'}}&utm_content={{utmcontent}}"  universal="true" style="border:0;"><img class="" src="{{module_image}}" style="-ms-interpolation-mode: bicubic; border: none; border-radius: 6px; clear: both; display: block; height: 100%; max-height: 256px; max-width: 256px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; width: 100%;" alt=""></a>
+<!-- END EDIT IMG_1 240x240 + LINK -->
+                        </td>
+                     </tr>
+                  </tbody></table>
+               </td>
+            </tr>
+         </tbody></table>
+         <!--[if (gte mso 9)|(IE)]>
+      </td>
+      <td width="256" valign="top">
+         <![endif]-->
+         <table border="0" cellpadding="0" cellspacing="0" class="banner_text_width" style="border-collapse: collapse; display: inline-block; max-width: 100%; vertical-align: middle; width: 100%;">
+            <tbody><tr>
+               <td class="banner_text_center" style="text-align:left;padding-left: 12px; padding-right: 12px;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-collapse: collapse; table-layout: fixed; width: 100%;">
+                     <tbody><tr>
+                        <td class="banner_text_align"  style="color: #{{font_color}}; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 20px;  mso-line-height-rule: exactly; line-height: 130%;  letter-spacing: -0.2px; padding:0 0 4px; text-align:center;">
+<!-- EDIT Header 1 + link -->
+<a href="{{module_link}}?lid={{${cblid} | lid: '1appwl8o2xym'}}&utm_content={{utmcontent}}"  universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{font_color}};">{{module_headline}}
+</a>
+<!-- END EDIT Header 1 + link -->
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="banner_text_align"  style="color: #{{font_color}}; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; mso-line-height-rule: exactly; line-height: 130%; padding:0 0 24px; text-align:center;">
+                           <!-- EDIT Header 1 -->
+
+<!-- EDIT Paragraph 1 + link -->
+<a href="{{module_link}}?lid={{${cblid} | lid: 'izlud8bmcaei'}}&utm_content={{utmcontent}}"  universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{font_color}};">{{module_body}}
+
+</a>
+<!-- END EDIT Paragraph 1 + link -->
+                        </td>
+                     </tr>
+                     <tr>
+                       <td >
+                  <div class="banner_text_center" style="color: #{{font_color}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 18px; mso-line-height-rule: exactly; line-height: 130%; ">
+                     <!-- EDIT CTA + link -->    
+                     <a href="{{module_link}}?lid={{${cblid} | lid: 'v4dlqd9axba3'}}&utm_content={{utmcontent}}" class="darkmode_font_primary"  universal="true" style="text-decoration:none; color:#{{font_color}};">{{module_cta}} 
+ →</a>
+                     <!-- END EDIT CTA + link -->
+                  </div>
+                  
+               </td>
+                     </tr>
+                  </tbody></table>
+                  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+               </td>
+            </tr>
+         </tbody></table>
+          <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+               </td>
+            </tr>
+         </tbody></table>
+          <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+             
