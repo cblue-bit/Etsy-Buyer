@@ -317,7 +317,7 @@ color: inherit !important;
             <td align="center" style="padding: 24px 0 24px;">
             <!-- EDIT IMG 600x500 + LINK -->
             <a href="{{herolink}}{{hero_parameter}}lid=3p7cg6xfbwdg&utm_content=hero" universal="true" style="border:0;">
-            <img src="{{heroimage}}" width="" class="hero_image_height" style="-ms-interpolation-mode: bicubic; border: 0; border-radius:0px; clear: both; display: block; height: auto; max-height: 250px; max-width: {{herowidth}}px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; width: 100%;" alt=""></a>
+            <img src="{{heroimage}}" width="600" class="hero_image_height" style="-ms-interpolation-mode: bicubic; border: 0; border-radius:0px; clear: both; display: block; height: auto; max-height: 250px; max-width: {{herowidth}}px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; width: 100%;" alt=""></a>
             <!-- END EDIT IMG 600x500 + LINK -->
             </td>
          </tr>
@@ -326,7 +326,7 @@ color: inherit !important;
          <tr>
             <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 12px; ">
                <!-- EDIT Headline + link -->
-               <a href="{{herolink}}{{hero_parameter}}lid=h0xcnidopiuh&utm_content=hero" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:left;  " class=" darkmode_font_primary">{{hero_headline}}</h1></a>
+               <a href="{{herolink}}{{hero_parameter}}lid=h0xcnidopiuh&utm_content=hero" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><!--[if mso]><span style="display:none"><![endif]--><h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:left;  " class=" darkmode_font_primary"><!--[if mso]></span><![endif]-->{{hero_headline}}<!--[if mso]><span style="display:none"><![endif]--></h1><!--[if mso]></span><![endif]--></a>
                <!-- END EDIT Headline + link -->
             </td>  
             </tr>  
@@ -394,7 +394,7 @@ color: inherit !important;
         <tr>
            <td class="hero_headline_pad darkmode_background"  style=" color: #{{fonthex}}; padding:0 6px 24px; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; ">
               <!-- EDIT Headline + link -->
-              <a href="https://www.etsy.com?utm_content=RD-B-Banner3-OPFY-MMX_unknownImage&lid=fpvnc1c87yve" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_background darkmode_font_primary "><!--[if mso]></span><![endif]-->{{content_blocks.${HEADER_GLOBAL_OPFY_100625_hero} | id: 'cb157'}}<!--[if mso]><span style="display:none"><![endif]--></h2><!--[if mso]></span><![endif]--></a>
+              <a href="https://www.etsy.com?utm_content=RD-B-Banner3-OPFY-MMX_unknownImage&lid=fpvnc1c87yve" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><!--[if mso]><span style="display:none"><![endif]--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_background darkmode_font_primary "><!--[if mso]></span><![endif]-->{{content_blocks.${HEADER_GLOBAL_OPFY_100625_hero} | id: 'cb157'}}<!--[if mso]><span style="display:none"><![endif]--></h2><!--[if mso]></span><![endif]--></a>
               <!-- END EDIT Headline + link -->
            </td> 
            </tr> 
@@ -551,7 +551,7 @@ color: inherit !important;
         <tr>
            <td class="darkmode_background secondary_headline_pad"  style="padding: 0 6px 24px;  text-align: left; ">
               <!-- EDIT Headline + link -->
-              <a href="https://www.etsy.com?utm_content=RD-B-Banner3-OPFY-MMX_unknownImage&lid=22p13nmbdnxj" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;  " class=" darkmode_font_primary">{{content_blocks.${HEADER_GLOBAL_OPFY_100625_secondary} | id: 'cb100'}}</h2></a>
+              <a href="https://www.etsy.com?utm_content=RD-B-Banner3-OPFY-MMX_unknownImage&lid=22p13nmbdnxj" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><!--[if mso]><span style="display:none"><![endif]--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_background darkmode_font_primary "><!--[if mso]></span><![endif]-->{{content_blocks.${HEADER_GLOBAL_OPFY_100625_secondary} | id: 'cb100'}}<!--[if mso]><span style="display:none"><![endif]--></h2><!--[if mso]></span><![endif]--></a>
               <!-- END EDIT Headline + link -->
            </td> 
            </tr>    
