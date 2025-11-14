@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<title>Etsy</title>
+{{content_blocks.${VisID-CSS-Font} | id: 'cb24'}}
+<style>
+  a[x-apple-data-detectors] {
+color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+  }
+  #MessageViewBody a {
+    color: inherit !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+  }
+  .blueLinks a { 
+              color:inherit !important; 
+              text-decoration: none !important; 
+  }
+  .shop_stats {
+    display: flex;
+    align-items: center;
+    /* Other desktop styles if needed */
+  }
+  .stat_item {
+      display: inline;
+  }
+  @media screen and (min-width: 460px) {
+      /* Must include in every email */
+      h1 {
+          font-size: 50px !important;
+          letter-spacing:-1.5px !important;
+        }
+      h2{
+       font-size: 34px !important;
+       letter-spacing:-1.25px !important; 
+      }
+      .nav_container_links_pad{
+        padding: 0 32px 0 0 !important;
+      }
+      .nav_container_pad{
+       padding: 0 32px 0 !important;
+     }
+     .banner_container_pad  {
+        padding: 40px 20px !important;
+      }
+      .banner_image_pad{
+        padding: 0 12px !important;
+      }
+      .banner_text_width{
+        max-width:275px !important;
+      }
+      .banner_text_align{
+        text-align:left !important;
+      }
+      .footer_container_pad{
+        padding: 32px 32px 0px !important;
+      }
+       /* END Must include in every email */ 
+      .hero_image_height{
+        max-height:350px !important;
+      }
+      .hero_container_pad {
+        padding: 0 32px 40px !important;   
+      }
+      .primary_container_pad {
+      padding: 0 20px 40px !important;
+      }
+      .listing_container_pad{
+        padding:0 12px 24px !important;
+      }
+      .primary_button_pad{
+        padding: 0 12px 0 !important;
+      }
+      .listing_container_width{
+        width:50% !important;
+      } 
+      .secondary_hero_listing_container_pad {
+        padding: 0 32px 0 !important;   
+      }
+      .disclaimer_container_pad{
+        padding: 0 32px 24px !important;
+      } 
+      
+  }
+/* Dark Mode Styles */
+  @media (prefers-color-scheme: dark) {
+/* Default Darkmode CSS - Must include in every email */
+    body { background-color: #1C181F !important; } 
+    .darkmode_font_primary { color: #FAF8F5 !important; }
+    .darkmode_font_secondary { color: #967C98 !important; }
+    .darkmode_background { background-color: #1C181F !important; }
+    .darkmode_background-e1 { background-color: #312B36 !important; }
+    .darkmode_divider { border-color: #514659 !important;} 
+    .darkmode_border { border-color: #514659 !important;} 
+    .darkmode_buttonbackground { background-color: #1C181F !important; }
+    .darkmode_background-e1 { background-color: #312B36 !important; }
+    .darkmode_loyaltybanner_background{ background-color: #FCC7A2 !important;}
+    .darkmode_background_banner { background-color: #1C181F !important; }
+     /* END Must include in every email */
+/* Darkmode Buttons CSS  */
+    .darkmode_button_primary { background-color: #FAF8F5 !important; color: #312B36 !important; border: 2px solid #FAF8F5 !important; } 
+    .darkmode_button_primary_dark { background-color: #312B36 !important; color: #FAF8F5 !important; border: 2px solid #312B36 !important; }  
+    .darkmode_button_secondary { background-color: #1C181F !important; color: #FAF8F5 !important; border: 1.5px solid #FAF8F5 !important; }     
+  }
+  @media screen and (max-width: 460px) {
+    /* Must include in every email */
+    .nav_container_links_right_pad{
+    max-width:80% !important;
+    }
+    .banner_text_center{
+      text-align:center !important;
+    }
+     /* END Must include in every email */
+    /* Shop review and year stats */
+    .shop_stats {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .shop_stats {
+        display: none;
+    }
+    .stat_item {
+        margin: 1px 0;
+    }
+    .years_stat {
+        order: 1; /* Appears first on mobile */
+    }
+    .reviews_stat {
+        order: 2; /* Appears second on mobile */
+    }
+  }
+</style>
+</head>
+<body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #FAF8F5; margin: 0; min-width: 100%; padding: 0; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
+
+<!--- BEGIN EDIT LIQUID--->
+
+	{% assign navbar = 1 %}
+
+<!--- BG COLOR (white,orange,yellow,purple,blue,green (color_tint or color_dk)) --->
+	<!--- BG COLOR --->
+	{% assign bg_colour = 'grey' %}		
+	{% assign bg_colour2 = 'purple_tint' %}	
+
+  {% assign bghex_hero = 'FAF8F5' %}
+  {% assign fonthex_hero = '312B36' %}
+	
+<!--- HERO SECTION--->
+	{% assign herolink = "https://www.etsy.com/featured/hub/holiday" %}
+  {% assign hero_parameter = "?" %}
+	{% assign heroimage = "https://braze-images.com/appboy/communication/assets/image_assets/images/6916405012a4e90063895c8b/original.png?1763065935" %}
+
+	
+  <!--- HERO FONT (georgia or graphik or guardian) --->
+	{% assign header_font = 'graphik' %}
+  
+  {% capture hero_headline %}
+{{content_blocks.${HEADER_GLOBAL_Shop_111525_hero} | id: 'cb60'}}
+	{% endcapture %}
+  
+  {% capture hero_subheader %}
+
+	{% endcapture %}
+
+  {% capture hero_subheader_with_title %}
+
+	{% endcapture %}
+
+	{% capture hero_body %}
+{{content_blocks.${BODY_GLOBAL_Shop_111525_hero} | id: 'cb61'}}
+	{% endcapture %}
+
+	{% capture hero_cta %}
+{{content_blocks.${CTA_GLOBAL_Shop_111525_hero} | id: 'cb62'}}
+	{% endcapture %}
+	
+<!--- MANUAL LISTINGS--->	
+  <!--- Listing type (boxed or staggered) --->
+	{% assign list_type = 'boxed' %}
+
+	{% capture listings_headline %}
+	{% endcapture %}
+
+	<!--- LISTING 1--->	
+	{% assign listings_link_1 =  "#" %} 
+	
+	{% assign listings_image_1 =  "https://braze-images.com/appboy/communication/assets/image_assets/images/6893d0de4d88790065676155/original.png?1754517725" %}
+	
+	{% capture listings_title_1 %}
+	{% endcapture %}
+
+	{% capture listings_price_1 %}
+	{% endcapture %}
+	
+
+	<!--- MANUAL LISTING CTA--->
+	{% assign manual_listings_cta_link =  "#" %}
+  {% assign manual_listings_cta_parameter = "?" %}
+
+	{% capture manual_listings_cta %}
+{{content_blocks.${CTA_GLOBAL_shop_110825_primary} | id: 'cb47'}}
+	{% endcapture %}
+
+
+	<!--- BANNER--->	
+	{% capture banner %}
+{{content_blocks.${BANNER_shops_111625v2} | id: 'cb78'}}
+	{% endcapture %}
+	
+    <!--- DISCLAIMER --->	
+	{% capture disclaimer %}
+	{% endcapture %}
+  
+<!--- END EDIT LIQUID--->
+
+<!--- DON'T EDIT THIS BLOCK--->
+{{content_blocks.${background_colors_and_fonts_v3} | id: 'cb26'}}
+
+<!--- SHOP #1 ------------------------------------------>
+{% assign shop_link =  "https://www.etsy.com/shop/ColetteBream" %}
+{% assign shop_parameter = "?" %}
+
+{% assign shop_headshot = "https://braze-images.com/appboy/communication/assets/image_assets/images/691495432c42da00630410af/original.png?1762956610" %}
+	{% capture shop_name %}
+{{content_blocks.${TITLE_1_GLOBAL_Colette_111525_hero} | id: 'cb63'}}
+	{% endcapture %}
+
+	{% capture shop_years %}
+{{content_blocks.${TITLE_2_GLOBAL_Colette_111525_hero} | id: 'cb64'}} 
+	{% endcapture %}
+
+	{% capture shop_reviews %}
+{{content_blocks.${TITLE_3_GLOBAL_Colette_111525_hero} | id: 'cb66'}}
+	{% endcapture %} 
+
+{% capture shop_cta %}
+{{content_blocks.${intl_Q123_category_propensity_CTA2}}} 
+	{% endcapture %}
+  
+{% assign shop_id1 = 6544215 %}
+
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/more-from-shop-listings?shop_id={{shop_id1}}&currency_code={{custom_attribute.${currency} | url_encode}}&region={{custom_attribute.${canonical_country} | url_encode}}&language_code={{${language}}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :save collections :basic_auth Etsyweb_Lifecycle_API %}
+
+{% assign listings = collections[0].listings %}
+
+<!--- SHOP #2 ------------------------------------------>
+{% assign shop_link2 =  "https://www.etsy.com/shop/MarcelaLopezArt" %}
+{% assign shop_parameter2 = "?" %}
+
+{% assign shop_headshot2 = "https://braze-images.com/appboy/communication/assets/image_assets/images/691495436f550e0064bd918d/original.png?1762956610" %}
+	{% capture shop_name2 %}
+{{content_blocks.${TITLE_1_GLOBAL_Marcela_111525_hero} | id: 'cb68'}}
+	{% endcapture %}
+
+	{% capture shop_years2 %}
+{{content_blocks.${TITLE_2_GLOBAL_Marcela_111525_hero} | id: 'cb69'}}
+	{% endcapture %}
+
+	{% capture shop_reviews2 %}
+{{content_blocks.${TITLE_3_GLOBAL_Marcela_111525_hero} | id: 'cb70'}}
+	{% endcapture %} 
+
+{% capture shop_cta2 %}
+{{content_blocks.${intl_Q123_category_propensity_CTA2}}} 
+	{% endcapture %}
+
+{% assign shop_id2 = 10872233 %}
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/more-from-shop-listings?shop_id={{shop_id2}}&currency_code={{custom_attribute.${currency} | url_encode}}&region={{custom_attribute.${canonical_country} | url_encode}}&language_code={{${language}}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :save collections2 :basic_auth Etsyweb_Lifecycle_API %}
+
+{% assign listings2 = collections2[0].listings %}
+
+<!--- SHOP #3 ------------------------------------------>
+{% assign shop_link3 =  "https://www.etsy.com/shop/BelgianPaperworks" %}
+{% assign shop_parameter3 = "?" %}
+
+{% assign shop_headshot3 = "https://braze-images.com/appboy/communication/assets/image_assets/images/69149543f375320063aa87df/original.png?1762956611" %}
+	{% capture shop_name3 %}
+{{content_blocks.${TITLE_1_GLOBAL_Belgian_111525_hero} | id: 'cb71'}}
+	{% endcapture %}
+
+	{% capture shop_years3 %}
+{{content_blocks.${TITLE_2_GLOBAL_Belgian_111525_hero} | id: 'cb72'}}
+	{% endcapture %}
+
+	{% capture shop_reviews3 %}
+{{content_blocks.${TITLE_3_GLOBAL_Belgian_111525_hero} | id: 'cb73'}}
+	{% endcapture %} 
+
+{% capture shop_cta3 %}
+{{content_blocks.${intl_Q123_category_propensity_CTA2}}} 
+	{% endcapture %}
+
+{% assign shop_id3 = 6339627 %}
+
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/more-from-shop-listings?shop_id={{shop_id3}}&currency_code={{custom_attribute.${currency} | url_encode}}&region={{custom_attribute.${canonical_country} | url_encode}}&language_code={{${language}}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :save collections3 :basic_auth Etsyweb_Lifecycle_API %}
+
+{% assign listings3 = collections3[0].listings %}
+
+<!--- SHOP #4 ------------------------------------------>
+{% assign shop_link4 =  "http://etsy.com/shop/UntitledCoDesign" %}
+{% assign shop_parameter4 = "?" %}
+
+{% assign shop_headshot4 = "https://braze-images.com/appboy/communication/assets/image_assets/images/69149543c790b700639f1a33/original.png?1762956611" %}
+	{% capture shop_name4 %}
+{{content_blocks.${TITLE_4_GLOBAL_Untitled_111525_hero} | id: 'cb74'}}
+	{% endcapture %}
+
+	{% capture shop_years4 %}
+{{content_blocks.${TITLE_5_GLOBAL_Untitled_111525_hero} | id: 'cb75'}}
+	{% endcapture %}
+
+	{% capture shop_reviews4 %}
+{{content_blocks.${TITLE_6_GLOBAL_Untitled_111525_hero} | id: 'cb76'}}
+	{% endcapture %} 
+
+{% capture shop_cta4 %}
+{{content_blocks.${intl_Q123_category_propensity_CTA2}}} 
+	{% endcapture %}
+
+{% assign shop_id4 = 13722199 %}
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/more-from-shop-listings?shop_id={{shop_id4}}&currency_code={{custom_attribute.${currency} | url_encode}}&region={{custom_attribute.${canonical_country} | url_encode}}&language_code={{${language}}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :save collections4 :basic_auth Etsyweb_Lifecycle_API %}
+
+  {% if collections4 == blank %}
+  {% abort_message("No content for this user") %}
+  {%endif%}
+
+  {% assign listings4 = collections4[0].listings %}
+  
+<!---  END OF LIQUID --->
+
+<!---  START OF EMAIL CODE --->
+<!--OUTER WRAPPER -->
+<table bgcolor="#FAF8F5" border="0" cellpadding="0" cellspacing="0" class="darkmode_background" style="background-color: #FAF8F5; border-collapse: collapse; border-spacing: 0; width: 100%; " width="100%">
+	<tbody>
+		<tr>
+			<td align="center" style=" display: block;">
+			<!--[if (gte mso 9)|(IE)]>
+			<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+			<td>
+			<![endif]-->
+      <!--CONTENT -->
+			<table border="0" cellpadding="0" cellspacing="0"  style="border-collapse: collapse; border-spacing: 0; max-width: 600px; width: 100%;" width="100%">
+				<tbody>
+					<tr>
+						<td class="darkmode_background" style="background-color:#FAF8F5;">
+										
+<!-- NAV-------------------------------------------------------------------------- -->
+<table align="left" width="100%"  border="0" cellpadding="0" cellspacing="0"  style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+     <tr>
+        <td>
+        {{content_blocks.${nav_pre_cyber} | id: 'cb57'}}
+        {{content_blocks.${loyalty_skinny_nav_v2} | id: 'cb58'}}
+        </td>
+    </tr>
+</table>
+<!-- END NAV------------------------------------------------------------------ -->
+																																																						
+<!-- HERO MODULE CONTENT------------------------------------------------------------------ -->
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex_hero}}" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+      {% if heroimage != blank %}
+	      <tr>
+            <td class="darkmode_background" style="padding: 0 0 24px;">
+            <!-- EDIT IMG 600x500 + LINK -->
+           <a href="{{herolink}}{{hero_parameter}}lid=exvpmib1g3wc&utm_content=hero" universal="true" style="border:0;">
+            <img src="{{heroimage}}" width="600" class="hero_image_height" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; height: auto; max-height: 250px; max-width: {{herowidth}}px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; width: 100%;" alt=""></a>
+            <!-- END EDIT IMG 600x500 + LINK -->
+            </td>
+         </tr>
+      {% endif %}
+  </tbody>
+</table>
+ <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+ <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex_hero}}"  width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="hero_container_pad darkmode_background darkmode_font_primary"  style="text-align:center; background-color: #{{bghex_hero}}; padding: 0 16px 40px;" >                
+     <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+        {% if hero_headline != blank %}
+         <tr>
+            <td class="darkmode_font_primary"  style=" color: #{{fonthex_hero}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 12px; ">
+               <!-- EDIT Headline + link -->
+               <a href="{{herolink}}{{hero_parameter}}lid=0oyqtk1xi3z5&utm_content=hero" universal="true"  style="text-decoration:none; color:#{{fonthex_hero}};"><!--[if mso]><span style="display:none"><![endif]--><h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:left;  " class=" darkmode_font_primary"><!--[if mso]></span><![endif]-->{{hero_headline}}<!--[if mso]><span style="display:none"><![endif]--></h1><!--[if mso]></span><![endif]--></a>
+               <!-- END EDIT Headline + link -->
+            </td>  
+            </tr>  
+         {% endif %}
+         <tr>
+            <td class="darkmode_font_primary "  style="color:#{{fonthex_hero}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 0 0 24px; ">
+            <!-- EDIT body text + link -->
+            <a href="{{herolink}}{{hero_parameter}}lid=5vci9iq8lwk1&utm_content=hero" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex_hero}};">
+            {{hero_body}}
+            </a>
+            <!-- END EDIT body text + link -->
+            </td>
+         </tr>
+         
+         <tr>
+            <td align="left" style="padding: 0 0 0; ">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{herolink}}{{hero_parameter}}lid=nd90e5eizwbn&utm_content=hero" class="darkmode_button_primary"  style="background-color: #{{fonthex_hero}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{cta_text_color}}; border: 2px solid #{{fonthex_hero}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{hero_cta}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+         </tr>
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- CLOSE HERO Module------------------------------------------------------------------ -->
+{% if bghex_hero != 'FAF8F5'%}
+<div class="darkmode_background spacer" style="line-height:40px;height:40px;mso-line-height-rule:exactly; background-color:#FAF8F5; text-align:center; color:#ccc;"></div> 
+{% endif %}
+<!--  PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
+<!--  SHOP2 MODULE CONTENT------------------------------------------------------------------ --> 
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="secondary_hero_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+            <tr>
+              <td style="padding:0 0 24px;" align="left" >
+              <!--[if mso]><table align="left" width="80" ><tr><td style=" width:80px; padding:0 12px 0 0;" valign="middle"><![endif]-->
+              <div style="width:80px; display:inline-block; padding:0 12px 0 0; vertical-align: middle">
+                <a href="{{shop_link2}}{{shop_parameter2}} utm_content=listing&lid=2rsvqygojq5a" universal="true">
+                <img src="{{shop_headshot2}}" width="80" class="darkmode_border"  style="-ms-interpolation-mode: bicubic; border:1.5px solid #E0DAD6;  border-radius: 50%; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </a>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+              <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name2}}</div>
+                <div class="darkmode_font_primary shop_stats"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+                'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
+                  <!-- <span style="color:#FFBA26;">&#x2605;</span> {{shop_reviews2}} • {{shop_years2}} -->
+                  <span class="stat_item reviews_stat">
+                    <span style="color:#FFBA26;">&#x2605;</span>
+                    <span>{{shop_reviews2}}</span>
+                  </span>
+                  <span class="shop_stats"> &nbsp;•&nbsp; </span>
+                  <span class="stat_item years_stat">{{shop_years2}}</span>
+                </div>
+              </div>
+             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+              </td>
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- 4 IMG GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center;font-size:0;">	
+            <!-- LIQUID NOTES: Begining of forloop to display listings. Assigns data and listing size to variables ---------------- -->	
+            {% for listing in listings2 limit: 2 %}
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="https://www.etsy.com/search?lid=5e7w76okcqdp&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 30 }}&anchor_listing_id={{ listing.listing_id }}&utm_content=4listingsmodule" universal="true">
+                <div  style="max-width: 100%; overflow:hidden">
+                <img src="{{ listing.image }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            {% endfor %} 	                           
+            </div>
+            </td>
+          </tr>
+          {% if manual_listings_cta != blank %}
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{shop_link2}}{{shop_parameter2}}utm_content=listing&lid=pg4gfyrkkcx7" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{shop_cta2}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE 4 IMG GRID------------------------------------------------------------------ -->
+<!--  CLOSE SHOP2 MODULE CONTENT------------------------------------------------------------------ --> 
+<!--  SHOP3 MODULE CONTENT------------------------------------------------------------------ --> 
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="secondary_hero_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+            <tr>
+              <td style="padding:0 0 24px;" align="left" >
+              <!--[if mso]><table align="left" width="80" ><tr><td style=" width:80px; padding:0 12px 0 0;" valign="middle"><![endif]-->
+              <div style="width:80px; display:inline-block; padding:0 12px 0 0; vertical-align: middle">
+                <a href="{{shop_link3}}{{shop_parameter3}}utm_content=listing&lid=ntdoxlfyfvhb" universal="true">
+                <img src="{{shop_headshot3}}" width="80" class="darkmode_border"  style="-ms-interpolation-mode: bicubic;  border:1.5px solid #E0DAD6;  border-radius: 50%; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </a>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+              <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name3}}</div>
+                <div class="darkmode_font_primary shop_stats"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
+                  <!-- <span style="color:#FFBA26;">&#x2605;</span> {{shop_reviews3}} • {{shop_years3}} -->
+                  <span class="stat_item reviews_stat">
+                    <span style="color:#FFBA26;">&#x2605;</span>
+                    <span>{{shop_reviews3}}</span>
+                  </span>
+                  <span class="shop_stats"> &nbsp;•&nbsp; </span>
+                  <span class="stat_item years_stat">{{shop_years3}}</span>
+                </div>
+              </div>
+             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+              </td>
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- 4 IMG GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center;font-size:0;">	
+            <!-- LIQUID NOTES: Begining of forloop to display listings. Assigns data and listing size to variables ---------------- -->	
+            {% for listing in listings3 offset: 3 | limit: 2 %}
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="https://www.etsy.com/search?lid=nnvhry25nv2y&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 30 }}&anchor_listing_id={{ listing.listing_id }}&utm_content=4listingsmodule" universal="true">
+                <div  style="max-width: 100%; overflow:hidden">
+                <img src="{{ listing.image }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            {% endfor %} 	                           
+            </div>
+            </td>
+          </tr>
+          {% if manual_listings_cta != blank %}
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{shop_link3}}{{shop_parameter3}}utm_content=listing&lid=7tcg0hkxn4b9" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{shop_cta3}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                            
+<!-- ClOSE 4 IMG GRID------------------------------------------------------------------ -->
+<!--  CLOSE SHOP3 MODULE CONTENT------------------------------------------------------------------ --> 
+<!--  SHOP1  CONTENT------------------------------------------------------------------ --> 
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="secondary_hero_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+            <tr>
+              <td style="padding:0 0 24px;" align="left" >
+              <!--[if mso]><table align="left" width="80" ><tr><td style=" width:80px; padding:0 12px 0 0;" valign="middle"><![endif]-->
+              <div style="width:80px; display:inline-block; padding:0 12px 0 0; vertical-align: middle">
+                <a href="{{shop_link}}{{shop_parameter}}utm_content=listing&lid=q6dnopnat2to" universal="true">
+                <img src="{{shop_headshot}}" width="80" class="darkmode_border"  style="-ms-interpolation-mode: bicubic;  border:1.5px solid #E0DAD6;  border-radius: 50%; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </a>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+              <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name}}</div>
+                <div class="darkmode_font_primary shop_stats"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
+                  <!-- <span style="color:#FFBA26;">&#x2605;</span> {{shop_reviews}} • {{shop_years}} -->
+                  <span class="stat_item reviews_stat">
+                    <span style="color:#FFBA26;">&#x2605;</span>
+                    <span>{{shop_reviews}}</span>
+                  </span>
+                  <span class="shop_stats"> &nbsp;•&nbsp; </span>
+                  <span class="stat_item years_stat">{{shop_years}}</span>
+                </div>
+              </div>
+             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+              </td>
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- 4 IMG GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center;font-size:0;">	
+            <!-- LIQUID NOTES: Begining of forloop to display listings. Assigns data and listing size to variables ---------------- -->	
+            {% for listing in listings offset: 3 | limit: 2 %}
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="https://www.etsy.com/search?lid=qyp1zgv5wuq8&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 30 }}&anchor_listing_id={{ listing.listing_id }}&utm_content=4listingsmodule" universal="true">
+                <div  style="max-width: 100%; overflow:hidden">
+                <img src="{{ listing.image }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            {% endfor %} 	                           
+            </div>
+            </td>
+          </tr>
+          {% if manual_listings_cta != blank %}
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{shop_link}}{{shop_parameter}}utm_content=listing%3F&lid=hpz5egrpmoo0" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{shop_cta}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE 4 IMG GRID------------------------------------------------------------------ -->
+<!--  CLOSE SHOP1 MODULE CONTENT------------------------------------------------------------------ --> 
+<!--  SHOP4 MODULE CONTENT------------------------------------------------------------------ --> 
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="secondary_hero_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+            <tr>
+              <td style="padding:0 0 24px;" align="left" >
+              <!--[if mso]><table align="left" width="80" ><tr><td style=" width:80px; padding:0 12px 0 0;" valign="middle"><![endif]-->
+              <div style="width:80px; display:inline-block; padding:0 12px 0 0; vertical-align: middle">
+                <a href="{{shop_link4}}{{shop_parameter4}}utm_content=listing&lid=5opdxexck1pq" universal="true">
+                <img src="{{shop_headshot4}}" width="80" class="darkmode_border"  style="-ms-interpolation-mode: bicubic;  border:1.5px solid #E0DAD6;  border-radius: 50%; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </a>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+              <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name4}}</div>
+                <div class="darkmode_font_primary shop_stats"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+                'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
+                  <!-- <span style="color:#FFBA26;">&#x2605;</span> {{shop_reviews4}} • {{shop_years4}} -->
+                  <span class="stat_item reviews_stat">
+                    <span style="color:#FFBA26;">&#x2605;</span>
+                    <span>{{shop_reviews4}}</span>
+                  </span>
+                  <span class="shop_stats"> &nbsp;•&nbsp; </span>
+                  <span class="stat_item years_stat">{{shop_years4}}</span>
+                </div>
+              </div>
+             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+              </td>
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- 4 IMG GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center;font-size:0;">	
+            <!-- LIQUID NOTES: Begining of forloop to display listings. Assigns data and listing size to variables ---------------- -->	
+            {% for listing in listings4 limit: 2 %}
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="https://www.etsy.com/search?lid=s60g0t6yp1vv&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 30 }}&anchor_listing_id={{ listing.listing_id }}&utm_content=4listingsmodule" universal="true">
+                <div  style="max-width: 100%; overflow:hidden">
+                <img src="{{ listing.image }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            {% endfor %} 	                           
+            </div>
+            </td>
+          </tr>
+          {% if manual_listings_cta != blank %}
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{shop_link4}}{{shop_parameter4}}utm_content=listing&lid=dhxa3n055ugb" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{shop_cta4}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE 4 IMG GRID------------------------------------------------------------------ -->
+<!--  CLOSE SHOP4 MODULE CONTENT------------------------------------------------------------------ --> 
+<!-- CLOSE PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
+<!-- BANNER MODULE --------------------------------------------------------- --> 
+{% if banner != blank %}
+{{banner}}
+{% endif %}
+<!-- CLOSE BANNER MODULE ------------------------------------------------------------ -->
+{{content_blocks.${BANNER_GLOBAL_loyalty_freeshipping_v2} | id: 'cb59'}}
+<!-- DISCLAIMER ------------------------------------->
+{% if disclaimer != blank %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0"
+style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td  align="center" class="disclaimer_container_pad" style="text-align:center;  padding: 0 16px 24px; ">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left"
+        style="border-collapse: collapse; table-layout: fixed; width: 100%;">
+          <tbody>
+            <tr>
+              <td class="darkmode_footer_font_dark" style="color:#665E5C; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left;">
+               {{disclaimer}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endif %}
+<!-- END DISCLAIMER ------------------------------>		
+
+<!-- FOOTER ------------------------------------------------------------------ -->
+
+{{content_blocks.${Global_Footer_Buyer_v3_Experiment} | id: 'cb29'}}
+	
+<!-- END FOOTER ------------------------------------------------------------------ -->
+									</td>
+								</tr>
+							</tbody>
+						</table><!--CLOSE CONTENT -->
+					</td>
+					</tr>
+				</tbody>
+			</table>	<!--CLOSE OUTER WRAPPER -->		
+</body></html>
