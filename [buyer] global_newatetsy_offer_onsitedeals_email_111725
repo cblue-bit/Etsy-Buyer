@@ -393,7 +393,7 @@ color: inherit !important;
         <tr>
            <td class="hero_headline_pad darkmode_background"  style=" color: #{{fonthex}}; padding:0 6px 24px; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; ">
               <!-- EDIT Headline + link -->
-              <a href="https://www.etsy.com?utm_content=RD-B-Banner3-OPFY-MMX_unknownImage&lid=fpvnc1c87yve" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:left;  " class=" darkmode_font_primary ">{{content_blocks.${HEADER_GLOBAL_OPFY_100625_hero} | id: 'cb157'}}</h1></a>
+              <a href="https://www.etsy.com?utm_content=RD-B-Banner3-OPFY-MMX_unknownImage&lid=fpvnc1c87yve" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_background darkmode_font_primary "><!--[if mso]></span><![endif]-->{{content_blocks.${HEADER_GLOBAL_OPFY_100625_hero} | id: 'cb157'}}<!--[if mso]><span style="display:none"><![endif]--></h2><!--[if mso]></span><![endif]--></a>
               <!-- END EDIT Headline + link -->
            </td> 
            </tr> 
@@ -465,6 +465,30 @@ color: inherit !important;
   {% assign listings_dumb = stash_data.listings %}
 
 
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="h2_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+         <tr>
+            <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
+               <!-- EDIT Headline + link -->
+                <a href="{{secondary_cta_link}}&lid=22vry9gp25y6&utm_content=listing" universal="true"  style="text-decoration:none; color:#{{fonthex}};"><!--[if mso]><span style="display:none"><![endif]--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_background darkmode_font_primary "><!--[if mso]></span><![endif]-->{{content_blocks.${HEADER_GLOBAL_Non-OPFY_Offer_111725_primary} | id: 'cb161'}}<!--[if mso]><span style="display:none"><![endif]--></h2><!--[if mso]></span><![endif]--></a>
+               <!-- END EDIT Headline + link -->
+            </td>  
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+
 
 <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
   <tbody>
@@ -496,7 +520,7 @@ color: inherit !important;
           <tr>
             <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
             <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{secondary_cta_link}}&lid=22vry9gp25y6&utm_content=listing" class="darkmode_button_primary_dark" style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{secondary_cta_link}}&lid=grjinkfdqyxx&utm_content=listing" class="darkmode_button_primary_dark" style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{content_blocks.${intl_Q123_category_propensity_CTA2}}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
