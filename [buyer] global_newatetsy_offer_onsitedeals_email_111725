@@ -3,6 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
 <!--[if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
  <o:AllowPNG/>
@@ -521,7 +523,7 @@ color: inherit !important;
           <tr>
             <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
             <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{secondary_cta_link}}&lid=grjinkfdqyxx&utm_content=listing" class="darkmode_button_primary_dark" style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{secondary_cta_link}}&lid=grjinkfdqyxx&utm_content=listing" class="darkmode_button_secondary" style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{content_blocks.${intl_Q123_category_propensity_CTA2}}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
@@ -563,7 +565,7 @@ color: inherit !important;
 {% if stash_data == nil %} {% abort_message("ABORT! No listing data to use.") %} {% endif %}
 {% if {{stash_data}} %}  {% assign listings = stash_data.listings %}
 {% endif %}
-           <!--[if mso]><table role="presentation" width="100%"><tr><td style="width:50%;padding:10px;" valign="middle"><![endif]-->
+           <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
              <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top;">
                <div class="secondary_listing_pad" style="padding:0 6px 12px">
                <a href="{{listing_link1}}&lid=bvcm04svne4n&anchor_listing_id={{ listings[0].listing_id }}&utm_content=primary" universal="true">
@@ -589,7 +591,7 @@ color: inherit !important;
 
 {% if {{stash_data_new}} %}  {% assign listings_new = stash_data_new.listings %}
 {% endif %}
-           <!--[if mso]><table role="presentation" width="100%"><tr><td style="width:50%;padding:10px;" valign="middle"><![endif]-->
+           <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
              <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top;">
                <div class="secondary_listing_pad" style="padding:0 6px 12px">
                <a href="{{listing_link2}}&lid=9a2w5q3le7az&anchor_listing_id={{ listings_new[0].listing_id }}&utm_content=secondary" universal="true">
@@ -613,7 +615,7 @@ color: inherit !important;
 
 {% if {{stash_data_new3}} %} {% assign listings_new3 = stash_data_new3.listings %}
 {% endif %}
-           <!--[if mso]><table role="presentation" width="100%"><tr><td style="width:50%;padding:10px;" valign="middle"><![endif]-->
+            <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
              <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top; ">
                <div class="secondary_listing_pad" style="padding:0 6px 12px">
                <a href="{{listing_link3}}&lid=lpwf6spv8vi5&anchor_listing_id={{ listings_new3[0].listing_id }}&utm_content=tertiary" universal="true">
