@@ -2,9 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width">
-<!--[if !mso]><!-- -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--<![endif]-->
 <!--[if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
  <o:AllowPNG/>
@@ -64,13 +62,16 @@ color: inherit !important;
       .banner_text_align{
         text-align:left !important;
       }
-           .disclaimer_container_pad{
+      .disclaimer_container_pad{
        padding: 0 32px 24px !important;
      }
      .footer_container_pad{
        padding: 32px 32px 0px !important;
      }
       /* END Must include in every email */
+      .h2_listing_container_pad{
+        padding: 0 32px 0 !important;
+       }
       .hero_image_height{
         max-height:350px !important;
       }
