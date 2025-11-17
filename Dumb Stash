@@ -1,0 +1,64 @@
+<!--- DUMB STASH  ------------------------------------------------------------------->
+{% assign merch_collection_ids = 1402624161571 %}
+ {% assign sectionid = 1407735686586  %}
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/get-stash-listings?&merch_collection_ids={{merch_collection_ids}}&section_id={{sectionid}}&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}
+:save stash_data :basic_auth Etsyweb_Lifecycle_API :cache_max_age 900 %}
+ 
+  {% if stash_data == blank %}
+  {% abort_message("No content for this user") %}
+  {%endif%}
+
+  {% assign listings = stash_data.listings %}
+
+  {% assign category_url = listings[0].category_url %}
+
+
+  {% if category_url == "https://www.etsy.com/c/" %}
+  {% capture category_url %}https://www.etsy.com/search?q={{ listing.category }}
+  {% endcapture %}
+  {% endif %}
+
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background" align="left" style="direction:ltr;text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center;font-size:0;">	
+            {% for listing in listings  limit: 4 %}
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{ listing.branch_listing_url }}{{branch_utms}}&lid=4vie1ha5vdi5&utm_content=4listingsmodule" universal="true">
+                <div style="max-width: 100%; overflow:hidden">
+                <img src="{{ listing.img.url_300x300 }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if mso]></td></tr></table><![endif]-->
+            {% endfor %} 
+            	                           
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{category_url}}&lid=5v82jc9014zd&utm_content=listing" class="darkmode_button_primary_dark" style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{content_blocks.${intl_Q123_category_propensity_CTA2}}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--- CLOSE DUMB STASH  ------------------------------------------------------------------->
