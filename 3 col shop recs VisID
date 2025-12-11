@@ -8,11 +8,6 @@
   .listing_container_pad{padding:0 12px 24px !important;}
 }
 
-/* Mobile CSS */
-@media screen and (max-width: 460px) {  
-  .listing_container_pad{padding: 0 0 12px;}
-}
-
 /* Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
   .darkmode_font_primary { color: #ffffff !important;}
