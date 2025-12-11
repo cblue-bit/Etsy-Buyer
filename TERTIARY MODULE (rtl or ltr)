@@ -1,0 +1,102 @@
+<!--- TERTIARY MODULE 1 --->
+ <!--- Layout (rtl or ltr) --->
+{% assign tert_module_layout = 'ltr' %}
+
+{% assign tert_module_link = "https://www.etsy.com/featured/etsydesignawards" %}
+{% assign tert_module_link_parameter = "?" %}
+
+{% assign tert_module_image = "https://braze-images.com/appboy/communication/assets/image_assets/images/6912125b88123a0063679dfa/original.png?1762792026" %}
+
+{% capture tert_module_headline %}
+   {{content_blocks.${HEADER_GLOBAL_EDA1_111325_primary} | id: 'cb101'}}
+{% endcapture %}
+
+{% capture tert_module_body %}
+{{content_blocks.${BODY_GLOBAL_EDA1_111325_primary} | id: 'cb102'}}
+{% endcapture %}
+
+{% capture tert_module_cta %}
+  {{content_blocks.${CTA_GLOBAL_EDA1_111325_primary} | id: 'cb103'}}
+{% endcapture %}
+
+{% assign tert_utmcontent = 'banner' %}	
+
+{% assign tert_bg_color = 'FAF8F5' %}	
+
+{% assign tert_font_color = '332F2E' %}	
+
+<!--TERTIARY MODULE 1 CONTENT-->
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="left" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;" >
+   <tbody><tr>
+      <td class="banner_container_pad darkmode_background"  style="direction:{{tert_module_layout}}; text-align:center;background-color: #{{tert_bg_color}}; padding: 40px 4px;">
+         
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="left" cellpadding="0" cellspacing="0" border="0">
+   <tr>
+      <td width="280" valign="top">
+         <![endif]-->
+         <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; display: inline-block; max-width: 280px; vertical-align: middle; width: 100%;">
+            <tbody><tr>
+               <td class="banner_image_pad" style="text-align:left; padding:0 12px 24px;">
+                  <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+                <a href="{{tert_module_link}}{{tert_module_link_parameter}}lid=aw1rri221i1r&utm_content={{tert_utmcontent}}" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{tert_module_image}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 0px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+               </td>
+            </tr>
+         </tbody></table>
+         <!--[if (gte mso 9)|(IE)]>
+      </td>
+      <td width="256" valign="top">
+         <![endif]-->
+         <table border="0" cellpadding="0" cellspacing="0" class="banner_text_width" style="border-collapse: collapse; display: inline-block; max-width: 100%; vertical-align: middle; width: 100%;">
+            <tbody><tr>
+               <td class="banner_text_center" style="text-align:left;padding-left: 12px; padding-right: 12px;">
+                 <!--[if mso]><table align="left" width="100%" ><tr><td style="padding:40px 0 0 0; text-align:left !iimportant;" valign="middle"><![endif]-->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-collapse: collapse; table-layout: fixed; width: 100%;">
+                     <tbody><tr>
+                        <td class="banner_text_center"  style="direction:ltr; color: #{{tert_font_color}}; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 20px;  mso-line-height-rule: exactly; line-height: 130%;  letter-spacing: -0.2px; padding:0 0 4px; text-align:left; ">
+<!-- EDIT Header 1 + link -->
+<a href="{{tert_module_link}}{{tert_module_link_parameter}}lid=6xtxsa5sw5g7&utm_content={{tert_utmcontent}}"  universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{tert_font_color}};">{{tert_module_headline}}
+</a>
+<!-- END EDIT Header 1 + link -->
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="banner_text_center"  style="direction:ltr; color: #{{tert_font_color}}; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; mso-line-height-rule: exactly; line-height: 130%; padding:0 0 24px; text-align:left; ">
+                           <!-- EDIT Header 1 -->
+
+<!-- EDIT Paragraph 1 + link -->
+<a href="{{tert_module_link}}{{tert_module_link_parameter}}lid=nhte1j5jeurr&utm_content={{tert_utmcontent}}"  universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{tert_font_color}};">{{tert_module_body}}
+
+</a>
+<!-- END EDIT Paragraph 1 + link -->
+                        </td>
+                     </tr>
+                     <tr>
+                       <td >
+                  <div class="banner_text_center" style="direction:ltr; color: #{{tert_font_color}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 18px; mso-line-height-rule: exactly; line-height: 130%; ">
+                     <!-- EDIT CTA + link -->    
+                     <a href="{{tert_module_link}}{{tert_module_link_parameter}}lid=3uo1yfwg7t77&utm_content={{tert_utmcontent}}" class="darkmode_font_primary"  universal="true" style="text-decoration:none; color:#{{tert_font_color}};">{{tert_module_cta}} 
+ →</a>
+                     <!-- END EDIT CTA + link -->
+                  </div>
+                  
+               </td>
+                     </tr>
+                  </tbody></table>
+                  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+               </td>
+            </tr>
+         </tbody></table>
+          <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+               </td>
+            </tr>
+         </tbody></table>
+          <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+ <!-- CLOSE TERTIARY MODULE 1 CONTENT ------- > 
