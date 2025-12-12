@@ -1,26 +1,26 @@
-{% assign module_link = "https://www.etsy.com/featured/hub/holiday" %}
+{% assign module_link = "https://www.etsy.com/r/curated/top-100-digital-downloads?sections=1434551772363&anchor_listings=1587197103" %}
 
-{% assign module_link_parameter = "?" %}
+{% assign module_link_parameter = "&" %}
 
-{% assign module_image = "https://braze-images.com/appboy/communication/assets/image_assets/images/691b537bb6ae3200636f641b/original.gif?1763398523" %}
+{% assign module_image = "https://braze-images.com/appboy/communication/assets/image_assets/images/693c5ca84d8a100063b29e5c/original.png?1765563560" %}
 
 {% capture module_headline %}
-   {{content_blocks.${HEADER_GLOBAL_commerce_110125_tertiary} | id: 'cb49'}}
+   {{content_blocks.${HEADER_GLOBAL_Digital_122325_tertiary} | id: 'cb61'}}
 {% endcapture %}
 
 {% capture module_body %}
-   {{content_blocks.${BODY_GLOBAL_commerce_110125_tertiary} | id: 'cb50'}}
+   {{content_blocks.${BODY_GLOBAL_Digital_122325_tertiary} | id: 'cb62'}}
 {% endcapture %}
 
 {% capture module_cta %}
-  {{content_blocks.${CTA_GLOBAL_commerce_110125_tertiary} | id: 'cb51'}}
+  {{content_blocks.${CTA_GLOBAL_Digital_122325_tertiary} | id: 'cb63'}}
 {% endcapture %}
 
 {% assign utmcontent = 'banner' %}	
 
-{% assign bg_color = 'FAF8F5' %}	
+{% assign bg_color = '0D424E' %}	
 
-{% assign font_color = '332F2E' %}	
+{% assign font_color = 'FAF8F5' %}	
 
 <style>
 /* Desktop styles for this email  */
@@ -65,8 +65,8 @@
             <tbody><tr>
                <td class="banner_image_pad" style="text-align:left; padding:0 12px 24px;">
                    <!--[if mso]><table align="left" width="49%" ><tr><td valign="middle"><![endif]-->
-                <a href="{{module_link}}{{module_link_parameter}}lid={{${cblid} | lid: 'kug54s0e3vfn'}}&utm_content={{utmcontent}}" universal="true">
-                <div class="center" style="max-width: 100%; overflow:hidden">
+                <a href="{{module_link}}{{module_link_parameter}}lid={{${cblid} | lid: '9wtafswlu5k1'}}&utm_content={{utmcontent}}" universal="true">
+                <div style="max-width: 100%; overflow:hidden">
                 <img src="{{module_image}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 0px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                 </div>
                 </a>
@@ -81,21 +81,22 @@
          <table border="0" cellpadding="0" cellspacing="0" class="banner_text_width" style="border-collapse: collapse; display: inline-block; max-width: 100%; vertical-align: middle; width: 100%;">
             <tbody><tr>
                <td class="banner_text_center" style="text-align:left;padding-left: 12px; padding-right: 12px;">
+                    <!--[if mso]><table align="left" width="100%" ><tr><td style="padding:40px 0 0 0; text-align:left !iimportant;" valign="middle"><![endif]-->
                   <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-collapse: collapse; table-layout: fixed; width: 100%;">
                      <tbody><tr>
-                        <td class="banner_text_align"  style="color: #{{font_color}}; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 20px;  mso-line-height-rule: exactly; line-height: 130%;  letter-spacing: -0.2px; padding:0 0 4px; text-align:center; ">
+                        <td class="banner_text_center"  style="color: #{{font_color}}; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 20px;  mso-line-height-rule: exactly; line-height: 130%;  letter-spacing: -0.2px; padding:0 0 4px; text-align:left; ">
 <!-- EDIT Header 1 + link -->
-<a href="{{module_link}}{{module_link_parameter}}lid={{${cblid} | lid: 'e0kh4sc9hmrs'}}&utm_content={{utmcontent}}"  universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{font_color}};">{{module_headline}}
+<a href="{{module_link}}{{module_link_parameter}}lid={{${cblid} | lid: '3bhnbisrpmyw'}}&utm_content={{utmcontent}}"  universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{font_color}};">{{module_headline}}
 </a>
 <!-- END EDIT Header 1 + link -->
                         </td>
                      </tr>
                      <tr>
-                        <td class="banner_text_align"  style="color: #{{font_color}}; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; mso-line-height-rule: exactly; line-height: 130%; padding:0 0 24px; text-align:center; ">
+                        <td class="banner_text_center"  style="color: #{{font_color}}; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; mso-line-height-rule: exactly; line-height: 130%; padding:0 0 24px; text-align:left; ">
                            <!-- EDIT Header 1 -->
 
 <!-- EDIT Paragraph 1 + link -->
-<a href="{{module_link}}{{module_link_parameter}}lid={{${cblid} | lid: 'bh26krcm1szp'}}&utm_content={{utmcontent}}"  universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{font_color}};">{{module_body}}
+<a href="{{module_link}}{{module_link_parameter}}lid={{${cblid} | lid: 'm7a124j0rdcv'}}&utm_content={{utmcontent}}"  universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{font_color}};">{{module_body}}
 
 </a>
 <!-- END EDIT Paragraph 1 + link -->
@@ -105,7 +106,7 @@
                        <td >
                   <div class="banner_text_center" style="color: #{{font_color}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 18px; mso-line-height-rule: exactly; line-height: 130%; ">
                      <!-- EDIT CTA + link -->    
-                     <a href="{{module_link}}{{module_link_parameter}}lid={{${cblid} | lid: 'qisu72ktqyq0'}}&utm_content={{utmcontent}}" class="darkmode_font_primary"  universal="true" style="text-decoration:none; color:#{{font_color}};">{{module_cta}} 
+                     <a href="{{module_link}}{{module_link_parameter}}lid={{${cblid} | lid: 'gjqsu4659df1'}}&utm_content={{utmcontent}}" class="darkmode_font_primary"  universal="true" style="text-decoration:none; color:#{{font_color}};">{{module_cta}} 
  →</a>
                      <!-- END EDIT CTA + link -->
                   </div>
