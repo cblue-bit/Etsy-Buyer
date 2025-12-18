@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<!--[if mso]>
+<style type="text/css">
+* {    
+  mso-line-height-rule: exactly !important;
+}
+td, p, span, div, h3 {
+  font-family: Arial, Sans-Serif !important;
+ } 
+h1, h2 {
+  font-family: Georgia, serif !important;
+  letter-spacing: .01em !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+</style>
+<![endif]--> 
+<title>Etsy</title>
+{{content_blocks.${VisID-CSS-Font} | id: 'cb1'}}
+{{content_blocks.${VisID_CSS}}}
+<style>
+/* Custom Dark Mode Styles */
+  @media (prefers-color-scheme: dark) {
+    .darkmode_hero_border { border-color: #D2DBBD !important;} 
+    .darkmode_background_banner { background-color: #2F203C !important; }
+}
+</style>
+</head>
+<body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #FAF8F5; margin: 0; min-width: 100%; padding: 0; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
+<!--- BEGIN EDIT LIQUID--->
+
+<!--- BG COLOR (white,orange,yellow,purple,blue,green (color_tint or color_dk)) --->
+	<!--- BG COLOR --->
+	{% assign bg_colour = 'grey' %}		
+	{% assign bg_colour2 = 'purple_tint' %}	
+
+  {% assign bghex_hero = 'FAF8F5' %}
+  {% assign fonthex_hero = '332F2E' %}
+
+ {% assign herolink = "https://www.etsy.com/r/curated/end-of-season-sale?sections=1429260729329,1432317797443&is_on_sale=true&anchor_listings=1893958653,1340104093,1311327929" %}
+
+{% assign hero_parameter = "&" %}
+
+{% assign heroimage = "https://braze-images.com/appboy/communication/assets/image_assets/images/69430078898b3b0063eb4a60/original.gif?1765998711" %}
+
+
+  {% capture hero_headline %}
+{{content_blocks.${HEADER_GLOBAL_Boxing_122825_hero} | id: 'cb2'}}
+	{% endcapture %}
+
+
+  {% capture hero_body %}
+{{content_blocks.${BODY_GLOBAL_Boxing_122825_hero} | id: 'cb3'}}
+	{% endcapture %}
+
+  {% capture hero_cta %}
+{{content_blocks.${CTA_GLOBAL_Boxing_122825_hero} | id: 'cb4'}}
+	{% endcapture %}
+
+<!--- LISTING MODULE (type 'display' to show the module )--->
+   {% assign display_listings_module = 'display' %}
+
+   {% capture listings_headline %}
+   {{content_blocks.${HEADER_GLOBAL_Boxing_122825_hero} | id: 'cb2'}}
+	{% endcapture %}
+
+<!--- MANUAL LISTING 1--->  
+
+ {% assign listings_link1 = "https://www.etsy.com/search?q=personalized+spice+labels&is_personalizable=true&explicit=1&is_merch_library=true&anchor_listing_id=990371804" %}
+
+ {% assign listings_link1_parameter = "&" %}
+
+  {% assign listings_image1 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b10384978600638a193d/original.png?1765912834" %}
+
+ {% capture listings_title1 %}
+{{content_blocks.${TITLE_1_GLOBAL_Trending_122725_primary} | id: 'cb113'}}
+ {% endcapture %}
+
+<!--- MANUAL LISTING 2 --->  
+
+ {% assign listings_link2 = "https://www.etsy.com/search?q=knit+balaclava&is_merch_library=true&anchor_listing_id=1802837602" %}
+
+ {% assign listings_link2_parameter = "&" %}
+
+ {% assign listings_image2 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1037c3ada00631cc31d/original.png?1765912834" %}
+
+ {% capture listings_title2 %}
+{{content_blocks.${TITLE_2_GLOBAL_Trending_122725_primary} | id: 'cb114'}}
+ {% endcapture %}
+
+ <!--- MANUAL LISTING 3 --->  
+
+ {% assign listings_link3 = "https://www.etsy.com/search?q=pet+portrait+mug&explicit=1&is_merch_library=true&is_discounted=true&anchor_listing_id=1250312385" %}
+
+  {% assign listings_link3_parameter = "&" %}
+
+  {% assign listings_image3 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1031f9c750063b647cb/original.png?1765912834" %}
+
+ {% capture listings_title3 %}
+{{content_blocks.${TITLE_3_GLOBAL_Trending_122725_primary} | id: 'cb115'}}
+ {% endcapture %}
+
+ <!--- MANUAL LISTING 4--->  
+
+ {% assign listings_link4 = "https://www.etsy.com/search?q=constellation+necklace&explicit=1&is_merch_library=true&is_discounted=true&anchor_listing_id=953628614" %}
+
+ {% assign listings_link4_parameter = "&" %}
+
+  {% assign listings_image4 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1035f92990063331480/original.png?1765912834" %}
+
+ {% capture listings_title4 %}
+{{content_blocks.${TITLE_4_GLOBAL_Trending_122725_primary} | id: 'cb116'}}
+ {% endcapture %}
+
+<!--- MANUAL LISTING 5 --->  
+
+ {% assign listings_link5 = "https://www.etsy.com/search/craft-supplies-and-tools?q=winter+craft&category_path=562&explicit=1&is_merch_library=true&anchor_listing_id=1502188224" %}
+
+ {% assign listings_link5_parameter = "&" %}
+
+ {% assign listings_image5 = "" %}
+
+ {% capture listings_title5 %}
+{{content_blocks.${TITLE_5_GLOBAL_Trending_122725_primary} | id: 'cb117'}}
+ {% endcapture %}
+
+ <!--- MANUAL LISTING 6 --->  
+
+ {% assign listings_link6 = "https://www.etsy.com/search?q=quilted+jacket&explicit=1&is_merch_library=true&anchor_listing_id=1571125980" %}
+
+  {% assign listings_link6_parameter = "&" %}
+
+  {% assign listings_image6 = "" %}
+
+ {% capture listings_title6 %}
+{{content_blocks.${TITLE_6_GLOBAL_Trending_122725_primary} | id: 'cb118'}}
+ {% endcapture %}
+
+ <!--- MANUAL LISTING CTA --->
+	{% assign manual_listings_cta_link =  "https://www.etsy.com/r/curated/trending-search?sections=1438959968712&narrow=trending-search-terms" %}
+  {% assign manual_listings_cta_parameter = "&" %}
+
+	{% capture manual_listings_cta %}
+  {{content_blocks.${CTA_GLOBAL_Trending_122725_primary} | id: 'cb119'}}
+	{% endcapture %}
+
+  <!--- SECONDARY LISTING MODULE (type 'display' to show the module )--->
+   
+   {% assign display_secondary_listings_module = 'display' %}
+
+   {% capture secondary_listings_headline %}
+   {{content_blocks.${HEADER_GLOBAL_Boxing_122825_hero} | id: 'cb2'}}
+	{% endcapture %}
+
+<!--- SECONDARY MANUAL LISTING 1--->  
+
+ {% assign secondary_listings_link1 = "https://www.etsy.com/search?q=personalized+spice+labels&is_personalizable=true&explicit=1&is_merch_library=true&anchor_listing_id=990371804" %}
+
+ {% assign secondary_listings_link1_parameter = "&" %}
+
+  {% assign secondary_listings_image1 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b10384978600638a193d/original.png?1765912834" %}
+
+ {% capture secondary_listings_title1 %}
+{{content_blocks.${TITLE_1_GLOBAL_Trending_122725_primary} | id: 'cb113'}}
+ {% endcapture %}
+
+<!--- SECONDARY MANUAL LISTING 2 --->  
+
+ {% assign secondary_listings_link2 = "https://www.etsy.com/search?q=knit+balaclava&is_merch_library=true&anchor_listing_id=1802837602" %}
+
+ {% assign secondary_listings_link2_parameter = "&" %}
+
+ {% assign secondary_listings_image2 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1037c3ada00631cc31d/original.png?1765912834" %}
+
+ {% capture secondary_listings_title2 %}
+{{content_blocks.${TITLE_2_GLOBAL_Trending_122725_primary} | id: 'cb114'}}
+ {% endcapture %}
+
+ <!--- SECONDARY MANUAL LISTING 3 --->  
+
+ {% assign secondary_listings_link3 = "https://www.etsy.com/search?q=pet+portrait+mug&explicit=1&is_merch_library=true&is_discounted=true&anchor_listing_id=1250312385" %}
+
+  {% assign secondary_listings_link3_parameter = "&" %}
+
+  {% assign secondary_listings_image3 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1031f9c750063b647cb/original.png?1765912834" %}
+
+ {% capture secondary_listings_title3 %}
+{{content_blocks.${TITLE_3_GLOBAL_Trending_122725_primary} | id: 'cb115'}}
+ {% endcapture %}
+
+ <!--- SECONDARY MANUAL LISTING 4--->  
+
+ {% assign secondary_listings_link4 = "https://www.etsy.com/search?q=constellation+necklace&explicit=1&is_merch_library=true&is_discounted=true&anchor_listing_id=953628614" %}
+
+ {% assign secondary_listings_link4_parameter = "&" %}
+
+  {% assign secondary_listings_image4 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1035f92990063331480/original.png?1765912834" %}
+
+ {% capture secondary_listings_title4 %}
+{{content_blocks.${TITLE_4_GLOBAL_Trending_122725_primary} | id: 'cb116'}}
+ {% endcapture %}
+
+ <!--- SECONDARY MANUAL LISTING CTA --->
+	{% assign secondary_manual_listings_cta_link =  "https://www.etsy.com/r/curated/trending-search?sections=1438959968712&narrow=trending-search-terms" %}
+  {% assign secondary_manual_listings_cta_parameter = "&" %}
+
+	{% capture secondary_manual_listings_cta %}
+  {{content_blocks.${CTA_GLOBAL_Trending_122725_primary} | id: 'cb119'}}
+	{% endcapture %}
+
+
+	<!--- BANNER--->	
+	{% capture banner %}
+	{% endcapture %}
+	
+    <!--- DISCLAIMER --->	
+	{% capture disclaimer %}
+  {{content_blocks.${DISCLAIMER_GLOBAL_catprop_122825_disclaimer} | id: 'cb10'}}
+	{% endcapture %}
+  
+<!--- FONTS AND COLORS --->
+{{content_blocks.${background_colors_and_fonts_v3} | id: 'cb11'}}
+
+<!--- END EDIT LIQUID--->
+
+<!-- assigns branch link utms to branch links  -->
+{% assign campaignname = {{campaign.${name}}} %}
+{% assign branch_utms = "&utm_campaign=" | append: campaignname | append: "&utm_medium=email&utm_source=adhoc&campaign_label=cat_prop"  %}
+
+<!---  START OF EMAIL CODE --->
+<!--OUTER WRAPPER -->
+<table bgcolor="#FAF8F5" class="darkmode_background" border="0" cellpadding="0" cellspacing="0" style="background-color: #FAF8F5; border-collapse: collapse; border-spacing: 0; width: 100%; " width="100%">
+	<tbody>
+		<tr>
+			<td align="center" style=" display: block;">
+			<!--[if (gte mso 9)|(IE)]>
+			<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+			<td>
+			<![endif]-->
+      <!--CONTENT -->
+			<table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="border-collapse: collapse; border-spacing: 0; max-width: 600px; width: 100%;" width="100%">
+				<tbody>
+					<tr>
+						<td class="darkmode_background" style="background-color:#FAF8F5;">											
+														
+<!-- NAV-------------------------------------------------------------------------- -->
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table align="left"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;  margin: 0;" >
+     <tr>
+        <td  style="padding:0 0 24px;" >
+         {{content_blocks.${nav_post_holiday} | id: 'cb17'}}
+         {{content_blocks.${loyalty_skinny_nav_v2} | id: 'cb13'}}
+        </td>
+    </tr>
+</table>
+ <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- END NAV------------------------------------------------------------------ -->
+																								
+<!-- HERO MODULE CONTENT------------------------------------------------------------------ -->
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table   width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+       {% if heroimage != blank %}
+	      <tr>
+            <td class="darkmode_background hero_image_pad" align="center" style="padding: 0 16px 24px;">
+            <!-- EDIT IMG 600x500 + LINK -->
+            <a href="{{herolink}}{{hero_parameter}}lid=ykg4t1hmq9cc&utm_content=hero" universal="true" style="border:0;">
+          <img class="darkmode_hero_border" src="{{heroimage}}" width="600" style="-ms-interpolation-mode: bicubic; clear: both; border: 3px solid #0D424E; display: block; height: auto; max-height: 500px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; max-width: 100%;box-sizing: border-box; width:100%"
+          alt="">
+            <!-- END EDIT IMG 600x500 + LINK -->
+            </td>
+         </tr>
+      {% endif %}
+  </tbody>
+</table>
+ <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->																						
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table  class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="hero_container_pad darkmode_background darkmode_font_primary"  align="center" style="direction:ltr;text-align:center;  padding: 0 16px 40px;">             
+      <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+         <tr>
+            <td class="darkmode_font_primary" style="direction:ltr; color: #{{fonthex_hero}}; font-family: font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; ">
+               <!-- EDIT Headline + link -->
+               <h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:left;  " class="darkmode_font_primary"><a href="{{herolink}}{{hero_parameter}}lid=f9huh27bpun4&utm_content=hero" universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{fonthex_hero}};">{{hero_headline}}</a></h1>
+               <!-- END EDIT Headline + link -->
+            </td>  
+            </tr>  
+         <tr>
+            <td class="darkmode_font_primary" style="direction:ltr;color:#{{fonthex_hero}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 12px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{herolink}}{{hero_parameter}}lid=39pml20ckurq&utm_content=hero" universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{fonthex_hero}};">
+            {{hero_body}}</a>
+            <!-- END EDIT body text + link -->
+            </td>
+         </tr>
+         
+         <tr>
+            <td align="left" style="padding: 24px 0 0; ">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{herolink}}{{hero_parameter}}lid=60k6vicdshx9&utm_content=hero" class="darkmode_button_primary" style="background-color: #{{fonthex_hero}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{cta_text_color}}; border: 2px solid #{{fonthex_hero}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{hero_cta}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+         </tr>
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- CLOSE HERO Module------------------------------------------------------------------ -->
+<!--  PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
+{% if display_listings_module  != blank  %}
+{% if listings_headline  != blank  %}
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="h2_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+         <tr>
+            <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
+               <!-- EDIT Headline + link -->
+                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{listings_cta_link}}{{listings_cta_parameter}}lid=j2hd82hyy9j0&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{listings_headline}}</a></h2>
+               <!-- END EDIT Headline + link -->
+            </td>  
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+{%endif%}
+<!-- MANUAL 6 LISTINGS GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center; font-size:0;">	
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{listings_link1}}{{listings_link1_parameter}}lid=3hwn9pqxln6u&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{listings_image1}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if listings_title1  != blank  %}
+                 <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{listings_link1}}{{listings_link1_parameter}}lid=kw5qv6w3lj63&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{listings_title1}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                        
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{listings_link2}}{{listings_link2_parameter}}lid=xt14hg5o024o&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{listings_image2}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if listings_title2  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{listings_link2}}{{listings_link2_parameter}}lid=2vovlztf1g6g&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{listings_title2}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->   
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{listings_link3}}{{listings_link3_parameter}}lid=ow6mus7uu6s7&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{listings_image3}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if listings_title3  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{listings_link3}}{{listings_link3_parameter}}lid=njs779dg830h&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{listings_title3}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->   
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{listings_link4}}{{listings_link4_parameter}}lid=fagm3p2xpcyj&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{listings_image4}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if listings_title4  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{listings_link4}}{{listings_link4_parameter}}lid=gl0kyzlg071i&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{listings_title4}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+            {% if listings_image5  != blank  %} 
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{listings_link5}}{{listings_link5_parameter}}lid=3kvgj8msjudy&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{listings_image5}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if listings_title5  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{listings_link5}}{{listings_link5_parameter}}lid=90rpwiso51xy&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{listings_title5}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> {%endif%}  
+            {% if listings_image6  != blank  %} 
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{listings_link6}}{{listings_link6_parameter}}lid=ioofwn0fnhev&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{listings_image6}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if listings_title6  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{listings_link6}}{{listings_link6_parameter}}lid=4py48a3d0hke&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{listings_title6}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> {%endif%}
+            </div> 
+            </td>
+          </tr>
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{manual_listings_link}}{{manual_listings_parameter}}lid=rhcslr0wivmg&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{manual_listings_cta}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE MANUAL 6 LISTINGS GRID------------------------------------------------------------------ -->
+{% endif %}
+ <!-- CLOSE PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
+ <!--SECONDARY MODULE CONTENT ------>
+ {% if display_secondary_listings_module  != blank  %}
+{% if secondary_listings_headline  != blank  %}
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="h2_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+         <tr>
+            <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
+               <!-- EDIT Headline + link -->
+                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{secondary_listings_cta_link}}{{secondary_listings_cta_parameter}}lid=j2hd82hyy9j0&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_headline}}</a></h2>
+               <!-- END EDIT Headline + link -->
+            </td>  
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+{%endif%}
+<!-- MANUAL 6 LISTINGS GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center; font-size:0;">	
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{secondary_listings_link1}}{{secondary_listings_link1_parameter}}lid=3hwn9pqxln6u&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{secondary_listings_image1}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if secondary_listings_title1  != blank  %}
+                 <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{secondary_listings_link1}}{{secondary_listings_link1_parameter}}lid=kw5qv6w3lj63&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title1}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                        
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{secondary_listings_link2}}{{secondary_listings_link2_parameter}}lid=xt14hg5o024o&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{secondary_listings_image2}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if secondary_listings_title2  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{secondary_listings_link2}}{{secondary_listings_link2_parameter}}lid=2vovlztf1g6g&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title2}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->   
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{secondary_listings_link3}}{{secondary_listings_link3_parameter}}lid=ow6mus7uu6s7&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{secondary_listings_image3}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if secondary_listings_title3  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{secondary_listings_link3}}{{secondary_listings_link3_parameter}}lid=njs779dg830h&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title3}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->   
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{secondary_listings_link4}}{{secondary_listings_link4_parameter}}lid=fagm3p2xpcyj&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{secondary_listings_image4}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if secondary_listings_title4  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{secondary_listings_link4}}{{secondary_listings_link4_parameter}}lid=gl0kyzlg071i&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title4}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            </div> 
+            </td>
+          </tr>
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{secondary_manual_listings_link}}{{secondary_manual_listings_parameter}}lid=rhcslr0wivmg&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{secondary_manual_listings_cta}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE MANUAL 6 LISTINGS GRID------------------------------------------------------------------ -->
+{% endif %}
+ <!-- CLOSE SECONDARY MODULE -------------------->           
+<!-- BANNER MODULE --------------------------------------------------------- --> 
+{% if banner != blank %}
+{{banner}}
+{% endif %}
+<!-- CLOSE BANNER MODULE ------------------------------------------------------------ -->
+{{content_blocks.${BANNER_GLOBAL_loyalty_freeshipping_v2} | id: 'cb15'}}
+{% if {{custom_attribute.${is_current_loyalty_insider}}} == "1" and disclaimer != blank %} 
+  <div class="spacer" style="mso-line-height-rule:exactly;line-height:40px;height:40px;"></div>  
+{%endif%}
+<!-- DISCLAIMER ------------------------------------->
+{% if disclaimer != blank %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0"
+style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td  align="center" class="disclaimer_container_pad" style="text-align:center;  padding: 0 16px 24px; ">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left"
+        style="border-collapse: collapse; table-layout: fixed; width: 100%;">
+          <tbody>
+            <tr>
+              <td class="darkmode_font_secondary" style="color:#665E5C; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left;">
+               {{disclaimer}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endif %}
+<!-- END DISCLAIMER ------------------------------>		
+
+<!-- FOOTER ------------------------------------------------------------------ -->
+
+{{content_blocks.${Global_Footer_Buyer_v3_Experiment} | id: 'cb16'}}
+	
+<!-- END FOOTER ------------------------------------------------------------------ -->
+									</td>
+								</tr>
+							</tbody>
+						</table><!--CLOSE CONTENT -->
+					</td>
+					</tr>
+				</tbody>
+			</table>	<!--CLOSE OUTER WRAPPER -->		
+</body></html>
