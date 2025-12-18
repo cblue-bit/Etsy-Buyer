@@ -272,11 +272,14 @@ h1, h2 {
 																								
 <!-- HERO MODULE CONTENT------------------------------------------------------------------ -->
 <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-<table   width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+<table bgcolor="#{{bghex_hero}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tbody>
        {% if heroimage != blank %}
 	      <tr>
             <td class="darkmode_background hero_image_pad" align="center" style="padding: 0 16px 24px;">
+              {% if bghex_hero != 'FAF8F5'%}
+<div class="spacer" style="mso-line-height-rule:exactly;line-height:24px;height:24px;"></div> 
+{% endif %}
             <!-- EDIT IMG 600x500 + LINK -->
             <a href="{{herolink}}{{hero_parameter}}lid=ykg4t1hmq9cc&utm_content=hero" universal="true" style="border:0;">
           <img class="darkmode_hero_border" src="{{heroimage}}" width="600" style="-ms-interpolation-mode: bicubic; clear: both; border: 3px solid #0D424E; display: block; height: auto; max-height: 500px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; max-width: 100%;box-sizing: border-box; width:100%"
@@ -289,7 +292,7 @@ h1, h2 {
 </table>
  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->																						
 <!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
-<table  class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+<table bgcolor="#{{bghex_hero}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tbody>
     <tr>
       <td class="hero_container_pad darkmode_background darkmode_font_primary"  align="center" style="direction:ltr;text-align:center;  padding: 0 16px 40px;">             
@@ -331,6 +334,9 @@ h1, h2 {
 </table>
 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 <!-- CLOSE HERO Module------------------------------------------------------------------ -->
+{% if bghex_hero != 'FAF8F5'%}
+<div class="spacer" style="mso-line-height-rule:exactly;line-height:40px;height:40px;"></div> 
+{% endif %}
 <!--  PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
 {% if display_listings_module  != blank  %}
 {% if listings_headline  != blank  %}
