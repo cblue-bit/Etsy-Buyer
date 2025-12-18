@@ -351,7 +351,7 @@ h1, h2 {
          <tr>
             <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
                <!-- EDIT Headline + link -->
-                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{listings_cta_link}}{{listings_cta_parameter}}lid=j2hd82hyy9j0&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{listings_headline}}</a></h2>
+                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{manual_listings_cta_link}}{{manual_listings_cta_parameter}}lid=j2hd82hyy9j0&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{listings_headline}}</a></h2>
                <!-- END EDIT Headline + link -->
             </td>  
             </tr>  
@@ -484,9 +484,9 @@ h1, h2 {
             </td>
           </tr>
           <tr>
-            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <td align="left" style="padding: 12px 6px 0;">
             <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{manual_listings_link}}{{manual_listings_parameter}}lid=rhcslr0wivmg&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{manual_listings_cta_link}}{{manual_listings_cta_parameter}}lid=rhcslr0wivmg&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{manual_listings_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
@@ -517,7 +517,7 @@ h1, h2 {
          <tr>
             <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
                <!-- EDIT Headline + link -->
-                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{secondary_listings_cta_link}}{{secondary_listings_cta_parameter}}lid=j2hd82hyy9j0&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_headline}}</a></h2>
+                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{secondary_manual_listings_cta_link}}{{secondary_manual_listings_cta_parameter}}lid=j2hd82hyy9j0&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_headline}}</a></h2>
                <!-- END EDIT Headline + link -->
             </td>  
             </tr>  
@@ -617,9 +617,9 @@ h1, h2 {
             </td>
           </tr>
           <tr>
-            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <td align="left" style="padding: 12px 6px 0;">
             <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{secondary_manual_listings_link}}{{secondary_manual_listings_parameter}}lid=rhcslr0wivmg&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{secondary_manual_listings_cta_link}}{{secondary_manual_listings_cta_parameter}}lid=rhcslr0wivmg&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{secondary_manual_listings_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
