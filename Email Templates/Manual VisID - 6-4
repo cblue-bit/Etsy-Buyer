@@ -642,7 +642,7 @@ h1, h2 {
 {% endif %}
 <!-- CLOSE BANNER MODULE ------------------------------------------------------------ -->
 {{content_blocks.${BANNER_GLOBAL_loyalty_freeshipping_v2} | id: 'cb15'}}
-{% if {{custom_attribute.${is_current_loyalty_insider}}} == "1" and disclaimer != blank %} 
+{% if disclaimer != blank and {{custom_attribute.${is_current_loyalty_insider}}} == "1" or banner != blank %} 
   <div class="spacer" style="mso-line-height-rule:exactly;line-height:40px;height:40px;"></div>  
 {%endif%}
 <!-- DISCLAIMER ------------------------------------->
