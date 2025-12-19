@@ -6,28 +6,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark">
-<!--[if gte mso 9]><xml>
-<o:OfficeDocumentSettings>
-  <o:AllowPNG/>
-  <o:PixelsPerInch>96</o:PixelsPerInch>
-</o:OfficeDocumentSettings>
-</xml><![endif]-->
-<!--[if mso]>
-<style type="text/css">
-* {    
-  mso-line-height-rule: exactly !important;
-}
-td, p, span, div, h3 {
-  font-family: Arial, Sans-Serif !important;
- } 
-h1, h2 {
-  font-family: Georgia, serif !important;
-  letter-spacing: .01em !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-</style>
-<![endif]--> 
 <title>Etsy</title>
 {{content_blocks.${VisID-CSS-Font} | id: 'cb1'}}
 {{content_blocks.${VisID_CSS}}}
