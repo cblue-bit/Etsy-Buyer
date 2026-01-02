@@ -20,7 +20,6 @@
 <body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #FAF8F5; margin: 0; min-width: 100%; padding: 0; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
 
 <!--- BEGIN EDIT LIQUID--->
-		{% assign navbar = 1 %}
 <!--- BG COLOR (white,orange,yellow,purple,blue,green (color_tint or color_dk)) --->
 	<!--- BG COLOR --->
 	{% assign bg_colour = 'grey' %}		
