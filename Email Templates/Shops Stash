@@ -5,121 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark">
-<!--[if gte mso 9]><xml>
-<o:OfficeDocumentSettings>
-  <o:AllowPNG/>
-  <o:PixelsPerInch>96</o:PixelsPerInch>
-</o:OfficeDocumentSettings>
-</xml><![endif]-->
 <title>Etsy</title>
-{{content_blocks.${VisID-CSS-Font} | id: 'cb24'}}
+{{content_blocks.${VisID-CSS-Font} | id: 'cb1'}}
+{{content_blocks.${VisID_CSS}}}
 <style>
-  a[x-apple-data-detectors] {
-color: inherit !important;
-            text-decoration: none !important;
-            font-size: inherit !important;
-            font-family: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-  }
-  #MessageViewBody a {
-    color: inherit !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-  }
-  .blueLinks a { 
-              color:inherit !important; 
-              text-decoration: none !important; 
-  }
-  .shop_stats {
-    display: flex;
-    align-items: center;
-    /* Other desktop styles if needed */
-  }
-  .stat_item {
-      display: inline;
-  }
-  @media screen and (min-width: 460px) {
-      /* Must include in every email */
-      h1 {
-          font-size: 50px !important;
-          letter-spacing:-1.5px !important;
-        }
-      h2{
-       font-size: 34px !important;
-       letter-spacing:-1.25px !important; 
-      }
-      .nav_container_links_pad{
-        padding: 0 32px 0 0 !important;
-      }
-      .nav_container_pad{
-       padding: 0 32px 0 !important;
-     }
-     .banner_container_pad  {
-        padding: 40px 20px !important;
-      }
-      .banner_image_pad{
-        padding: 0 12px !important;
-      }
-      .banner_text_width{
-        max-width:275px !important;
-      }
-      .banner_text_align{
-        text-align:left !important;
-      }
-      .footer_container_pad{
-        padding: 32px 32px 0px !important;
-      }
-       /* END Must include in every email */ 
-      .hero_image_height{
-        max-height:350px !important;
-      }
-      .hero_container_pad {
-        padding: 0 32px 40px !important;   
-      }
-      .primary_container_pad {
-      padding: 0 20px 40px !important;
-      }
-      .listing_container_pad{
-        padding:0 12px 24px !important;
-      }
-      .primary_button_pad{
-        padding: 0 12px 0 !important;
-      }
-      .listing_container_width{
-        width:50% !important;
-      } 
-      .secondary_hero_listing_container_pad {
-        padding: 0 32px 0 !important;   
-      }
-      .disclaimer_container_pad{
-        padding: 0 32px 24px !important;
-      } 
-      
-  }
-/* Dark Mode Styles */
+/* Custom Dark Mode Styles */
   @media (prefers-color-scheme: dark) {
-/* Default Darkmode CSS - Must include in every email */
-    body { background-color: #1C181F !important; } 
-    .darkmode_font_primary { color: #FAF8F5 !important; }
-    .darkmode_font_secondary { color: #967C98 !important; }
-    .darkmode_background { background-color: #1C181F !important; }
-    .darkmode_background-e1 { background-color: #312B36 !important; }
-    .darkmode_divider { border-color: #514659 !important;} 
-    .darkmode_border { border-color: #514659 !important;} 
-    .darkmode_buttonbackground { background-color: #1C181F !important; }
-    .darkmode_background-e1 { background-color: #312B36 !important; }
-    .darkmode_loyaltybanner_background{ background-color: #FCC7A2 !important;}
-    .darkmode_background_banner { background-color: #1C181F !important; }
-     /* END Must include in every email */
-/* Darkmode Buttons CSS  */
-    .darkmode_button_primary { background-color: #FAF8F5 !important; color: #312B36 !important; border: 2px solid #FAF8F5 !important; } 
-    .darkmode_button_primary_dark { background-color: #312B36 !important; color: #FAF8F5 !important; border: 2px solid #312B36 !important; }  
-    .darkmode_button_secondary { background-color: #1C181F !important; color: #FAF8F5 !important; border: 1.5px solid #FAF8F5 !important; }     
-  }
-  @media screen and (max-width: 460px) {
+    .darkmode_hero_border { border-color: #D2DBBD !important;} 
+    .darkmode_background_banner { background-color: #2F203C !important; }
+}
+@media screen and (max-width: 460px) {
     /* Must include in every email */
     .nav_container_links_right_pad{
     max-width:80% !important;
@@ -129,22 +24,16 @@ color: inherit !important;
     }
      /* END Must include in every email */
     /* Shop review and year stats */
-    .shop_stats {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .shop_stats {
+    .shop_statsb {
         display: none;
     }
-    .stat_item {
-        margin: 1px 0;
-    }
     .years_stat {
-        order: 1; /* Appears first on mobile */
+        width:100% !important;
+        display:block !important;
     }
     .reviews_stat {
-        order: 2; /* Appears second on mobile */
+        width:100% !important;
+        display:block !important;
     }
   }
 </style>
@@ -152,8 +41,6 @@ color: inherit !important;
 <body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #FAF8F5; margin: 0; min-width: 100%; padding: 0; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
 
 <!--- BEGIN EDIT LIQUID--->
-
-	{% assign navbar = 1 %}
 
 <!--- BG COLOR (white,orange,yellow,purple,blue,green (color_tint or color_dk)) --->
 	<!--- BG COLOR --->
@@ -459,19 +346,14 @@ color: inherit !important;
                 </a>
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+               <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
               <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
-                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
-            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name2}}</div>
-                <div class="darkmode_font_primary shop_stats"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name2}}</div>
+                 <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
                 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
-                  <!-- <span style="color:#FFBA26;">&#x2605;</span> {{shop_reviews2}} • {{shop_years2}} -->
-                  <span class="stat_item reviews_stat">
-                    <span style="color:#FFBA26;">&#x2605;</span>
-                    <span>{{shop_reviews2}}</span>
-                  </span>
-                  <span class="shop_stats"> &nbsp;•&nbsp; </span>
-                  <span class="stat_item years_stat">{{shop_years2}}</span>
+                <span class="reviews_stat" ><span class="darkmode_icon_review" style="color:#FFBA26;">&#x2605;</span>{{shop_reviews2}}</span>
+                <span class="shop_statsb"> &nbsp;•&nbsp; </span>
+                <span class="years_stat">{{shop_years2}}</span>
                 </div>
               </div>
              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
@@ -554,17 +436,14 @@ color: inherit !important;
                 </a>
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+               <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
               <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
                 <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name3}}</div>
-                <div class="darkmode_font_primary shop_stats"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
-                  <!-- <span style="color:#FFBA26;">&#x2605;</span> {{shop_reviews3}} • {{shop_years3}} -->
-                  <span class="stat_item reviews_stat">
-                    <span style="color:#FFBA26;">&#x2605;</span>
-                    <span>{{shop_reviews3}}</span>
-                  </span>
-                  <span class="shop_stats"> &nbsp;•&nbsp; </span>
-                  <span class="stat_item years_stat">{{shop_years3}}</span>
+                 <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+                'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
+                <span class="reviews_stat" ><span class="darkmode_icon_review" style="color:#FFBA26;">&#x2605;</span>{{shop_reviews3}}</span>
+                <span class="shop_statsb"> &nbsp;•&nbsp; </span>
+                <span class="years_stat">{{shop_years3}}</span>
                 </div>
               </div>
              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
@@ -647,18 +526,14 @@ color: inherit !important;
                 </a>
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+               <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
               <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
-                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
-            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name}}</div>
-                <div class="darkmode_font_primary shop_stats"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
-                  <!-- <span style="color:#FFBA26;">&#x2605;</span> {{shop_reviews}} • {{shop_years}} -->
-                  <span class="stat_item reviews_stat">
-                    <span style="color:#FFBA26;">&#x2605;</span>
-                    <span>{{shop_reviews}}</span>
-                  </span>
-                  <span class="shop_stats"> &nbsp;•&nbsp; </span>
-                  <span class="stat_item years_stat">{{shop_years}}</span>
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name}}</div>
+                 <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+                'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
+                <span class="reviews_stat" ><span class="darkmode_icon_review" style="color:#FFBA26;">&#x2605;</span>{{shop_reviews}}</span>
+                <span class="shop_statsb"> &nbsp;•&nbsp; </span>
+                <span class="years_stat">{{shop_years}}</span>
                 </div>
               </div>
              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
@@ -741,19 +616,14 @@ color: inherit !important;
                 </a>
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+               <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
               <div class="" style="display:inline-block; padding:0;  vertical-align: middle">
-                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
-            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name4}}</div>
-                <div class="darkmode_font_primary shop_stats"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{shop_name4}}</div>
+                 <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
                 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">
-                  <!-- <span style="color:#FFBA26;">&#x2605;</span> {{shop_reviews4}} • {{shop_years4}} -->
-                  <span class="stat_item reviews_stat">
-                    <span style="color:#FFBA26;">&#x2605;</span>
-                    <span>{{shop_reviews4}}</span>
-                  </span>
-                  <span class="shop_stats"> &nbsp;•&nbsp; </span>
-                  <span class="stat_item years_stat">{{shop_years4}}</span>
+                <span class="reviews_stat" ><span class="darkmode_icon_review" style="color:#FFBA26;">&#x2605;</span>{{shop_reviews4}}</span>
+                <span class="shop_statsb"> &nbsp;•&nbsp; </span>
+                <span class="years_stat">{{shop_years4}}</span>
                 </div>
               </div>
              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
