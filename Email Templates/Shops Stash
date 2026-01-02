@@ -11,8 +11,7 @@
 <style>
 /* Custom Dark Mode Styles */
   @media (prefers-color-scheme: dark) {
-    .darkmode_hero_border { border-color: #D2DBBD !important;} 
-    .darkmode_background_banner { background-color: #2F203C !important; }
+    .darkmode_background_banner { background-color: #0D424E !important; }
 }
 @media screen and (max-width: 460px) {
     /* Must include in every email */
