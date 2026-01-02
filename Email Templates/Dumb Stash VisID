@@ -120,7 +120,7 @@
 <table align="left" width="100%"  border="0" cellpadding="0" cellspacing="0"  style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
      <tr>
         <td>
-          {{content_blocks.${nav_last_minute} | id: 'cb111'}}
+          {{content_blocks.${Global_NAV_Buyer_VizID} | id: 'cb111'}}
           {{content_blocks.${loyalty_skinny_nav_v2} | id: 'cb98'}}
         </td>
     </tr>
