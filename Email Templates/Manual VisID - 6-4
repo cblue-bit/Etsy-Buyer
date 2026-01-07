@@ -239,7 +239,7 @@
 <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table align="left"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;  margin: 0;" >
      <tr>
-        <td  style="padding:0 0 24px;" >
+        <td style="padding:0 0 24px;" >
          {{content_blocks.${Global_NAV_Buyer_VizID} | id: 'cb17'}}
          {{content_blocks.${loyalty_skinny_nav_v2} | id: 'cb13'}}
         </td>
