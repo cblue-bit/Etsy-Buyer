@@ -1,0 +1,161 @@
+****LIQUID CODE FOR HEAD********
+<!--- SOCIAL PROOF ------------------------------------------>
+{% assign social_link =  "https://www.etsy.com/people/VintageBecomesHer/favorites/my-favorite-organization-tools?collection_key=MTY3NjQ0ODIzfDE1MDczMzY1" %}
+{% assign social_parameter = "&" %}
+
+{% assign social_headshot = "https://braze-images.com/appboy/communication/assets/image_assets/images/695d680ee3e9f600637de91a/original.png?1767729166" %}
+
+	{% capture social_name %}
+{{content_blocks.${NAME_1_GLOBAL_Resolutions_10826_secondary} | id: 'cb173'}}
+	{% endcapture %}
+
+	{% capture social_title%}
+{{content_blocks.${TITLE_1_GLOBAL_Resolutions_10826_secondary} | id: 'cb170'}}
+	{% endcapture %}
+
+	{% capture social_description %}
+{{content_blocks.${BODY_GLOBAL_Resolutions_10826_secondary} | id: 'cb171'}}
+	{% endcapture %}
+
+{% assign social_listing = "https://braze-images.com/appboy/communication/assets/image_assets/images/695549d6b2f13600633f24df/original.png?1767197142" %}
+
+{% assign social_listing2 = "https://braze-images.com/appboy/communication/assets/image_assets/images/695549d66dfc5300631bb3b0/original.png?1767197142" %}
+
+{% capture social_cta %}
+{{content_blocks.${CTA_GLOBAL_Resolutions_10826_secondary} | id: 'cb172'}} 
+	{% endcapture %}
+
+
+****EMAIL CODE FOR BODY********
+<!--  SOCIAL  CONTENT------------------------------------------------------------------ --> 
+ <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; border-collapse: collapse;  width: 100%;">
+		<tbody>
+				<tr>
+					<td class="darkmode_background" align="center" style="padding:0 0 24px 0;"><!-- EDIT IMG 60x60 + LINK --><a href="{{social_link}}{{social_parameter}}lid=hww1lhydt6ke&utm_content=listing" universal="true"  style="border:0; "><img alt="" src="https://braze-images.com/appboy/communication/assets/image_assets/images/695d6862629a200065e80480/original.png?1767729249" width="100" style="height: auto; max-width: 100px; outline: none; text-decoration: none; width: 100px; display:block" /></a> <!-- END EDIT IMG 60x60 + LINK --></td>
+					</tr>
+        </td>
+    </tbody>
+ </table>
+ <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="h2_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+         <tr>
+            <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: center; padding:0 0 24px; ">
+               <!-- EDIT Headline + link -->
+                <a href="{{social_link}}{{social_parameter}}lid=boak9m8xc5ap&utm_content=listing" universal="true"   style="text-decoration:none; color:#{{fonthex}};"><!--[if mso]><span style="display:none"><![endif]--><h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:center;" class=" darkmode_background darkmode_font_primary "><!--[if mso]></span><![endif]-->{{content_blocks.${HEADER_GLOBAL_Resolutions_10826_secondary} | id: 'cb175'}}<!--[if mso]><span style="display:none"><![endif]--></h2><!--[if mso]></span><![endif]--></a>
+               <!-- END EDIT Headline + link -->
+            </td>  
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="social_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+            <tr>
+              <td style="padding:0 0 24px;" align="left" >
+              <!--[if mso]><table align="left" width="80" ><tr><td style=" width:80px; padding:0 12px 0 0;" valign="middle"><![endif]-->
+              <div style="width:80px; display:inline-block; padding:0 12px 0 0; vertical-align: middle">
+                <a href="{{social_link}}{{social_parameter}}lid=35j19jdfd8j1&utm_content=listing" universal="true" >
+                <img src="{{social_headshot}}" width="80" class="darkmode_border"  style="-ms-interpolation-mode: bicubic;  border:1.5px solid #E0DAD6;  border-radius: 50%; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </a>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            <!--[if mso]><table align="left" width="400" ><tr><td style="width:400px; " valign="middle"><![endif]-->
+              <div class="social_text_container" style="max-width:300px; display:inline-block; padding:0; vertical-align: middle">
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 4px; ">{{social_name}}</div>
+                <div class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; ">{{social_title}}
+              </div>
+              </div>
+             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+            <tr>
+              <td class="darkmode_font_primary"  style="max-width: 100%; overflow:hidden; color:#{{fonthex}}; font-family: 'ABC Diatype','Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding:0 0 24px;">
+                {{social_description}}
+              </td>
+            </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- 2 IMG GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center;font-size:0;">	
+            <!--[if mso]><table align="left" width="49%" ><tr><td valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{social_link}}{{social_parameter}}lid=gobfi7xtul1x&utm_content=listing" universal="true" >
+                <div  style="max-width: 100%; overflow:hidden">
+                <img src="{{ social_listing }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            <!--[if mso]><table align="left" width="49%" ><tr><td valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{social_link}}{{social_parameter}}lid=ryhboty5p8ts&utm_content=listing" universal="true" >
+                <div  style="max-width: 100%; overflow:hidden">
+                <img src="{{social_listing2}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                           
+            </div>
+            </td>
+          </tr>
+          {% if social_cta != blank %}
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{social_link}}{{social_parameter}}lid=vbocom8e2e0o&utm_content=listing" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true" >
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{social_cta}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE 2 IMG GRID------------------------------------------------------------------ -->
+<!--  CLOSE SOCIAL MODULE CONTENT------------------------------------------------------------------ -->    
