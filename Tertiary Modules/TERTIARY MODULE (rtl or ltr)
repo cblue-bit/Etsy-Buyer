@@ -50,7 +50,7 @@
 
 {% assign font_color2 = '332F2E' %}	
 
-
+****EMAIL CODE FOR BODY******** Both Modules are wrapped in if statements. They must have a url for the module content to display. 
 
 {% if ltr_module_link != blank %} 
  <!-- SECONDARY MODULE CONTENT-->
