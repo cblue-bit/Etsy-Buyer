@@ -14,14 +14,6 @@
     .darkmode_background_banner { background-color: #0D424E !important; }
 }
 @media screen and (max-width: 460px) {
-    /* Must include in every email */
-    .nav_container_links_right_pad{
-    max-width:80% !important;
-    }
-    .banner_text_center{
-      text-align:center !important;
-    }
-     /* END Must include in every email */
     /* Shop review and year stats */
     .shop_statsb {
         display: none;
@@ -222,7 +214,7 @@
 <table align="left" width="100%"  border="0" cellpadding="0" cellspacing="0"  style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
      <tr>
         <td>
-        {{content_blocks.${Global_NAV_Buyer_VizID} | id: 'cb170'}}
+        {{content_blocks.${Global_NAV_Buyer_2026} | id: 'cb170'}}
         {{content_blocks.${loyalty_skinny_nav_v2} | id: 'cb88'}}
         </td>
     </tr>
