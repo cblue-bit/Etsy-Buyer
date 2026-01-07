@@ -1,3 +1,4 @@
+****LIQUID CODE FOR HEAD********
 <!--- SECONDARY MODULE --->
  <!--- Banner type (rtl or ltr) --->
 {% assign banner_layout = 'ltr' %}
