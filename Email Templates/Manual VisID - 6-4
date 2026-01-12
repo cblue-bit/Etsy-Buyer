@@ -256,7 +256,9 @@
 	      <tr>
             <td class="darkmode_background hero_image_pad" align="center" style="padding: 0 16px 24px;">
               {% if bghex_hero != 'FAF8F5'%}
-<div class="spacer" style="mso-line-height-rule:exactly;line-height:24px;height:24px;"></div> 
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" ><tr><td style=" height: 24px;"><![endif]-->
+<div class="spacer" style="line-height:24px;height:24px;"></div> 
+  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
 {% endif %}
             <!-- EDIT IMG 600x500 + LINK -->
             <a href="{{herolink}}{{hero_parameter}}lid=ykg4t1hmq9cc&utm_content=hero" universal="true" style="border:0;">
@@ -313,7 +315,9 @@
 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 <!-- CLOSE HERO Module------------------------------------------------------------------ -->
 {% if bghex_hero != 'FAF8F5'%}
-<div class="spacer" style="mso-line-height-rule:exactly;line-height:40px;height:40px;"></div> 
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" ><tr><td style=" height: 40px;"><![endif]-->
+<div class="spacer" style="line-height:40px;height:40px;"></div> 
+  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
 {% endif %}
 <!--  PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
 {% if display_listings_module  != blank  %}
