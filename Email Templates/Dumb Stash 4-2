@@ -191,7 +191,9 @@
 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 <!-- CLOSE HERO Module------------------------------------------------------------------ -->
 {% if bghex_hero != 'FAF8F5'%}
-<div class="darkmode_background spacer" style="line-height:40px;height:40px;mso-line-height-rule:exactly; background-color:#FAF8F5; text-align:center; color:#ccc;"></div> 
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" ><tr><td style=" height: 40px;"><![endif]-->
+<div class="spacer" style="line-height:40px;height:40px;"></div> 
+  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
 {% endif %}
 <!--  PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
 {% if manual_listings_headline != blank %}
