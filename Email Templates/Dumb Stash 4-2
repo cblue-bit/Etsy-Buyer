@@ -175,7 +175,7 @@
          <tr>
             <td align="left" style="padding: 0 0 0; ">
             <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{herolink}}{{hero_parameter}}lid=bpgvmb383zw8&utm_content=hero" class="darkmode_button_primary"  style="background-color: #{{fonthex_hero}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{cta_text_color}}; border: 2px solid #{{fonthex_hero}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{herolink}}{{hero_parameter}}lid=bpgvmb383zw8&utm_content=hero" class="darkmode_button_primary"  style="background-color: #{{fonthex_hero}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{cta_text_color}}; border: 1.5px solid #{{fonthex_hero}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{hero_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
@@ -261,7 +261,7 @@
           <tr>
             <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
              <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{manual_listings_cta_link}}{{manual_listings_cta_parameter}}lid=lu1idkf1h28p&utm_content=listings" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{manual_listings_cta_link}}{{manual_listings_cta_parameter}}lid=lu1idkf1h28p&utm_content=listings" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{manual_listings_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
@@ -337,7 +337,7 @@
           <tr>
             <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
              <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{manual_listings_cta_link}}{{manual_listings_cta_parameter}}lid=z3zv53bz2agi&utm_content=listings" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{manual_listings_cta_link}}{{manual_listings_cta_parameter}}lid=z3zv53bz2agi&utm_content=listings" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{manual_listings_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
