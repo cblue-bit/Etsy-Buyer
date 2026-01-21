@@ -1,0 +1,156 @@
+<!---ONSITE DEALS LISTING 1--->  
+ {% assign merch_collection_ids_1 = 1442892087108 %}
+ {% assign sectionid_1 = 1444265290460 %}
+
+ {% assign listing_link1 = "https://www.etsy.com/search?q=birthday+gift&moci=1442892087108&mosi=1444265290460&is_discounted=true&pct_discount_max=20&is_merch_library=true&mosv=sese" %}
+
+ {% capture listing_headline1 %}
+{{content_blocks.${BODY_1_GLOBAL_OPFY_12626_secondary} | id: 'cb61'}}
+ {% endcapture %}
+
+<!--- ONSITE DEALS LISTING 2 --->  
+ {% assign merch_collection_ids_2 = 1442892087108 %}
+ {% assign sectionid_2 = 1444984323719 %}
+
+ {% assign listing_link2 = "https://www.etsy.com/search?q=storage&moci=1442892087108&mosi=1444984323719&is_discounted=true&pct_discount_max=20&is_merch_library=true&mosv=sese" %}
+
+ {% capture listing_headline2 %}
+{{content_blocks.${BODY_2_GLOBAL_OPFY_12626_secondary} | id: 'cb62'}}
+ {% endcapture %}
+
+ <!--- ONSITE DEALS LISTING 3 --->  
+ {% assign merch_collection_ids_3 = 1442892087108 %}
+ {% assign sectionid_3 = 1444984754351 %}
+
+ {% assign listing_link3 = "https://www.etsy.com/search?q=DIY+kit&moci=1442892087108&mosi=1444984754351&is_discounted=true&pct_discount_max=20&is_merch_library=true&mosv=sese" %}
+
+ {% capture listing_headline3 %}
+{{content_blocks.${BODY_3_GLOBAL_OPFY_12626_secondary} | id: 'cb63'}}
+ {% endcapture %}
+
+ <!--- ONSITE DEALS CTA --->
+ {% assign onsite_deals_cta_link =  "https://www.etsy.com/r/curated/sales?sections=1417523172709&is_on_sale=true&narrow=sales_merch_narrowing_pathways" %}
+ 
+ {% assign onsite_deals_cta_parameter = "&" %}
+
+ {% capture onsite_deals_cta %}
+{{content_blocks.${CTA_GLOBAL_OPFY_11226_secondary} | id: 'cb64'}}
+ {% endcapture %}
+
+
+*****EMAIL CODE
+<!-- ONSITE DEALS MODULE ------------------------------------------------------------------ -->     
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+ <tbody>
+   <tr>
+     <td class="secondary_container_pad darkmode_background" align="left" style="text-align:left; padding: 0 10px 28px; background-color: #{{bghex}};">
+       <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+       <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+       <tbody>        
+        <tr>
+           <td class="darkmode_background secondary_headline_pad"  style="padding: 0 6px 24px;  text-align: left; ">
+              <!-- EDIT Headline + link -->
+              <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{onsite_deals_cta_link}}{{onsite_deals_cta_parameter}}&lid=0n604zd4y7wz&utm_content=listing" class=" darkmode_font_primary" universal="true"  style="text-decoration:none; color:#{{fonthex}};">{{content_blocks.${HEADER_GLOBAL_OPFY_100625_secondary} | id: 'cb55'}}</a></h2>
+              <!-- END EDIT Headline + link -->
+           </td> 
+           </tr>    
+         <tr>
+           <td align="center" style="padding:0;">
+           <div  style="text-align:center;font-size:0;">
+           <!--- Listing 1--->
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/get-stash-listings?&merch_collection_ids={{merch_collection_ids_1}}&section_id={{sectionid_1}}&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}}&braze_campaign_name={{campaign.${name} | url_encode}} :save stash_data_new :basic_auth Etsyweb_Lifecycle_API :cache_max_age 900 %}
+{% if stash_data_new == nil %} {% abort_message("ABORT! No listing 1 data to use.") %} {% endif %}
+{% if {{stash_data_new}} %}  {% assign listings_new = stash_data_new.listings %}
+{% endif %}
+           <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
+             <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top;">
+               <div class="secondary_listing_pad" style="padding:0 6px 12px">
+               <a href="{{listing_link1}}&lid=gjsvrn8t579b&anchor_listing_id={{ listings_new[0].listing_id }}&utm_content=primary" universal="true">
+               <div class="secondary_listing_height" style="max-width: 100%; overflow:hidden;  height:112px;">
+               <img src="{{ listings_new[0].image }}" width="171" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+               </div>
+           <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+           'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+           <!-- EDIT body text + link -->
+           <a href="{{listing_link1}}&lid=jcdydpliwmzg&anchor_listing_id={{ listings_new[0].listing_id }}&utm_content=primary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
+           {{listing_headline1}}</a>
+           <!-- END EDIT body text + link -->
+           </div>
+               </a>
+               </div>
+             </div>
+           <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+           <!--- Listing 2--->
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/get-stash-listings?&merch_collection_ids={{merch_collection_ids_2}}&section_id={{sectionid_2}}&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}}&braze_campaign_name={{campaign.${name} | url_encode}} :save stash_data_new2 :basic_auth Etsyweb_Lifecycle_API :cache_max_age 900 %}
+
+
+
+
+{% if {{stash_data_new2}} %}  {% assign listings_new2 = stash_data_new2.listings %}
+{% endif %}
+           <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
+             <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top;">
+               <div class="secondary_listing_pad" style="padding:0 6px 12px">
+               <a href="{{listing_link2}}&lid=ntrz214m9bhk&anchor_listing_id={{ listings_new2[0].listing_id }}&utm_content=secondary" universal="true">
+               <div class="secondary_listing_height" style="max-width: 100%; overflow:hidden;  height:112px;">
+               <img src="{{ listings_new2[0].image }}" width="171" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+               </div>
+           <div class="darkmode_background"  style=" font-family: 'ABC Diatype',
+           'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+           <!-- EDIT body text + link -->
+           <a href="{{listing_link2}}&lid=16aotkc69x1b&anchor_listing_id={{ listings_new2[0].listing_id }}&utm_content=secondary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
+           {{listing_headline2}}</a>
+           <!-- END EDIT body text + link -->
+           </div>
+               </a>
+               </div>
+             </div>
+           <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+           <!--- Listing 3--->
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/get-stash-listings?&merch_collection_ids={{merch_collection_ids_3}}&section_id={{sectionid_3}}&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}}&braze_campaign_name={{campaign.${name} | url_encode}} :save stash_data_new3 :basic_auth Etsyweb_Lifecycle_API :cache_max_age 900 %}
+
+
+{% if {{stash_data_new3}} %} {% assign listings_new3 = stash_data_new3.listings %}
+{% endif %}
+           <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
+             <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top; ">
+               <div class="secondary_listing_pad" style="padding:0 6px 12px">
+               <a href="{{listing_link3}}&lid=jh5qnjtcvl2r&anchor_listing_id={{ listings_new3[0].listing_id }}&utm_content=tertiary" universal="true">
+               <div class="secondary_listing_height" style="max-width: 100%; overflow:hidden; height:112px;">
+               <img src="{{ listings_new3[0].image }}" width="171" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+               </div>
+           <div class="darkmode_background"  style=" font-family: 'ABC Diatype',
+           'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+           <!-- EDIT body text + link -->
+           <a href="{{listing_link3}}&lid=befckecqty7f&anchor_listing_id={{ listings_new3[0].listing_id }}&utm_content=tertiary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
+           {{listing_headline3}}</a>
+           <!-- END EDIT body text + link -->
+           </div>
+               </a>
+               </div>
+             </div>
+           <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                  
+           </div>
+           </td>
+         </tr>
+         {% if secondary_cta2 != blank %}
+         <tr>
+           <td class="secondary_button_pad" align="left" style="padding: 12px 6px 12px;">
+           <!-- EDIT CTA + link -->
+           <a target="_blank" rel="noopener" href="{{onsite_deals_cta_link}}{{onsite_deals_cta_parameter}}&lid=qfdsozr08rid&utm_content=listing" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+           <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{onsite_deals_cta}}</span>
+           <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+           <!-- END EDIT CTA + link -->
+           </td>          
+         </tr>
+         {% endif %}
+       </tbody>
+     </table>
+     <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+     </td>
+   </tr>  
+ </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                          
+<!-- ClOSE ONSITE DEALS MODULE ------------------------------------------------------------------ -->
