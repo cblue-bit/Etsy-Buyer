@@ -1,3 +1,4 @@
+****LIQUID CODE FOR HEAD********
 <!--- SECONDARY LISTING MODULE (type 'display' to show the module )--->
    
    {% assign display_secondary_listings_module = 'display' %}
