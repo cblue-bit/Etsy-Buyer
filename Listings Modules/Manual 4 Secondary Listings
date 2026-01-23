@@ -63,6 +63,7 @@
   {{content_blocks.${CTA_GLOBAL_Trending_122725_primary} | id: 'cb119'}}
 	{% endcapture %}
 
+****EMAIL CODE FOR BODY********  Module is wrapped in an if statement. Variable "display_secondary_listings_module" must have a value of "display" to display. 
 <!--SECONDARY MODULE CONTENT ------>
  {% if display_secondary_listings_module  != blank  %}
 {% if secondary_listings_headline  != blank  %}
