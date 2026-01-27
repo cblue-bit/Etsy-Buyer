@@ -1,5 +1,5 @@
 ****LIQUID CODE FOR HEAD********
-<!--- SMART STASH LISTINGS --->
+<!--- SMART STASH LISTING --->
  {% assign merch_collection_ids = 1402624161571 %}
 
 {% capture listings_headline %}
