@@ -13,6 +13,32 @@
 {{content_blocks.${CTA_GLOBAL_Home_120325_primary} | id: 'cb108'}}
 {% endcapture %}
 
+****EMAIL CODE FOR BODY********  
+{% if stash_listings_headline != blank %}
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="h2_listing_container_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 0;">             
+    <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+         <tr>
+            <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
+               <!-- EDIT Headline + link -->
+               <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary "><a href="{{stash_listings_cta_link}}{{stash_listings_cta_parameter}}lid=nqgjkqkh8kz3&utm_content=listings" class=" darkmode_font_primary" universal="true"  style="text-decoration:none; color:#{{fonthex}};">{{stash_listings_headline}}</a></h2>
+               <!-- END EDIT Headline + link -->
+            </td>  
+          </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+{% endif %}
 <!--- SMART STASH  ------------------------------------------------------------------->    
   {% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/stash-listing-recs?user_id={{${user_id}}}&listing_id=1&merch_collection_id={{merch_collection_ids}}&strategy_code=treatment&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country} | url_encode}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}}&skip_save=true :basic_auth Etsyweb_Lifecycle_API :save data :retry %}
 
