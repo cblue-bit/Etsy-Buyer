@@ -1,3 +1,19 @@
+	<!--- DUMB STASH LISTING CTA--->
+  {% assign merch_collection_ids = 1407530005114 %}
+  {% assign sectionid = 1408051054233  %}
+
+  {% capture manual_listings_headline %}
+  sdfsf
+	{% endcapture %}
+
+	{% assign manual_listings_cta_link =  "https://www.etsy.com/r/themes/1409604823322?anchor_listings=1327981151" %}
+
+  {% assign manual_listings_cta_parameter = "&" %}
+
+	{% capture manual_listings_cta %}
+{{content_blocks.${CTA_GLOBAL_Home_120325_primary} | id: 'cb108'}}
+	{% endcapture %}
+
 <!--- DUMB STASH  ------------------------------------------------------------------->
 {% assign merch_collection_ids = 1402624161571 %}
  {% assign sectionid = 1407735686586  %}
