@@ -1,5 +1,5 @@
 ****LIQUID CODE FOR HEAD********
-<!--- DUMB STASH LISTING CTA--->
+<!--- DUMB STASH LISTING --->
 {% assign merch_collection_ids = 1407530005114 %}
 {% assign sectionid = 1408051054233  %}
 
