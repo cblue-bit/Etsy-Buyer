@@ -1,5 +1,19 @@
+****LIQUID CODE FOR HEAD********
+<!--- SMART STASH LISTINGS --->
+ {% assign merch_collection_ids = 1402624161571 %}
+
+{% capture stash_listings_headline %}
+{% endcapture %}
+
+{% assign stash_listings_cta_link =  "https://www.etsy.com/r/themes/1409604823322?anchor_listings=1327981151" %}
+
+{% assign stash_listings_cta_parameter = "&" %}
+
+{% capture stash_listings_cta %}
+{{content_blocks.${CTA_GLOBAL_Home_120325_primary} | id: 'cb108'}}
+{% endcapture %}
+
 <!--- SMART STASH  ------------------------------------------------------------------->    
-  {% assign merch_collection_ids = 1402624161571 %}
   {% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/stash-listing-recs?user_id={{${user_id}}}&listing_id=1&merch_collection_id={{merch_collection_ids}}&strategy_code=treatment&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country} | url_encode}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}}&skip_save=true :basic_auth Etsyweb_Lifecycle_API :save data :retry %}
 
   {% if data == blank %}
