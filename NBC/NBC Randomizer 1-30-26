@@ -1,31 +1,62 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>Etsy</title>
+{{content_blocks.${VisID-CSS-Font} | id: 'cb134'}}
+{{content_blocks.${VisID_CSS} | id: 'cb135'}}
+<style>
+  @media screen and (min-width: 460px) {
+/* Custom NBC Styles */
+      .secondary_container_pad {
+        padding: 0 20px 40px !important;
+      }
+.hero_image_height{
+        max-height:429px !important;
+      }
+.secondary_button_pad{
+        padding: 0 12px 0 !important;
+      }
+}
+/* Custom Dark Mode Styles */
+  @media (prefers-color-scheme: dark) {
+    .darkmode_background_banner { background-color: #560920 !important; }
+    .darkmode_background_banner2 { background-color: #2F203C !important; }
+}
+</style>
+</head>
+<body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #FAF8F5; margin: 0; min-width: 100%; padding: 0; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
+
+  <!-- IDE CONNECTED CONTENT-->
 {% assign join_date_epoch = {{custom_attribute.${join_date} | date: '%s' }} %}
 {% assign last_open_epoch = {{custom_attribute.${last_braze_nae_open_date_nightly} | date: '%s' }} %}
 {% assign first_boe_visit_epoch = {{custom_attribute.${first_boe_visit_date} | date: '%s' }} %}
 {% assign last_purch_date_nightly = {{custom_attribute.${last_purch_date_nightly} | date: '%s' }} %}
 
-
 {% connected_content
 https://www.etsy.com/api/v3/ajax/public/braze/content-block/get-multi-v2?ide_ranker_version=v0&ide_ranker_rate_limit=10&rate_limit=100&external_id={{${user_id}}}&email_address={{${email_address} | url_encode}}&last_purchase_timestamp={{last_purch_date_nightly}}&first_boe_visit_date={{first_boe_visit_epoch}}&join_date={{join_date_epoch}}&last_nae_open_date={{last_open_epoch}}&audience_segmentation_days=180&ramping_enabled=true&utm_source=adhoc&quality=latest&braze_dispatch_id={{campaign.${dispatch_id}}}&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country}}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :basic_auth Etsyweb_Lifecycle_API :save eligible_data :retry %}
 
-
-{% if eligible_data[0]['name'] == blank %} 
+{% if eligible_data == blank %} 
 {% abort_message("IDE ccc abort. Non-200 returned") %}
 {% endif %}
-
 <!-- END IDE CONNECTED CONTENT-->
 
 <!-- BRANCH UTM VARIABLE -->
 {% assign campaignname = {{campaign.${name}}} %}
 {% assign branch_utms = "&utm_campaign=" | append: campaignname | append: "&utm_medium=email&utm_source=adhoc&campaign_label=new_at_etsy"  %}
 
-<!-- SET NAVBAR TO 1 TO DISPLAY VISID NAVBAR -->
-{% assign navbar = 1 %}	
-
 <!-- SET NBCMODULE TO TREATMENT TO DISPLAY VISID MODULES -->
 {% assign nbcmodule = 'treatment' %}
   
 <!--- BANNER --->	
-{% capture banner %}
+{% capture banner %}	
+  {% if {{${country}}} == 'US' %}
+  {{content_blocks.${BANNER_nbc_013026} | id: 'cb148'}}
+{%else%}
+{{content_blocks.${BANNER_nbc_013026_v2} | id: 'cb149'}}
+  {%endif%}
 {% endcapture %}
 
 <!--- DISCLAIMER --->	
@@ -35,153 +66,8 @@ https://www.etsy.com/api/v3/ajax/public/braze/content-block/get-multi-v2?ide_ran
 <!--- BG COLOR (white,orange,yellow,purple,blue,green (color_tint or color_dk)) --->
 {% assign bg_colour = 'grey' %}		
 
-{{content_blocks.${background_colors_and_fonts_v3} | id: 'cb135'}}
+{{content_blocks.${background_colors_and_fonts_v3} | id: 'cb63'}}
 
-
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width">
-<!--[if !mso]><!-- -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--<![endif]-->
-<!--[if gte mso 9]><xml>
-<o:OfficeDocumentSettings>
-  <o:AllowPNG/>
-  <o:PixelsPerInch>96</o:PixelsPerInch>
-</o:OfficeDocumentSettings>
-</xml><![endif]-->
-<title>Etsy</title>
-{{content_blocks.${VisID-CSS-Font} | id: 'cb136'}}
-<style>
-/* Overrids blue links in Apple Mail*/
-  a[x-apple-data-detectors] {
-color: inherit !important;
-            text-decoration: none !important;
-            font-size: inherit !important;
-            font-family: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-}
-/* Overrids blue links in Samsung Mail*/
-#MessageViewBody a {
-	color: inherit !important;
-	font-size: inherit !important;
-	font-family: inherit !important;
-	font-weight: inherit !important;
-	line-height: inherit !important;
-}
-/* Overrids blue links in Outlook App*/
-.blueLinks a { 
-            color:inherit !important; 
-            text-decoration: none !important; 
-}
-  @media screen and (min-width: 460px) {
-      /* Must include in every email */
-      h1 {
-          font-size: 50px !important;
-          letter-spacing:-1.5px !important;
-        }
-      h2{
-       font-size: 34px !important;
-       letter-spacing:-1.25px !important; 
-      }
-      .nav_container_links_pad{
-        padding: 0 32px 0 0 !important;
-      }
-      .nav_container_pad{
-        padding: 0 16px 0 32px !important;
-      }
-      .footer_container_pad{
-        padding: 32px 32px 0px !important;
-      }
-       /* END Must include in every email */ 
-      .hero_image_height{
-        max-height:429px !important;
-      }
-      .hero_container_pad {
-        padding: 0 32px 40px !important;   
-      }
-      .primary_container_pad {
-        padding: 0 20px 40px !important;
-      }
-      .primary_button_pad{
-        padding: 0 12px 0 !important;
-      }
-      .listing_container_pad{
-        padding:0 12px 24px !important;
-      }
-      .listing_container_width{
-        width:50% !important;
-      }   
-      .secondary_container_pad {
-        padding: 0 20px 40px !important;
-      }
-      .secondary_headline_pad{
-        padding:0 12px 24px !important;
-      }
-      .secondary_listing_pad{
-        padding:0 12px 24px !important;
-      } 
-      .secondary_button_pad{
-        padding: 0 12px 0 !important;
-      }
-      .secondary_hero_listing_container_pad {
-        padding: 0 32px 0 !important;   
-      }
-      .disclaimer_container_pad{
-        padding: 0 32px 24px !important;
-      }
-}
-/* Dark Mode Styles */
-  @media (prefers-color-scheme: dark) {
-/* Default Darkmode CSS - Must include in every email */
-    body { background-color: #1C181F !important; } 
-    .darkmode_font_primary { color: #FAF8F5 !important; }
-    .darkmode_font_secondary { color: #967C98 !important; }
-    .darkmode_background { background-color: #1C181F !important; }
-    .darkmode_background-e1 { background-color: #312B36 !important; }
-    .darkmode_divider { border-color: #514659 !important;} 
-    .darkmode_border { border-color: #514659 !important;} 
-    .darkmode_buttonbackground { background-color: #1C181F !important; }
-    .darkmode_background-e1 { background-color: #312B36 !important; }
-/* Darkmode Buttons CSS  */
-    .darkmode_button_primary { background-color: #FAF8F5 !important; color: #312B36 !important; border: 2px solid #FAF8F5 !important; } 
-    .darkmode_button_primary_dark { background-color: #1C181F !important; color: #FAF8F5 !important; border: 2px solid #312B36 !important; }  
-    .darkmode_button_secondary { background-color: #1C181F !important; color: #FAF8F5 !important; border: 1.5px solid #FAF8F5 !important; } 
-/* Darkmode Misc CSS  */
-    .darkmode_font_starSeller { color: #CA86BD !important; }
-    .darkmode_font_critical { color: #F36F85 !important; }
-    .darkmode_font-promote { color: #A3D277 !important; }
-    .darkmode_icon_review { color: #FFBA26 !important; }
-    .darkmode_icon_favorite { color: #F36F85 !important;     
-}
-}
-@media screen and (max-width: 460px) {
-      .nav_container_links_right_pad{
-       max-width:80% !important;
-      }
-      .herolg{
-         height:270px !important;
-         max-height:270px !important;
-      }
-      .herosm{
-        height:129px !important;
-        max-height:129px !important;  
-      }
-       .herolgc{
-        padding: 0 6px 0 0 !important; 
-      }
-      .herosmc{
-        padding: 0 0 6px 6px !important; 
-      }
-      .herosmc2{
-        padding: 6px 0 0 6px !important; 
-      }
-
-    }
-</style>
-</head>
-<body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #FAF8F5; margin: 0; min-width: 100%; padding: 0; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
 
 <!---  START OF EMAIL CODE --->
 <!--OUTER WRAPPER -->
@@ -204,7 +90,8 @@ color: inherit !important;
 <table align="left"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;  margin: 0;" >
      <tr>
         <td  style="padding:0 0 24px;" >
-          {{content_blocks.${Global_NAV_Buyer_VizID} | id: 'cb137'}}
+          {{content_blocks.${Global_NAV_Buyer_2026} | id: 'cb146'}}
+           
         </td>
     </tr>
 </table>
@@ -215,53 +102,53 @@ color: inherit !important;
 <!-- repeat -->
 {% if hero_content_block_name == 'RepeatPurchase_OPFY_NoOffer_Hero_MultiListing_redesign' %}
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Hero_MultiListing_redesign} | id: 'cb138'}}
+    {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Hero_MultiListing_redesign} | id: 'cb66'}}
 {% elsif hero_content_block_name == 'RepeatPurchase_Default_Hero_MultiListing_Stash_redesign' %}
 {% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${RepeatPurchase_Default_Hero_MultiListing_Stash_redesign} | id: 'cb139'}}
+    {{content_blocks.${RepeatPurchase_Default_Hero_MultiListing_Stash_redesign} | id: 'cb67'}}
 <!-- cross sell -->
 {% elsif hero_content_block_name == 'CrossSell_Qualified_Hero_MultiListing_redesign' %}
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${CrossSell_Qualified_Hero_MultiListing_redesign} | id: 'cb140'}}
+    {{content_blocks.${CrossSell_Qualified_Hero_MultiListing_redesign} | id: 'cb68'}}
 {% elsif hero_content_block_name == 'CrossSell_Default_Hero_MultiListing_Stash_redesign' %}
 {% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${CrossSell_Default_Hero_MultiListing_Stash_redesign} | id: 'cb141'}}
+    {{content_blocks.${CrossSell_Default_Hero_MultiListing_Stash_redesign} | id: 'cb69'}}
 <!-- abandoned_cart -->
 {% elsif hero_content_block_name == 'AbandonedCart_Item_Hero_redesign' %}
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'][0] %}
-    {{content_blocks.${AbandonedCart_Item_Hero_redesign} | id: 'cb142'}}
+    {{content_blocks.${AbandonedCart_Item_Hero_redesign} | id: 'cb70'}}
 {% elsif hero_content_block_name == 'AbandonedCart_Default_Hero_MultiListing_Stash_redesign' %}
 {% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${AbandonedCart_Default_Hero_MultiListing_Stash_redesign} | id: 'cb143'}}
+    {{content_blocks.${AbandonedCart_Default_Hero_MultiListing_Stash_redesign} | id: 'cb71'}}
 <!-- updates -->
 {% elsif hero_content_block_name == 'Updates_HasListing_Hero_redesign' %}
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'][0] %}
-    {{content_blocks.${Updates_HasListing_Hero_redesign} | id: 'cb144'}}
+    {{content_blocks.${Updates_HasListing_Hero_redesign} | id: 'cb72'}}
 {% elsif hero_content_block_name == 'Updates_Default_Hero_MultiListing_redesign' %}
 {% assign listings = eligible_data[0]['external_content_modules'][0]['listings']  %} 
-    {{content_blocks.${Updates_Default_Hero_MultiListing_redesign} | id: 'cb145'}}
+    {{content_blocks.${Updates_Default_Hero_MultiListing_redesign} | id: 'cb73'}}
 <!-- favorite listing -->
 {% elsif hero_content_block_name == 'FavoriteListing_Views_Hero_MultiListing_redesign' %}
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${FavoriteListing_Views_Hero_MultiListing_redesign} | id: 'cb146'}}
+    {{content_blocks.${FavoriteListing_Views_Hero_MultiListing_redesign} | id: 'cb74'}}
 {% elsif hero_content_block_name == 'FavoriteListing_Default_Hero_MultiLIsting_Stash_redesign' %}
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${FavoriteListing_Default_Hero_MultiLIsting_Stash_redesign} | id: 'cb147'}}
+    {{content_blocks.${FavoriteListing_Default_Hero_MultiLIsting_Stash_redesign} | id: 'cb75'}}
 <!-- favorite shop -->
 {% elsif hero_content_block_name == 'FavoriteShop_Browse_Hero_MultiListing_Lisitngs_redesign' %}
 {% assign shop_and_listings = eligible_data[0]['external_content_modules'][0]['shop_and_listings'] %}
-    {{content_blocks.${FavoriteShop_Browse_Hero_MultiListing_Lisitngs_redesign} | id: 'cb148'}}
+    {{content_blocks.${FavoriteShop_Browse_Hero_MultiListing_Lisitngs_redesign} | id: 'cb76'}}
 {% elsif hero_content_block_name == 'FavoriteShop_Default_Hero_MultiListing_Stash_redesign' %}
 {% assign shop_and_listings = eligible_data[0]['external_content_modules'][0]['shop_and_listings'] %}
-    {{content_blocks.${FavoriteShop_Default_Hero_MultiListing_Stash_redesign} | id: 'cb149'}}
+    {{content_blocks.${FavoriteShop_Default_Hero_MultiListing_Stash_redesign} | id: 'cb77'}}
 <!-- recently favorited --> 
 {% elsif hero_content_block_name == 'RecentlyFavorited_MultiListing_Hero' %} 
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${RecentlyFavorited_MultiListing_Hero} | id: 'cb150'}}
+    {{content_blocks.${RecentlyFavorited_MultiListing_Hero} | id: 'cb78'}}
 <!-- similar to your collection -->
 {% elsif hero_content_block_name == 'SimilarToYourCollections_MultiListing_Hero' %}
 {% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${SimilarToYourCollections_MultiListing_Hero} | id: 'cb151'}}
+    {{content_blocks.${SimilarToYourCollections_MultiListing_Hero} | id: 'cb79'}}
 {% endif %}
 <!-- END HERO -->
 
@@ -271,53 +158,53 @@ color: inherit !important;
 <!-- repeat -->
 {% if secondary_content_block_name == 'RepeatPurchase_OPFY_NoOffer_Secondary_redesign' %}
 {% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Secondary_redesign} | id: 'cb152'}}
+    {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Secondary_redesign} | id: 'cb80'}}
 {% elsif secondary_content_block_name == 'RepeatPurchase_Default_Secondary_MultiLIsting_Stash_redesign' %}
 {% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${RepeatPurchase_Default_Secondary_MultiLIsting_Stash_redesign} | id: 'cb153'}}
+    {{content_blocks.${RepeatPurchase_Default_Secondary_MultiLIsting_Stash_redesign} | id: 'cb81'}}
 <!-- cross sell -->
 {% elsif secondary_content_block_name == 'CrossSell_Qualified_Secondary_redesign' %}
 {% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${CrossSell_Qualified_Secondary_redesign} | id: 'cb154'}}
+    {{content_blocks.${CrossSell_Qualified_Secondary_redesign} | id: 'cb82'}}
 {% elsif secondary_content_block_name == 'CrossSell_Default_Secondary_Stash_redesign' %}
 {% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${CrossSell_Default_Secondary_Stash_redesign} | id: 'cb155'}}
+    {{content_blocks.${CrossSell_Default_Secondary_Stash_redesign} | id: 'cb83'}}
 <!-- abandoned_cart -->
 {% elsif secondary_content_block_name == 'AbandonedCart_Item_Secondary_redesign' %}
 {% assign listing = eligible_data[1]['external_content_modules'][0]['listings'][0] %}
-    {{content_blocks.${AbandonedCart_Item_Secondary_redesign} | id: 'cb156'}}
+    {{content_blocks.${AbandonedCart_Item_Secondary_redesign} | id: 'cb84'}}
 {% elsif secondary_content_block_name == 'AbandonedCart_Default_Secondary_Stash_redesign' %}
 {% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${AbandonedCart_Default_Secondary_Stash_redesign} | id: 'cb157'}}
+    {{content_blocks.${AbandonedCart_Default_Secondary_Stash_redesign} | id: 'cb85'}}
 <!-- updates -->
 {% elsif secondary_content_block_name == 'Updates_HasListing_Secondary_redesign' %}
 {% assign listing = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${Updates_HasListing_Secondary_redesign} | id: 'cb158'}}
+    {{content_blocks.${Updates_HasListing_Secondary_redesign} | id: 'cb86'}}
 {% elsif secondary_content_block_name == 'Updates_Default_Secondary_MultiListing_redesign' %}
 {% assign listing = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${Updates_Default_Secondary_MultiListing_redesign} | id: 'cb159'}}
+    {{content_blocks.${Updates_Default_Secondary_MultiListing_redesign} | id: 'cb87'}}
 <!-- favorite listing -->
 {% elsif secondary_content_block_name == 'FavoriteListing_Views_Secondary_MultiListing_redesign' %}
 {% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${FavoriteListing_Views_Secondary_MultiListing_redesign} | id: 'cb160'}}
+    {{content_blocks.${FavoriteListing_Views_Secondary_MultiListing_redesign} | id: 'cb88'}}
 {% elsif secondary_content_block_name == 'FavoriteListing_Default_Secondary_Stash_redesign_us' %}
 {% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${FavoriteListing_Default_Secondary_Stash_redesign_us} | id: 'cb161'}}
+    {{content_blocks.${FavoriteListing_Default_Secondary_Stash_redesign_us} | id: 'cb89'}}
 <!-- favorite shop -->
 {% elsif secondary_content_block_name == 'Favoriteshop_Browse_Secondary_MultiListing_Listings_redesign' %}
 {% assign shop_and_listings = eligible_data[1]['external_content_modules'][0]['shop_and_listings'] %}
-    {{content_blocks.${Favoriteshop_Browse_Secondary_MultiListing_Listings_redesign} | id: 'cb162'}}
+    {{content_blocks.${Favoriteshop_Browse_Secondary_MultiListing_Listings_redesign} | id: 'cb90'}}
 {% elsif secondary_content_block_name == 'FavoriteShop_Default_Secondary_MultiListing_Stash_redesign' %}
 {% assign shop_and_listings = eligible_data[1]['external_content_modules'][0]['shop_and_listings'] %}
-    {{content_blocks.${FavoriteShop_Default_Secondary_MultiListing_Stash_redesign} | id: 'cb163'}}
+    {{content_blocks.${FavoriteShop_Default_Secondary_MultiListing_Stash_redesign} | id: 'cb91'}}
 <!-- recently favorited --> 
 {% elsif secondary_content_block_name == 'RecentlyFavorited_MultiListing_Secondary' %}
 {% assign listing = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${RecentlyFavorited_MultiListing_Secondary} | id: 'cb164'}}
+    {{content_blocks.${RecentlyFavorited_MultiListing_Secondary} | id: 'cb92'}}
 <!-- similar to your collection -->
 {% elsif secondary_content_block_name == 'SimilarToYourCollections_MultiListing_Secondary' %}
 {% assign listing = eligible_data[1]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${SimilarToYourCollections_MultiListing_Secondary} | id: 'cb165'}}
+    {{content_blocks.${SimilarToYourCollections_MultiListing_Secondary} | id: 'cb93'}}
 {% endif %}
 <!-- END SECONDARY -->
 
@@ -328,59 +215,59 @@ color: inherit !important;
 {% if banner_content_block_name == 'RepeatPurchase_OPFY_NoOffer_Banner_redesign' %}
 {% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %}
 {% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Banner_redesign} | id: 'cb166'}}
+    {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Banner_redesign} | id: 'cb94'}}
 {% elsif banner_content_block_name == 'RepeatPurchase_Default_Banner_Stash_redesign' %}
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${RepeatPurchase_Default_Banner_Stash_redesign} | id: 'cb167'}}
+    {{content_blocks.${RepeatPurchase_Default_Banner_Stash_redesign} | id: 'cb95'}}
 <!-- cross sell -->
 {% elsif banner_content_block_name == 'CrossSell_Qualified_Banner_redesign' %}
 {% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][1] %}
 {% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${CrossSell_Qualified_Banner_redesign} | id: 'cb168'}}
+    {{content_blocks.${CrossSell_Qualified_Banner_redesign} | id: 'cb96'}}
 {% elsif banner_content_block_name == 'CrossSell_Default_Banner_Stash_redesign' %}
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${CrossSell_Default_Banner_Stash_redesign} | id: 'cb169'}}
+    {{content_blocks.${CrossSell_Default_Banner_Stash_redesign} | id: 'cb97'}}
 <!-- abandoned_cart -->
 {% elsif banner_content_block_name == 'AbandonedCart_Item_Banner_redesign' %}
 {% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %}
-    {{content_blocks.${AbandonedCart_Item_Banner_redesign} | id: 'cb170'}}
+    {{content_blocks.${AbandonedCart_Item_Banner_redesign} | id: 'cb98'}}
 {% elsif banner_content_block_name == 'AbandonedCart_Default_Banner_Stash_redesign' %}
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${AbandonedCart_Default_Banner_Stash_redesign} | id: 'cb171'}}
+    {{content_blocks.${AbandonedCart_Default_Banner_Stash_redesign} | id: 'cb99'}}
 <!-- updates -->
 {% elsif banner_content_block_name == 'Updates_HasListing_Banner_redesign' %}
 {% assign listing = eligible_data[2]['external_content_modules'][0]['listings'] [0]%}
-    {{content_blocks.${Updates_HasListing_Banner_redesign} | id: 'cb172'}}
+    {{content_blocks.${Updates_HasListing_Banner_redesign} | id: 'cb100'}}
 {% elsif banner_content_block_name == 'Updates_Default_Banner_Stash_redesign' %}
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${Updates_Default_Banner_Stash_redesign} | id: 'cb173'}}
+    {{content_blocks.${Updates_Default_Banner_Stash_redesign} | id: 'cb101'}}
 <!-- favorite listing -->
 {% elsif banner_content_block_name == 'FavoriteListing_Views_Banner_redesign' %}
 {% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %}
 {% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${FavoriteListing_Views_Banner_redesign} | id: 'cb174'}}
+    {{content_blocks.${FavoriteListing_Views_Banner_redesign} | id: 'cb102'}}
 {% elsif banner_content_block_name == 'FavoriteListing_Default_Banner_Stash_redesign' %}
 {% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
-    {{content_blocks.${FavoriteListing_Default_Banner_Stash_redesign} | id: 'cb175'}}
+    {{content_blocks.${FavoriteListing_Default_Banner_Stash_redesign} | id: 'cb103'}}
 <!-- favorite shop -->
 {% elsif banner_content_block_name == 'FavoriteShop_Browse_Banner_redesign' %}
 {% assign shop_and_listings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2] %}
 {% assign multilistings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2]['listings'] %}
-    {{content_blocks.${FavoriteShop_Browse_Banner_redesign} | id: 'cb176'}}
+    {{content_blocks.${FavoriteShop_Browse_Banner_redesign} | id: 'cb104'}}
 {% elsif banner_content_block_name == 'FavoriteShop_Default_Banner_Stash_redesign' %}
 {% assign shop_and_listings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2] %}
 {% assign multilistings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2]['listings']  %}
-    {{content_blocks.${FavoriteShop_Default_Banner_Stash_redesign} | id: 'cb177'}}
+    {{content_blocks.${FavoriteShop_Default_Banner_Stash_redesign} | id: 'cb105'}}
 <!-- recently favorited -->  
 {% elsif banner_content_block_name == 'RecentlyFavorited_Banner' %}
 {% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %} 
 {% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}    
-    {{content_blocks.${RecentlyFavorited_Banner} | id: 'cb178'}}
+    {{content_blocks.${RecentlyFavorited_Banner} | id: 'cb106'}}
 <!-- similar to your collection -->
 {% elsif banner_content_block_name == 'SimilarToYourCollections_Banner' %}
 {% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %} 
 {% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}  
-    {{content_blocks.${SimilarToYourCollections_Banner} | id: 'cb179'}}
+    {{content_blocks.${SimilarToYourCollections_Banner} | id: 'cb107'}}
 {% endif %}
 <!-- END TERTIARY -->
 <!-- BANNER MODULE --------------------------------------------------------- --> 
@@ -388,7 +275,10 @@ color: inherit !important;
 {{banner}}
 {% endif %}
 <!-- CLOSE BANNER MODULE ------------------------------------------------------------ -->
-{{content_blocks.${BANNER_GLOBAL_loyalty_freeshipping} | id: 'cb180'}}
+{{content_blocks.${BANNER_GLOBAL_loyalty_freeshipping_v2} | id: 'cb108'}}
+{% if disclaimer != blank and {{custom_attribute.${is_current_loyalty_insider}}} == "1" or banner != blank %} 
+  <div class="spacer" style="mso-line-height-rule:exactly;line-height:40px;height:40px;"></div>  
+{%endif%}
 <!-- DISCLAIMER ------------------------------------->
 {% if disclaimer != blank %}
 <table width="100%" border="0" cellpadding="0" cellspacing="0"
@@ -400,7 +290,7 @@ style="border-collapse: collapse; width: 100%;">
         style="border-collapse: collapse; table-layout: fixed; width: 100%;">
           <tbody>
             <tr>
-              <td class="darkmode_footer_font_dark" style="color:#665E5C; font-family: 'ABC Diatype',
+              <td class="darkmode_font_secondary" style="color:#665E5C; font-family: 'ABC Diatype',
             'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left;">
                {{disclaimer}}
               </td>
@@ -416,7 +306,7 @@ style="border-collapse: collapse; width: 100%;">
 
 <!-- FOOTER ------------------------------------------------------------------ -->
 
-{{content_blocks.${Global_Footer_Buyer_v3_Experiment} | id: 'cb181'}}
+{{content_blocks.${Global_Footer_Buyer_v3_Experiment} | id: 'cb109'}}
 	
 <!-- END FOOTER ------------------------------------------------------------------ -->
 									</td>
