@@ -1,0 +1,20 @@
+% if {{${user_id}}} == blank %}
+{% abort_message("no user id") %}
+{%endif%}
+
+ {% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/category-propensity-v2?user_id={{${user_id}}}&language_code={{custom_attribute.${language_etsy}}}&quality=latest&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country} | url_encode}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :save data :basic_auth Etsyweb_Lifecycle_API %}
+ 
+  {% if data == blank %}
+  {% abort_message("No content for this user") %}
+  {%endif%}
+
+  {% assign listings = data[0].listings %}
+
+  {% assign category_url = listings[0].category_url %}
+
+   {% assign listing = listings[0] %}
+ 
+  {% if category_url == "https://www.etsy.com/c/" %}
+  {% capture category_url %}https://www.etsy.com/search?q={{ listing.category }}
+  {% endcapture %}
+  {% endif %}
