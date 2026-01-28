@@ -1,5 +1,5 @@
 ****LIQUID CODE FOR HEAD********
-<!--- SECONDARY MODULE --->
+<!--- TERTIARY MODULE 1 --->
  <!--- Banner type (rtl or ltr) --->
 {% assign banner_layout = 'ltr' %}
 
@@ -25,7 +25,7 @@
 
 {% assign font_color = 'FAF8F5' %}	
 
-<!--- TERTIARY MODULE --->
+<!--- TERTIARY MODULE 2 --->
  <!--- Banner type (rtl or ltr) --->
 {% assign banner_layout2 = 'rtl' %}
 
@@ -53,7 +53,7 @@
 ****EMAIL CODE FOR BODY******** Both Modules are wrapped in if statements. They must have a url for the module content to display. 
 
 {% if ltr_module_link != blank %} 
- <!-- SECONDARY MODULE CONTENT-->
+ <!-- TERTIARY MODULE CONTENT-->
 <!--[if (gte mso 9)|(IE)]>
 <table width="600" align="left" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;" >
@@ -123,10 +123,8 @@
             </tr>
          </tbody></table>
           <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->    
- <!-- CLOSE SECONDARY MODULE CONTENT ------- > 
  {% endif %}
  {% if ltr_module_link2 != blank %}   
-<!-- TERTIARY MODULE CONTENT-->
 <!--[if (gte mso 9)|(IE)]>
 <table width="600" align="left" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;" >
