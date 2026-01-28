@@ -1,21 +1,77 @@
-****LIQUID CODE FOR HEAD********
-{% if {{${user_id}}} == blank %}
-{% abort_message("no user id") %}
+{% if {{${user_id}}} == blank %} {% abort_message("no user id") %}{%endif%}
+{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/category-propensity-v2?user_id={{${user_id}}}&language_code={{custom_attribute.${language_etsy}}}&quality=latest&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country} | url_encode}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :save data :basic_auth Etsyweb_Lifecycle_API %}
+ 
+{% if data == blank %}
+{% abort_message("No content for this user") %}
 {%endif%}
 
- {% connected_content https://www.etsy.com/api/v3/ajax/public/braze/external-content-module/category-propensity-v2?user_id={{${user_id}}}&language_code={{custom_attribute.${language_etsy}}}&quality=latest&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country} | url_encode}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :save data :basic_auth Etsyweb_Lifecycle_API %}
+{% assign listings = data[0].listings %}
+{% assign category_url = listings[0].category_url %}
+{% assign listing = listings[0] %}
  
-  {% if data == blank %}
-  {% abort_message("No content for this user") %}
-  {%endif%}
+{% if category_url == "https://www.etsy.com/c/" %}
+{% capture category_url %}https://www.etsy.com/search?q={{ listing.category }}
+{% endcapture %}
+{% endif %}
 
-  {% assign listings = data[0].listings %}
-
-  {% assign category_url = listings[0].category_url %}
-
-   {% assign listing = listings[0] %}
- 
-  {% if category_url == "https://www.etsy.com/c/" %}
-  {% capture category_url %}https://www.etsy.com/search?q={{ listing.category }}
-  {% endcapture %}
-  {% endif %}
+<!-- CAT PROP GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="primary_container_pad darkmode_background" align="left" style="direction:ltr;text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+          	<div  style="text-align:center;font-size:0;">	
+            <!-- LIQUID NOTES: Begining of forloop to display listings. Assigns data and listing size to variables ---------------- -->	
+            {% for collection in data %}
+            {% assign listings = collection['listings'] %}
+            {% assign listingsize = collection['listings'] | size %}
+            <!-- LIQUID NOTES: Checks if listings contain anything  ---------------- -->	
+            {% if forloop.length > 0 %}
+            <!-- LIQUID NOTES: Checks listings and assigns a value of 2 or 4 to a variable ---------------- -->	    
+            {% if listingsize >  3 %}
+            {% assign limitsize = 4 %}
+            {% else %}
+            {% assign limitsize = 2 %}
+            {% endif %}
+            <!-- LIQUID NOTES: Runs for loop to display a 2 or 4 listing blocks  ---------------- -->	 
+            {% for listing in listings offset: 1 limit: {{limitsize}} %}
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{ listing.branch_listing_url }}{{branch_utms}}&lid=96avj0jmuega&utm_content=4listingsmodule" universal="true">
+                <div style="max-width: 100%; overflow:hidden">
+                <img src="{{ listing.image }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>
+                </div>
+              </div>
+            <!--[if mso]></td></tr></table><![endif]-->
+            {% endfor %} 
+            {% endif %} 
+            {% endfor %}	                           
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{category_url}}&lid=t1bg2titaqxm&utm_content=listing" class="darkmode_button_secondary" style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 2px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{content_blocks.${intl_Q123_category_propensity_CTA2}}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+            <!-- END EDIT CTA + link -->
+            </td>           
+          </tr>
+        </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE CAT PROP GRID------------------------------------------------------------------ -->
