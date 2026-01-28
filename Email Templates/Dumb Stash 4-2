@@ -46,21 +46,20 @@
 {{content_blocks.${CTA_GLOBAL_Home_120325_hero} | id: 'cb107'}}
 	{% endcapture %}
 
-	<!--- DUMB STASH LISTING CTA--->
-  {% assign merch_collection_ids = 1407530005114 %}
-  {% assign sectionid = 1408051054233  %}
+<!--- DUMB STASH LISTING --->
+{% assign merch_collection_ids = 1407530005114 %}
+{% assign sectionid = 1408051054233  %}
 
-  {% capture manual_listings_headline %}
-  sdfsf
-	{% endcapture %}
+{% capture listings_headline %}
+{% endcapture %}
 
-	{% assign manual_listings_cta_link =  "https://www.etsy.com/r/themes/1409604823322?anchor_listings=1327981151" %}
+{% assign listings_cta_link =  "https://www.etsy.com/r/themes/1409604823322?anchor_listings=1327981151" %}
 
-  {% assign manual_listings_cta_parameter = "&" %}
+{% assign listings_cta_parameter = "&" %}
 
-	{% capture manual_listings_cta %}
+{% capture listings_cta %}
 {{content_blocks.${CTA_GLOBAL_Home_120325_primary} | id: 'cb108'}}
-	{% endcapture %}
+{% endcapture %}
 
 <!--- DUMB STASH 2 LISTING HEADLINE --->
   {% assign merch_collection_ids2 = 1402623870159 %}
