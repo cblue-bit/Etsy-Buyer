@@ -101,23 +101,12 @@
 {% abort_message("CCC does not support guest") %}
 {% endif %}
 
+{% if data == blank %}
+{% abort_message("No content for this user") %}
+{%endif%}
 
- {% if data == blank %}
- {% abort_message("No content for this user") %}
- {%endif%}
+{% assign listings = data[0].listings %}
 
-
- {% assign listings = data[0].listings %}
-
-
- {% assign category_url = listings[0].category_url %}
-
-
-  {% assign listing = listings[0] %}
- {% if category_url == "https://www.etsy.com/c/" %}
- {% capture category_url %}https://www.etsy.com/search?q={{ listing.category }}
- {% endcapture %}
- {% endif %}
  <!---  END OF LIQUID --->
 
 
@@ -183,7 +172,7 @@
            {% assign limitsize = 2 %}
            {% endif %}
            <!-- LIQUID NOTES: Runs for loop to display a 2 or 4 listing blocks  ---------------- --> 
-           {% for listing in listings offset: 1 limit: {{limitsize}} %}
+           {% for listing in listings limit: {{limitsize}} %}
             <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
                <div class="listing_container_pad" style="padding:0 6px 12px">
