@@ -43,7 +43,7 @@
            {% assign limitsize = 2 %}
            {% endif %}
            <!-- LIQUID NOTES: Runs for loop to display a 2 or 4 listing blocks  ---------------- --> 
-           {% for listing in listings offset: 1 limit: {{limitsize}} %}
+           {% for listing in listings limit: {{limitsize}} %}
             <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
                <div class="listing_container_pad" style="padding:0 6px 12px">
