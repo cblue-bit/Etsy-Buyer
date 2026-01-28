@@ -1,4 +1,5 @@
-% if {{${user_id}}} == blank %}
+****LIQUID CODE FOR HEAD********
+{% if {{${user_id}}} == blank %}
 {% abort_message("no user id") %}
 {%endif%}
 
