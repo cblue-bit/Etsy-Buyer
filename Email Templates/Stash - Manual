@@ -61,20 +61,68 @@
 {{content_blocks.${CTA_GLOBAL_Home_120325_primary} | id: 'cb108'}}
 {% endcapture %}
 
-<!--- DUMB STASH 2 LISTING HEADLINE --->
-  {% assign merch_collection_ids2 = 1402623870159 %}
-  {% assign sectionid2 = 1407782223091  %}
+<!--- SECONDARY LISTING MODULE (type 'display' to show the module )--->
+   
+   {% assign display_secondary_listings_module = 'display' %}
 
-  {% capture secondary_listings_headline %}
-  asdfdf
+   {% capture secondary_listings_headline %}
+   {{content_blocks.${HEADER_GLOBAL_Boxing_122825_hero} | id: 'cb2'}}
 	{% endcapture %}
-  
-	{% assign secondary_listings_cta_link =  "#" %}
 
-  {% assign secondary_listings_cta_parameter = "&" %}
+<!--- SECONDARY MANUAL LISTING 1--->  
 
-	{% capture secondary_listings_cta %}
-  asdfa
+ {% assign secondary_listings_link1 = "https://www.etsy.com/search?q=personalized+spice+labels&is_personalizable=true&explicit=1&is_merch_library=true&anchor_listing_id=990371804" %}
+
+ {% assign secondary_listings_link1_parameter = "&" %}
+
+  {% assign secondary_listings_image1 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b10384978600638a193d/original.png?1765912834" %}
+
+ {% capture secondary_listings_title1 %}
+{{content_blocks.${TITLE_1_GLOBAL_Trending_122725_primary} | id: 'cb113'}}
+ {% endcapture %}
+
+<!--- SECONDARY MANUAL LISTING 2 --->  
+
+ {% assign secondary_listings_link2 = "https://www.etsy.com/search?q=knit+balaclava&is_merch_library=true&anchor_listing_id=1802837602" %}
+
+ {% assign secondary_listings_link2_parameter = "&" %}
+
+ {% assign secondary_listings_image2 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1037c3ada00631cc31d/original.png?1765912834" %}
+
+ {% capture secondary_listings_title2 %}
+{{content_blocks.${TITLE_2_GLOBAL_Trending_122725_primary} | id: 'cb114'}}
+ {% endcapture %}
+
+ <!--- SECONDARY MANUAL LISTING 3 --->  
+
+ {% assign secondary_listings_link3 = "https://www.etsy.com/search?q=pet+portrait+mug&explicit=1&is_merch_library=true&is_discounted=true&anchor_listing_id=1250312385" %}
+
+  {% assign secondary_listings_link3_parameter = "&" %}
+
+  {% assign secondary_listings_image3 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1031f9c750063b647cb/original.png?1765912834" %}
+
+ {% capture secondary_listings_title3 %}
+{{content_blocks.${TITLE_3_GLOBAL_Trending_122725_primary} | id: 'cb115'}}
+ {% endcapture %}
+
+ <!--- SECONDARY MANUAL LISTING 4--->  
+
+ {% assign secondary_listings_link4 = "https://www.etsy.com/search?q=constellation+necklace&explicit=1&is_merch_library=true&is_discounted=true&anchor_listing_id=953628614" %}
+
+ {% assign secondary_listings_link4_parameter = "&" %}
+
+  {% assign secondary_listings_image4 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1035f92990063331480/original.png?1765912834" %}
+
+ {% capture secondary_listings_title4 %}
+{{content_blocks.${TITLE_4_GLOBAL_Trending_122725_primary} | id: 'cb116'}}
+ {% endcapture %}
+
+ <!--- SECONDARY MANUAL LISTING CTA --->
+	{% assign secondary_manual_listings_cta_link =  "https://www.etsy.com/r/curated/trending-search?sections=1438959968712&narrow=trending-search-terms" %}
+  {% assign secondary_manual_listings_cta_parameter = "&" %}
+
+	{% capture secondary_manual_listings_cta %}
+  {{content_blocks.${CTA_GLOBAL_Trending_122725_primary} | id: 'cb119'}}
 	{% endcapture %}
 
 	<!--- BANNER--->	
