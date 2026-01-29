@@ -324,8 +324,8 @@
 <!--- CLOSE DUMB STASH  ------------------------------------------------------------------->
 <!-- CLOSE PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
 <!--SECONDARY MODULE CONTENT ------>
-{% if merch_collection_ids2 != blank %}
-{% if secondary_listings_cta_link != blank %}
+ {% if display_secondary_listings_module  != blank  %}
+{% if secondary_listings_headline  != blank  %}
 <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <tbody>
@@ -337,10 +337,10 @@
          <tr>
             <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
                <!-- EDIT Headline + link -->
-                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary "><a href="{{secondary_listings_cta_link}}{{secondary_listings_cta_parameter}}lid=kfyar11xqmiu&utm_content=listings" class=" darkmode_font_primary" universal="true"  style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_headline}}</a></h2>
+                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{secondary_manual_listings_cta_link}}{{secondary_manual_listings_cta_parameter}}lid=j2hd82hyy9j0&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_headline}}</a></h2>
                <!-- END EDIT Headline + link -->
             </td>  
-          </tr>  
+            </tr>  
       </tbody>
       </table>
       <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
@@ -349,45 +349,98 @@
    </tbody>
 </table>
 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
-{% endif %}
-<!--- DUMB STASH 2 ------------------------------------------------------------------->
-{% connected_content https://www.etsy.com/api/v3/ajax/public/braze/get-stash-listings?&merch_collection_ids={{merch_collection_ids2}}&section_id={{sectionid2}}&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}
-:save stash_data2 :basic_auth Etsyweb_Lifecycle_API :cache_max_age 900 %}
-
-{% assign listings = stash_data2.listings %}
-
+{%endif%}
+<!-- MANUAL 6 LISTINGS GRID------------------------------------------------------------------ -->      
+<!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
 <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
   <tbody>
     <tr>
-      <td class="primary_container_pad darkmode_background" align="left" style="direction:ltr;text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
-        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
+      <td class="primary_container_pad darkmode_background darkmode_font_primary" align="left" style="text-align:left; padding: 0 10px 40px; background-color: #{{bghex}};">
+        <!--[if (gte mso 9)|(IE)]><table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px;"><tr><td><![endif]-->
         <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
         <tbody>
 	        <tr>
             <td align="center" style="padding:0;">
-          	<div  style="text-align:center;font-size:0;">	
-            {% for listing in listings  limit: 2 %}
-            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:10px;" valign="middle"><![endif]-->
+          	<div  style="text-align:center; font-size:0;">	
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
               <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
                 <div class="listing_container_pad" style="padding:0 6px 12px">
-                <a href="https://www.etsy.com/search?lid=4an66pxcu7l2&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 50 }}&anchor_listing_id={{ listing.listing_id }}&utm_content=listings" universal="true">
-                <div style="max-width: 100%; overflow:hidden">
-                <img src="{{ listing.img.url_300x300 }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                <a href="{{secondary_listings_link1}}{{secondary_listings_link1_parameter}}lid=3hwn9pqxln6u&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{secondary_listings_image1}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                 </div>
-                </a>
+                </a>{% if secondary_listings_title1  != blank  %}
+                 <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{secondary_listings_link1}}{{secondary_listings_link1_parameter}}lid=kw5qv6w3lj63&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title1}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
                 </div>
               </div>
-            <!--[if mso]></td></tr></table><![endif]-->
-            {% endfor %} 
-            	                           
-            </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                        
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{secondary_listings_link2}}{{secondary_listings_link2_parameter}}lid=xt14hg5o024o&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{secondary_listings_image2}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if secondary_listings_title2  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{secondary_listings_link2}}{{secondary_listings_link2_parameter}}lid=2vovlztf1g6g&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title2}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->   
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{secondary_listings_link3}}{{secondary_listings_link3_parameter}}lid=ow6mus7uu6s7&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{secondary_listings_image3}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if secondary_listings_title3  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{secondary_listings_link3}}{{secondary_listings_link3_parameter}}lid=njs779dg830h&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title3}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->   
+            <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
+              <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
+                <div class="listing_container_pad" style="padding:0 6px 12px">
+                <a href="{{secondary_listings_link4}}{{secondary_listings_link4_parameter}}lid=fagm3p2xpcyj&utm_content=6listingsmodule" universal="true">
+                <div class="center" style="max-width: 100%; overflow:hidden">
+                <img src="{{secondary_listings_image4}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
+                </div>
+                </a>{% if secondary_listings_title4  != blank  %}
+                <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
+            <!-- EDIT body text + link -->
+            <a href="{{secondary_listings_link4}}{{secondary_listings_link4_parameter}}lid=gl0kyzlg071i&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title4}}</a>
+            <!-- END EDIT body text + link -->
+            </div>{%endif%}
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+                </div>
+              </div>
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            </div> 
             </td>
           </tr>
           <tr>
-            <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
-             <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{secondary_listings_cta_link}}{{secondary_listings_cta_parameter}}lid=z3zv53bz2agi&utm_content=listings" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
-            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{secondary_listings_cta}}</span>
+            <td align="left" style="padding: 12px 6px 0;">
+            <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{secondary_manual_listings_cta_link}}{{secondary_manual_listings_cta_parameter}}lid=rhcslr0wivmg&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{secondary_manual_listings_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
             </td>           
@@ -399,9 +452,10 @@
     </tr>   
   </tbody>
 </table>
-<!--- CLOSE DUMB STASH  ------------------------------------------------------------------->
-{%endif%}
-<!-- CLOSE SECONDARY MODULE -------------------->
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->                                           
+<!-- ClOSE MANUAL 6 LISTINGS GRID------------------------------------------------------------------ -->
+{% endif %}
+ <!-- CLOSE SECONDARY MODULE -------------------->  
 <!-- BANNER MODULE --------------------------------------------------------- --> 
 {% if banner != blank %}
 {{banner}}
