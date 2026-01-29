@@ -7,8 +7,8 @@
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark">
 <title>Etsy</title>
-{{content_blocks.${VisID-CSS-Font} | id: 'cb1'}}
-{{content_blocks.${VisID_CSS}}}
+{{content_blocks.${VisID-CSS-Font} | id: 'cb212'}}
+{{content_blocks.${VisID_CSS} | id: 'cb213'}}
 <style>
 /* Custom Dark Mode Styles */
   @media (prefers-color-scheme: dark) {
@@ -35,15 +35,15 @@
   {% assign heroimage = "https://braze-images.com/appboy/communication/assets/image_assets/images/692dc60ddeea56006310b0e4/original.png?1764607501" %}
   
   {% capture hero_headline %}
-{{content_blocks.${HEADER_GLOBAL_Home_120325_hero} | id: 'cb105'}}
+{{content_blocks.${HEADER_GLOBAL_Home_120325_hero} | id: 'cb214'}}
 	{% endcapture %}
 
 	{% capture hero_body %}
-{{content_blocks.${BODY_GLOBAL_Home_120325_hero} | id: 'cb106'}}
+{{content_blocks.${BODY_GLOBAL_Home_120325_hero} | id: 'cb215'}}
 	{% endcapture %}
 
 	{% capture hero_cta %}
-{{content_blocks.${CTA_GLOBAL_Home_120325_hero} | id: 'cb107'}}
+{{content_blocks.${CTA_GLOBAL_Home_120325_hero} | id: 'cb216'}}
 	{% endcapture %}
 
 <!--- DUMB STASH LISTING --->
@@ -58,7 +58,7 @@
 {% assign listings_cta_parameter = "&" %}
 
 {% capture listings_cta %}
-{{content_blocks.${CTA_GLOBAL_Home_120325_primary} | id: 'cb108'}}
+{{content_blocks.${CTA_GLOBAL_Home_120325_primary} | id: 'cb217'}}
 {% endcapture %}
 
 <!--- SECONDARY LISTING MODULE (type 'display' to show the module )--->
@@ -66,7 +66,7 @@
    {% assign display_secondary_listings_module = 'display' %}
 
    {% capture secondary_listings_headline %}
-   {{content_blocks.${HEADER_GLOBAL_Boxing_122825_hero} | id: 'cb2'}}
+   {{content_blocks.${HEADER_GLOBAL_Boxing_122825_hero} | id: 'cb218'}}
 	{% endcapture %}
 
 <!--- SECONDARY MANUAL LISTING 1--->  
@@ -78,7 +78,7 @@
   {% assign secondary_listings_image1 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b10384978600638a193d/original.png?1765912834" %}
 
  {% capture secondary_listings_title1 %}
-{{content_blocks.${TITLE_1_GLOBAL_Trending_122725_primary} | id: 'cb113'}}
+{{content_blocks.${TITLE_1_GLOBAL_Trending_122725_primary} | id: 'cb219'}}
  {% endcapture %}
 
 <!--- SECONDARY MANUAL LISTING 2 --->  
@@ -90,7 +90,7 @@
  {% assign secondary_listings_image2 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1037c3ada00631cc31d/original.png?1765912834" %}
 
  {% capture secondary_listings_title2 %}
-{{content_blocks.${TITLE_2_GLOBAL_Trending_122725_primary} | id: 'cb114'}}
+{{content_blocks.${TITLE_2_GLOBAL_Trending_122725_primary} | id: 'cb220'}}
  {% endcapture %}
 
  <!--- SECONDARY MANUAL LISTING 3 --->  
@@ -102,7 +102,7 @@
   {% assign secondary_listings_image3 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1031f9c750063b647cb/original.png?1765912834" %}
 
  {% capture secondary_listings_title3 %}
-{{content_blocks.${TITLE_3_GLOBAL_Trending_122725_primary} | id: 'cb115'}}
+{{content_blocks.${TITLE_3_GLOBAL_Trending_122725_primary} | id: 'cb221'}}
  {% endcapture %}
 
  <!--- SECONDARY MANUAL LISTING 4--->  
@@ -114,7 +114,7 @@
   {% assign secondary_listings_image4 = "https://braze-images.com/appboy/communication/assets/image_assets/images/6941b1035f92990063331480/original.png?1765912834" %}
 
  {% capture secondary_listings_title4 %}
-{{content_blocks.${TITLE_4_GLOBAL_Trending_122725_primary} | id: 'cb116'}}
+{{content_blocks.${TITLE_4_GLOBAL_Trending_122725_primary} | id: 'cb222'}}
  {% endcapture %}
 
  <!--- SECONDARY MANUAL LISTING CTA --->
@@ -122,16 +122,16 @@
   {% assign secondary_manual_listings_cta_parameter = "&" %}
 
 	{% capture secondary_manual_listings_cta %}
-  {{content_blocks.${CTA_GLOBAL_Trending_122725_primary} | id: 'cb119'}}
+  {{content_blocks.${CTA_GLOBAL_Trending_122725_primary} | id: 'cb223'}}
 	{% endcapture %}
 
 	<!--- BANNER--->	
 	{% capture banner %}
-  {{content_blocks.${BANNER_catbrow_120325} | id: 'cb110'}}
+  {{content_blocks.${BANNER_catbrow_120325} | id: 'cb224'}}
   {% if {{custom_attribute.${buyer360_top_buyer}}} == 1 or {{${country}}} == 'GB' %} 
-{{content_blocks.${BANNER_ddog_120325} | id: 'cb112'}}
+{{content_blocks.${BANNER_ddog_120325} | id: 'cb225'}}
   {%else%}
-{{content_blocks.${BANNER_holiday_120325} | id: 'cb109'}}
+{{content_blocks.${BANNER_holiday_120325} | id: 'cb226'}}
 {%endif%}
 	{% endcapture %}
 	
@@ -142,7 +142,7 @@
 <!--- END EDIT LIQUID--->
 
 <!--- DON'T EDIT THIS BLOCK--->
-{{content_blocks.${background_colors_and_fonts_v3} | id: 'cb96'}}
+{{content_blocks.${background_colors_and_fonts_v3} | id: 'cb227'}}
   
 <!---  END OF LIQUID --->
 
@@ -167,8 +167,8 @@
 <table align="left" width="100%"  border="0" cellpadding="0" cellspacing="0"  style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
      <tr>
         <td style="padding:0 0 24px;">
-          {{content_blocks.${Global_NAV_Buyer_2026} | id: 'cb111'}}
-          {{content_blocks.${loyalty_skinny_nav_v2} | id: 'cb98'}}
+          {{content_blocks.${Global_NAV_Buyer_2026} | id: 'cb228'}}
+          {{content_blocks.${loyalty_skinny_nav_v2} | id: 'cb229'}}
         </td>
     </tr>
 </table>
@@ -182,7 +182,7 @@
 	      <tr>
             <td class="darkmode_background hero_image_pad" align="center" style="padding: 0 16px 24px;">
             <!-- EDIT IMG 600x500 + LINK -->
-             <a href="{{herolink}}{{hero_parameter}}lid=7hftts8vmwhx&utm_content=hero" universal="true" style="border:0;">
+             <a href="{{herolink}}{{hero_parameter}}lid=rtm9fgunsxy9&utm_content=hero" universal="true" style="border:0;">
             <img src="{{heroimage}}" width="600" class="hero_image_height darkmode_hero_border" style="-ms-interpolation-mode: bicubic; border: 3px solid #0D424E; border-radius:0px; clear: both; display: block; height: auto; max-height: 250px; object-fit: cover; object-position: center; outline: none; overflow: hidden; text-decoration: none; max-width: 100%;box-sizing: border-box; width:100%" alt=""></a>
             <!-- END EDIT IMG 600x500 + LINK -->
             </td>
@@ -203,7 +203,7 @@
          <tr>
             <td class="darkmode_font_primary"  style=" color: #{{fonthex_hero}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 12px; ">
                <!-- EDIT Headline + link -->
-               <h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:left;  " class=" darkmode_font_primary"><a href="{{herolink}}{{hero_parameter}}lid=d6vljztrdpqv&utm_content=hero" class=" darkmode_font_primary" universal="true"  style="text-decoration:none; color:#{{fonthex_hero}};">{{hero_headline}}</a></h1>
+               <h1 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align:left;  " class=" darkmode_font_primary"><a href="{{herolink}}{{hero_parameter}}lid=8ro5t65fp22c&utm_content=hero" class=" darkmode_font_primary" universal="true"  style="text-decoration:none; color:#{{fonthex_hero}};">{{hero_headline}}</a></h1>
                <!-- END EDIT Headline + link -->
             </td>  
             </tr>  
@@ -212,7 +212,7 @@
             <td class="darkmode_font_primary "  style="color:#{{fonthex_hero}}; font-family: 'ABC Diatype',
             'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 0 0 24px; ">
             <!-- EDIT body text + link -->
-            <a href="{{herolink}}{{hero_parameter}}lid=kxq1uddqnzmr&utm_content=hero" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex_hero}};">
+            <a href="{{herolink}}{{hero_parameter}}lid=jhouekqsplxu&utm_content=hero" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex_hero}};">
             {{hero_body}}
             </a>
             <!-- END EDIT body text + link -->
@@ -222,7 +222,7 @@
          <tr>
             <td align="left" style="padding: 0 0 0; ">
             <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{herolink}}{{hero_parameter}}lid=bpgvmb383zw8&utm_content=hero" class="darkmode_button_primary"  style="background-color: #{{fonthex_hero}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{cta_text_color}}; border: 1.5px solid #{{fonthex_hero}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{herolink}}{{hero_parameter}}lid=q6b2dx2m5hye&utm_content=hero" class="darkmode_button_primary"  style="background-color: #{{fonthex_hero}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{cta_text_color}}; border: 1.5px solid #{{fonthex_hero}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{hero_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
@@ -255,7 +255,7 @@
          <tr>
             <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
                <!-- EDIT Headline + link -->
-               <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary "><a href="{{listings_cta_link}}{{listings_cta_parameter}}lid=nqgjkqkh8kz3&utm_content=listings" class=" darkmode_font_primary" universal="true"  style="text-decoration:none; color:#{{fonthex}};">{{listings_headline}}</a></h2>
+               <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary "><a href="{{listings_cta_link}}{{listings_cta_parameter}}lid=4m6zpbwwjeiz&utm_content=listings" class=" darkmode_font_primary" universal="true"  style="text-decoration:none; color:#{{fonthex}};">{{listings_headline}}</a></h2>
                <!-- END EDIT Headline + link -->
             </td>  
           </tr>  
@@ -292,7 +292,7 @@
             <!--[if mso]><table align="left" width="49%" ><tr><td valign="middle"><![endif]-->
               <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
                 <div class="listing_container_pad" style="padding:0 6px 12px">
-                <a href="https://www.etsy.com/search?lid=3st3e3eqhmx8&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 30 }}&anchor_listing_id={{ listing.listing_id }}&is_discounted=true&utm_content=listings" universal="true">
+                <a href="https://www.etsy.com/search?lid=rh4b4eemq27f&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 30 }}&anchor_listing_id={{ listing.listing_id }}&is_discounted=true&utm_content=listings" universal="true">
                 <div style="max-width: 100%; overflow:hidden">
                 <img src="{{ listing.img.url_300x300 }}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                 </div>
@@ -308,7 +308,7 @@
           <tr>
             <td class="primary_button_pad" align="left" style="padding: 12px 6px 0;">
              <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{listings_cta_link}}{{listings_cta_parameter}}lid=lu1idkf1h28p&utm_content=listings" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{listings_cta_link}}{{listings_cta_parameter}}lid=6nlesnahrzax&utm_content=listings" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{listings_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
@@ -337,7 +337,7 @@
          <tr>
             <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 36px; line-height: 120%; mso-line-height-rule: exactly; letter-spacing:-1.08px; text-align: left; padding:0 0 24px; ">
                <!-- EDIT Headline + link -->
-                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{secondary_manual_listings_cta_link}}{{secondary_manual_listings_cta_parameter}}lid=j2hd82hyy9j0&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_headline}}</a></h2>
+                <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 105%; mso-line-height-rule: exactly; letter-spacing:-.8px; text-align:left;" class=" darkmode_font_primary"><a href="{{secondary_manual_listings_cta_link}}{{secondary_manual_listings_cta_parameter}}lid=lbjw73exwzvo&utm_content=listing" class="  darkmode_font_primary" universal="true"   style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_headline}}</a></h2>
                <!-- END EDIT Headline + link -->
             </td>  
             </tr>  
@@ -365,7 +365,7 @@
             <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
               <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
                 <div class="listing_container_pad" style="padding:0 6px 12px">
-                <a href="{{secondary_listings_link1}}{{secondary_listings_link1_parameter}}lid=3hwn9pqxln6u&utm_content=6listingsmodule" universal="true">
+                <a href="{{secondary_listings_link1}}{{secondary_listings_link1_parameter}}lid=iczj9j5vjhnr&utm_content=6listingsmodule" universal="true">
                 <div class="center" style="max-width: 100%; overflow:hidden">
                 <img src="{{secondary_listings_image1}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                 </div>
@@ -373,7 +373,7 @@
                  <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
             'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
             <!-- EDIT body text + link -->
-            <a href="{{secondary_listings_link1}}{{secondary_listings_link1_parameter}}lid=kw5qv6w3lj63&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title1}}</a>
+            <a href="{{secondary_listings_link1}}{{secondary_listings_link1_parameter}}lid=rq8vf7g66m9h&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title1}}</a>
             <!-- END EDIT body text + link -->
             </div>{%endif%}
                 </div>
@@ -382,7 +382,7 @@
             <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
               <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
                 <div class="listing_container_pad" style="padding:0 6px 12px">
-                <a href="{{secondary_listings_link2}}{{secondary_listings_link2_parameter}}lid=xt14hg5o024o&utm_content=6listingsmodule" universal="true">
+                <a href="{{secondary_listings_link2}}{{secondary_listings_link2_parameter}}lid=2sbmu0qq006o&utm_content=6listingsmodule" universal="true">
                 <div class="center" style="max-width: 100%; overflow:hidden">
                 <img src="{{secondary_listings_image2}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                 </div>
@@ -390,16 +390,17 @@
                 <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
             'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
             <!-- EDIT body text + link -->
-            <a href="{{secondary_listings_link2}}{{secondary_listings_link2_parameter}}lid=2vovlztf1g6g&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title2}}</a>
+            <a href="{{secondary_listings_link2}}{{secondary_listings_link2_parameter}}lid=nlfurd2i5kvx&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title2}}</a>
             <!-- END EDIT body text + link -->
             </div>{%endif%}
                 </div>
               </div>
-            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->   
+            <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->  
+            {% if secondary_listings_image3  != blank  %} 
             <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
               <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
                 <div class="listing_container_pad" style="padding:0 6px 12px">
-                <a href="{{secondary_listings_link3}}{{secondary_listings_link3_parameter}}lid=ow6mus7uu6s7&utm_content=6listingsmodule" universal="true">
+                <a href="{{secondary_listings_link3}}{{secondary_listings_link3_parameter}}lid=65dnhcp4wr47&utm_content=6listingsmodule" universal="true">
                 <div class="center" style="max-width: 100%; overflow:hidden">
                 <img src="{{secondary_listings_image3}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                 </div>
@@ -407,7 +408,7 @@
                 <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
             'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
             <!-- EDIT body text + link -->
-            <a href="{{secondary_listings_link3}}{{secondary_listings_link3_parameter}}lid=njs779dg830h&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title3}}</a>
+            <a href="{{secondary_listings_link3}}{{secondary_listings_link3_parameter}}lid=5av59hmsfo1c&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title3}}</a>
             <!-- END EDIT body text + link -->
             </div>{%endif%}
                 </div>
@@ -416,7 +417,7 @@
             <!--[if mso]><table align="left" width="49%" ><tr><td style="padding:0;" valign="middle"><![endif]-->
               <div class="listing_container_width" style="width:49%;max-width:330px;display:inline-block;vertical-align:top;">
                 <div class="listing_container_pad" style="padding:0 6px 12px">
-                <a href="{{secondary_listings_link4}}{{secondary_listings_link4_parameter}}lid=fagm3p2xpcyj&utm_content=6listingsmodule" universal="true">
+                <a href="{{secondary_listings_link4}}{{secondary_listings_link4_parameter}}lid=wg1tklhhjbdy&utm_content=6listingsmodule" universal="true">
                 <div class="center" style="max-width: 100%; overflow:hidden">
                 <img src="{{secondary_listings_image4}}" width="256" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                 </div>
@@ -424,12 +425,13 @@
                 <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
             'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
             <!-- EDIT body text + link -->
-            <a href="{{secondary_listings_link4}}{{secondary_listings_link4_parameter}}lid=gl0kyzlg071i&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title4}}</a>
+            <a href="{{secondary_listings_link4}}{{secondary_listings_link4_parameter}}lid=9lmnviuxsl9u&utm_content=6listingsmodule" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">{{secondary_listings_title4}}</a>
             <!-- END EDIT body text + link -->
             </div>{%endif%}
                 </div>
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+            {%endif%}
                 </div>
               </div>
             <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
@@ -439,7 +441,7 @@
           <tr>
             <td align="left" style="padding: 12px 6px 0;">
             <!-- EDIT CTA + link -->
-            <a target="_blank" rel="noopener" href="{{secondary_manual_listings_cta_link}}{{secondary_manual_listings_cta_parameter}}lid=rhcslr0wivmg&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <a target="_blank" rel="noopener" href="{{secondary_manual_listings_cta_link}}{{secondary_manual_listings_cta_parameter}}lid=2f8qxgfxntuj&utm_content=6listingsmodule" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 18px; line-height: 130%; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; text-decoration: none; padding: 10.5px 32px; color: #{{fonthex}}; border: 1.5px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
             <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{secondary_manual_listings_cta}}</span>
             <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
             <!-- END EDIT CTA + link -->
@@ -461,7 +463,7 @@
 {{banner}}
 {% endif %}
 <!-- CLOSE BANNER MODULE ------------------------------------------------------------ -->
-{{content_blocks.${BANNER_GLOBAL_loyalty_freeshipping_v2} | id: 'cb99'}}
+{{content_blocks.${BANNER_GLOBAL_loyalty_freeshipping_v2} | id: 'cb230'}}
 {% if disclaimer != blank and {{custom_attribute.${is_current_loyalty_insider}}} == "1" or banner != blank %} 
   <!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" ><tr><td style=" height: 40px;"><![endif]-->
   <div class="spacer" style="mso-line-height-rule:exactly;line-height:40px;height:40px;"></div> 
@@ -494,7 +496,7 @@ style="border-collapse: collapse; width: 100%;">
 
 <!-- FOOTER ------------------------------------------------------------------ -->
 
-{{content_blocks.${Global_Footer_Buyer_v3_Experiment} | id: 'cb100'}}
+{{content_blocks.${Global_Footer_Buyer_v3_Experiment} | id: 'cb231'}}
 	
 <!-- END FOOTER ------------------------------------------------------------------ -->
 									</td>
