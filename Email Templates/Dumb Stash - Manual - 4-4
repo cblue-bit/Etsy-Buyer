@@ -46,6 +46,9 @@
 {{content_blocks.${CTA_GLOBAL_Home_120325_hero} | id: 'cb216'}}
 	{% endcapture %}
 
+<!--- LISTING MODULE (type 'display' to show the module )--->
+   {% assign display_listings_module = 'display' %}
+
 <!--- DUMB STASH LISTING --->
 {% assign merch_collection_ids = 1407530005114 %}
 {% assign sectionid = 1408051054233  %}
@@ -243,6 +246,7 @@
   <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
 {% endif %}
 <!--  PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
+{% if display_listings_module  != blank  %}
 {% if listings_headline != blank %}
 <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
@@ -322,6 +326,7 @@
   </tbody>
 </table>
 <!--- CLOSE DUMB STASH  ------------------------------------------------------------------->
+{% endif %}
 <!-- CLOSE PRIMARY MODULE CONTENT------------------------------------------------------------------ --> 
 <!--SECONDARY MODULE CONTENT ------>
  {% if display_secondary_listings_module  != blank  %}
