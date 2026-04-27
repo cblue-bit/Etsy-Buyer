@@ -40,7 +40,7 @@
 
 
 ****EMAIL CODE FOR BODY********
-<!-- ONSITE DEALS MODULE ------------------------------------------------------------------ -->     
+<!-- ONSITE DEALS MODULE v1------------------------------------------------------------------ -->     
 <!--[if (gte mso 9)|(IE)]><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;"><tr><td><![endif]-->
 <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; display: inline-block; max-width: 100%; vertical-align: top;">
  <tbody>
@@ -67,14 +67,14 @@
            <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
              <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top;">
                <div class="secondary_listing_pad" style="padding:0 6px 12px">
-               <a href="{{listing_link1}}&lid=gjsvrn8t579b&anchor_listing_id={{ listings_new[0].listing_id }}&utm_content=primary" universal="true">
+               <a href="{{listing_link1}}&lid=gjsvrn8t579b&utm_content=primary" universal="true">
                <div class="secondary_listing_height" style="max-width: 100%; overflow:hidden;  height:112px;">
                <img src="{{ listings_new[0].image }}" width="171" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                </div>
            <div class="darkmode_font_primary"  style=" font-family: 'ABC Diatype',
            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
            <!-- EDIT body text + link -->
-           <a href="{{listing_link1}}&lid=jcdydpliwmzg&anchor_listing_id={{ listings_new[0].listing_id }}&utm_content=primary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
+           <a href="{{listing_link1}}&lid=jcdydpliwmzg&utm_content=primary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
            {{listing_headline1}}</a>
            <!-- END EDIT body text + link -->
            </div>
@@ -93,14 +93,14 @@
            <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
              <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top;">
                <div class="secondary_listing_pad" style="padding:0 6px 12px">
-               <a href="{{listing_link2}}&lid=ntrz214m9bhk&anchor_listing_id={{ listings_new2[0].listing_id }}&utm_content=secondary" universal="true">
+               <a href="{{listing_link2}}&lid=ntrz214m9bhk&utm_content=secondary" universal="true">
                <div class="secondary_listing_height" style="max-width: 100%; overflow:hidden;  height:112px;">
                <img src="{{ listings_new2[0].image }}" width="171" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                </div>
            <div class="darkmode_background"  style=" font-family: 'ABC Diatype',
            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
            <!-- EDIT body text + link -->
-           <a href="{{listing_link2}}&lid=16aotkc69x1b&anchor_listing_id={{ listings_new2[0].listing_id }}&utm_content=secondary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
+           <a href="{{listing_link2}}&lid=16aotkc69x1b&utm_content=secondary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
            {{listing_headline2}}</a>
            <!-- END EDIT body text + link -->
            </div>
@@ -117,14 +117,14 @@
            <!--[if mso]><table align="left" width="33%"><tr><td valign="middle"><![endif]-->
              <div style="width:33%; max-width:182.666px;display:inline-block;vertical-align:top; ">
                <div class="secondary_listing_pad" style="padding:0 6px 12px">
-               <a href="{{listing_link3}}&lid=jh5qnjtcvl2r&anchor_listing_id={{ listings_new3[0].listing_id }}&utm_content=tertiary" universal="true">
+               <a href="{{listing_link3}}&lid=jh5qnjtcvl2r&utm_content=tertiary" universal="true">
                <div class="secondary_listing_height" style="max-width: 100%; overflow:hidden; height:112px;">
                <img src="{{ listings_new3[0].image }}" width="171" style="-ms-interpolation-mode: bicubic; border-radius: 8px; clear: both; display: block; width: 100%; height: 100%; object-fit: cover; object-position:center; overflow:hidden; outline: none; text-decoration: none;" alt="">
                </div>
            <div class="darkmode_background"  style=" font-family: 'ABC Diatype',
            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 130%; mso-line-height-rule: exactly; text-align: left; padding: 8px 0 0; ">
            <!-- EDIT body text + link -->
-           <a href="{{listing_link3}}&lid=befckecqty7f&anchor_listing_id={{ listings_new3[0].listing_id }}&utm_content=tertiary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
+           <a href="{{listing_link3}}&lid=befckecqty7f&utm_content=tertiary" class="darkmode_font_primary" universal="true" style="text-decoration:none; color:#{{fonthex}};">
            {{listing_headline3}}</a>
            <!-- END EDIT body text + link -->
            </div>
@@ -135,7 +135,7 @@
            </div>
            </td>
          </tr>
-         {% if secondary_cta2 != blank %}
+         {% if onsite_deals_cta_link != blank %}
          <tr>
            <td class="secondary_button_pad" align="left" style="padding: 12px 6px 12px;">
            <!-- EDIT CTA + link -->
