@@ -22,12 +22,11 @@
 }
 /* Custom Dark Mode Styles */
   @media (prefers-color-scheme: dark) {
-    .darkmode_background_banner { background-color: #560920 !important; }
-    .darkmode_background_banner2 { background-color: #2F203C !important; }
+    .darkmode_background_banner { background-color: #664F03 !important; }
 }
 </style>
 </head>
-<body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #FAF8F5; margin: 0; min-width: 100%; padding: 0; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
+<body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #EFECEA; margin: 0 !important; padding: 0 !important; min-width: 100%; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
 
   <!-- IDE CONNECTED CONTENT-->
 {% assign join_date_epoch = {{custom_attribute.${join_date} | date: '%s' }} %}
@@ -36,10 +35,10 @@
 {% assign last_purch_date_nightly = {{custom_attribute.${last_purch_date_nightly} | date: '%s' }} %}
 
 {% connected_content
-https://www.etsy.com/api/v3/ajax/public/braze/content-block/get-multi-v2?ide_ranker_version=v0&ide_ranker_rate_limit=10&rate_limit=100&external_id={{${user_id}}}&email_address={{${email_address} | url_encode}}&last_purchase_timestamp={{last_purch_date_nightly}}&first_boe_visit_date={{first_boe_visit_epoch}}&join_date={{join_date_epoch}}&last_nae_open_date={{last_open_epoch}}&audience_segmentation_days=180&ramping_enabled=true&utm_source=adhoc&quality=latest&braze_dispatch_id={{campaign.${dispatch_id}}}&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country}}}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :basic_auth Etsyweb_Lifecycle_API :save eligible_data :retry %}
+https://www.etsy.com/api/v3/ajax/public/braze/get/communication/ide-email?&ide_ranker_version=v0&ide_ranker_rate_limit=10&rate_limit=100&external_id={{${user_id}}}&email_address={{${email_address} | url_encode}}&last_purchase_timestamp={{last_purch_date_nightly}}&first_boe_visit_date={{first_boe_visit_epoch}}&join_date={{join_date_epoch}}&last_nae_open_date={{last_open_epoch}}&audience_segmentation_days=180&ramping_enabled=true&utm_source=adhoc&quality=latest&braze_dispatch_id={{campaign.${dispatch_id}}}&language_code={{custom_attribute.${language_etsy}}}&currency_code={{custom_attribute.${currency}}}&region={{custom_attribute.${canonical_country}  | url_encode }}&braze_campaign_name={{campaign.${name} | url_encode}}&braze_canvas_name={{canvas.${name} | url_encode}} :basic_auth Etsyweb_Lifecycle_API :save eligible_data :retry %}
 
-{% if eligible_data == blank %} 
-{% abort_message("IDE ccc abort. Non-200 returned") %}
+{% if eligible_data['content_blocks'][0]['name'] == blank %}
+{% abort_message(eligible_data[‘no_content_reason_message’] | default: 'No reason provided') %}
 {% endif %}
 <!-- END IDE CONNECTED CONTENT-->
 
@@ -49,21 +48,26 @@ https://www.etsy.com/api/v3/ajax/public/braze/content-block/get-multi-v2?ide_ran
 
 <!-- SET NBCMODULE TO TREATMENT TO DISPLAY VISID MODULES -->
 {% assign nbcmodule = 'treatment' %}
-  
+ 
 <!--- BANNER --->	
-{% capture banner %}	
-  {% if {{${country}}} == 'US' %}
-  {{content_blocks.${BANNER_nbc_013026} | id: 'cb148'}}
+{% capture banner %}
+{% if {{custom_attribute.${canonical_country}}} == 'US' %}
+{{content_blocks.${BANNER_nbc_032426_easter} | id: 'cb151'}}
 {%else%}
-{{content_blocks.${BANNER_nbc_013026_v2} | id: 'cb149'}}
-  {%endif%}
+{{content_blocks.${BANNER_nbc_032426} | id: 'cb152'}}
+{%endif%}
 {% endcapture %}
 
 <!--- DISCLAIMER --->	
 {% capture disclaimer %}
+{% if {{custom_attribute.${canonical_country}}} == 'US' %}
+{%else%}
+{{content_blocks.${BODY_GLOBAL_vintage_2024_disclaimer}}}
+{%endif%}
 {% endcapture %}
 
 <!--- BG COLOR (white,orange,yellow,purple,blue,green (color_tint or color_dk)) --->
+
 {% assign bg_colour = 'grey' %}		
 
 {{content_blocks.${background_colors_and_fonts_v3} | id: 'cb63'}}
@@ -71,7 +75,7 @@ https://www.etsy.com/api/v3/ajax/public/braze/content-block/get-multi-v2?ide_ran
 
 <!---  START OF EMAIL CODE --->
 <!--OUTER WRAPPER -->
-<table bgcolor="#FAF8F5" border="0" cellpadding="0" cellspacing="0" class="darkmode_background" style="background-color: #FAF8F5; border-collapse: collapse; border-spacing: 0; width: 100%; " width="100%">
+<table bgcolor="#EFECEA" class="darkmode_wrapper_background" border="0" cellpadding="0" cellspacing="0" style="background-color: #EFECEA; border-collapse: collapse; border-spacing: 0; width: 100%; " width="100%">
 	<tbody>
 		<tr>
 			<td align="center" style=" display: block;">
@@ -90,7 +94,7 @@ https://www.etsy.com/api/v3/ajax/public/braze/content-block/get-multi-v2?ide_ran
 <table align="left"  border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;  margin: 0;" >
      <tr>
         <td  style="padding:0 0 24px;" >
-          {{content_blocks.${Global_NAV_Buyer_2026} | id: 'cb146'}}
+          {{content_blocks.${Global_NAV_Buyer_2026} | id: 'cb147'}}
            
         </td>
     </tr>
@@ -98,179 +102,179 @@ https://www.etsy.com/api/v3/ajax/public/braze/content-block/get-multi-v2?ide_ran
  <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 <!-- END NAV------------------------------------------------------------------ -->
 <!-- HERO -->
-{% assign hero_content_block_name = eligible_data[0]['name'] %}
+{% assign hero_content_block_name = eligible_data['content_blocks'][0]['name'] %}
 <!-- repeat -->
 {% if hero_content_block_name == 'RepeatPurchase_OPFY_NoOffer_Hero_MultiListing_redesign' %}
-{% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Hero_MultiListing_redesign} | id: 'cb66'}}
 {% elsif hero_content_block_name == 'RepeatPurchase_Default_Hero_MultiListing_Stash_redesign' %}
-{% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RepeatPurchase_Default_Hero_MultiListing_Stash_redesign} | id: 'cb67'}}
 <!-- cross sell -->
 {% elsif hero_content_block_name == 'CrossSell_Qualified_Hero_MultiListing_redesign' %}
-{% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${CrossSell_Qualified_Hero_MultiListing_redesign} | id: 'cb68'}}
 {% elsif hero_content_block_name == 'CrossSell_Default_Hero_MultiListing_Stash_redesign' %}
-{% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${CrossSell_Default_Hero_MultiListing_Stash_redesign} | id: 'cb69'}}
 <!-- abandoned_cart -->
 {% elsif hero_content_block_name == 'AbandonedCart_Item_Hero_redesign' %}
-{% assign listing = eligible_data[0]['external_content_modules'][0]['listings'][0] %}
+{% assign listing = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'][0] %}
     {{content_blocks.${AbandonedCart_Item_Hero_redesign} | id: 'cb70'}}
 {% elsif hero_content_block_name == 'AbandonedCart_Default_Hero_MultiListing_Stash_redesign' %}
-{% assign listings = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${AbandonedCart_Default_Hero_MultiListing_Stash_redesign} | id: 'cb71'}}
 <!-- updates -->
 {% elsif hero_content_block_name == 'Updates_HasListing_Hero_redesign' %}
-{% assign listing = eligible_data[0]['external_content_modules'][0]['listings'][0] %}
+{% assign listing = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'][0] %}
     {{content_blocks.${Updates_HasListing_Hero_redesign} | id: 'cb72'}}
 {% elsif hero_content_block_name == 'Updates_Default_Hero_MultiListing_redesign' %}
-{% assign listings = eligible_data[0]['external_content_modules'][0]['listings']  %} 
+{% assign listings = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings']  %} 
     {{content_blocks.${Updates_Default_Hero_MultiListing_redesign} | id: 'cb73'}}
 <!-- favorite listing -->
 {% elsif hero_content_block_name == 'FavoriteListing_Views_Hero_MultiListing_redesign' %}
-{% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${FavoriteListing_Views_Hero_MultiListing_redesign} | id: 'cb74'}}
 {% elsif hero_content_block_name == 'FavoriteListing_Default_Hero_MultiLIsting_Stash_redesign' %}
-{% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${FavoriteListing_Default_Hero_MultiLIsting_Stash_redesign} | id: 'cb75'}}
 <!-- favorite shop -->
 {% elsif hero_content_block_name == 'FavoriteShop_Browse_Hero_MultiListing_Lisitngs_redesign' %}
-{% assign shop_and_listings = eligible_data[0]['external_content_modules'][0]['shop_and_listings'] %}
+{% assign shop_and_listings = eligible_data['content_blocks'][0]['external_content_modules'][0]['shop_and_listings'] %}
     {{content_blocks.${FavoriteShop_Browse_Hero_MultiListing_Lisitngs_redesign} | id: 'cb76'}}
 {% elsif hero_content_block_name == 'FavoriteShop_Default_Hero_MultiListing_Stash_redesign' %}
-{% assign shop_and_listings = eligible_data[0]['external_content_modules'][0]['shop_and_listings'] %}
+{% assign shop_and_listings = eligible_data['content_blocks'][0]['external_content_modules'][0]['shop_and_listings'] %}
     {{content_blocks.${FavoriteShop_Default_Hero_MultiListing_Stash_redesign} | id: 'cb77'}}
 <!-- recently favorited --> 
 {% elsif hero_content_block_name == 'RecentlyFavorited_MultiListing_Hero' %} 
-{% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RecentlyFavorited_MultiListing_Hero} | id: 'cb78'}}
 <!-- similar to your collection -->
 {% elsif hero_content_block_name == 'SimilarToYourCollections_MultiListing_Hero' %}
-{% assign listing = eligible_data[0]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][0]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${SimilarToYourCollections_MultiListing_Hero} | id: 'cb79'}}
 {% endif %}
 <!-- END HERO -->
 
 
 <!-- SECONDARY -->
-{% assign secondary_content_block_name = eligible_data[1]['name'] %}
+{% assign secondary_content_block_name = eligible_data['content_blocks'][1]['name'] %}
 <!-- repeat -->
 {% if secondary_content_block_name == 'RepeatPurchase_OPFY_NoOffer_Secondary_redesign' %}
-{% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Secondary_redesign} | id: 'cb80'}}
 {% elsif secondary_content_block_name == 'RepeatPurchase_Default_Secondary_MultiLIsting_Stash_redesign' %}
-{% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RepeatPurchase_Default_Secondary_MultiLIsting_Stash_redesign} | id: 'cb81'}}
 <!-- cross sell -->
 {% elsif secondary_content_block_name == 'CrossSell_Qualified_Secondary_redesign' %}
-{% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${CrossSell_Qualified_Secondary_redesign} | id: 'cb82'}}
 {% elsif secondary_content_block_name == 'CrossSell_Default_Secondary_Stash_redesign' %}
-{% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${CrossSell_Default_Secondary_Stash_redesign} | id: 'cb83'}}
 <!-- abandoned_cart -->
 {% elsif secondary_content_block_name == 'AbandonedCart_Item_Secondary_redesign' %}
-{% assign listing = eligible_data[1]['external_content_modules'][0]['listings'][0] %}
+{% assign listing = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'][0] %}
     {{content_blocks.${AbandonedCart_Item_Secondary_redesign} | id: 'cb84'}}
 {% elsif secondary_content_block_name == 'AbandonedCart_Default_Secondary_Stash_redesign' %}
-{% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${AbandonedCart_Default_Secondary_Stash_redesign} | id: 'cb85'}}
 <!-- updates -->
 {% elsif secondary_content_block_name == 'Updates_HasListing_Secondary_redesign' %}
-{% assign listing = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${Updates_HasListing_Secondary_redesign} | id: 'cb86'}}
 {% elsif secondary_content_block_name == 'Updates_Default_Secondary_MultiListing_redesign' %}
-{% assign listing = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${Updates_Default_Secondary_MultiListing_redesign} | id: 'cb87'}}
 <!-- favorite listing -->
 {% elsif secondary_content_block_name == 'FavoriteListing_Views_Secondary_MultiListing_redesign' %}
-{% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${FavoriteListing_Views_Secondary_MultiListing_redesign} | id: 'cb88'}}
 {% elsif secondary_content_block_name == 'FavoriteListing_Default_Secondary_Stash_redesign_us' %}
-{% assign listings = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${FavoriteListing_Default_Secondary_Stash_redesign_us} | id: 'cb89'}}
 <!-- favorite shop -->
 {% elsif secondary_content_block_name == 'Favoriteshop_Browse_Secondary_MultiListing_Listings_redesign' %}
-{% assign shop_and_listings = eligible_data[1]['external_content_modules'][0]['shop_and_listings'] %}
+{% assign shop_and_listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['shop_and_listings'] %}
     {{content_blocks.${Favoriteshop_Browse_Secondary_MultiListing_Listings_redesign} | id: 'cb90'}}
 {% elsif secondary_content_block_name == 'FavoriteShop_Default_Secondary_MultiListing_Stash_redesign' %}
-{% assign shop_and_listings = eligible_data[1]['external_content_modules'][0]['shop_and_listings'] %}
+{% assign shop_and_listings = eligible_data['content_blocks'][1]['external_content_modules'][0]['shop_and_listings'] %}
     {{content_blocks.${FavoriteShop_Default_Secondary_MultiListing_Stash_redesign} | id: 'cb91'}}
 <!-- recently favorited --> 
 {% elsif secondary_content_block_name == 'RecentlyFavorited_MultiListing_Secondary' %}
-{% assign listing = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RecentlyFavorited_MultiListing_Secondary} | id: 'cb92'}}
 <!-- similar to your collection -->
 {% elsif secondary_content_block_name == 'SimilarToYourCollections_MultiListing_Secondary' %}
-{% assign listing = eligible_data[1]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][1]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${SimilarToYourCollections_MultiListing_Secondary} | id: 'cb93'}}
 {% endif %}
 <!-- END SECONDARY -->
 
 
 <!-- TERTIARY -->
-{% assign banner_content_block_name = eligible_data[2]['name'] %}
+{% assign banner_content_block_name = eligible_data['content_blocks'][2]['name'] %}
 <!-- repeat -->
 {% if banner_content_block_name == 'RepeatPurchase_OPFY_NoOffer_Banner_redesign' %}
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %}
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'][0] %}
+{% assign multilistings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RepeatPurchase_OPFY_NoOffer_Banner_redesign} | id: 'cb94'}}
 {% elsif banner_content_block_name == 'RepeatPurchase_Default_Banner_Stash_redesign' %}
-{% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${RepeatPurchase_Default_Banner_Stash_redesign} | id: 'cb95'}}
 <!-- cross sell -->
 {% elsif banner_content_block_name == 'CrossSell_Qualified_Banner_redesign' %}
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][1] %}
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'][1] %}
+{% assign multilistings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${CrossSell_Qualified_Banner_redesign} | id: 'cb96'}}
 {% elsif banner_content_block_name == 'CrossSell_Default_Banner_Stash_redesign' %}
-{% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${CrossSell_Default_Banner_Stash_redesign} | id: 'cb97'}}
 <!-- abandoned_cart -->
 {% elsif banner_content_block_name == 'AbandonedCart_Item_Banner_redesign' %}
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %}
+{% assign listing = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'][0] %}
     {{content_blocks.${AbandonedCart_Item_Banner_redesign} | id: 'cb98'}}
 {% elsif banner_content_block_name == 'AbandonedCart_Default_Banner_Stash_redesign' %}
-{% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${AbandonedCart_Default_Banner_Stash_redesign} | id: 'cb99'}}
 <!-- updates -->
 {% elsif banner_content_block_name == 'Updates_HasListing_Banner_redesign' %}
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'] [0]%}
+{% assign listing = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] [0]%}
     {{content_blocks.${Updates_HasListing_Banner_redesign} | id: 'cb100'}}
 {% elsif banner_content_block_name == 'Updates_Default_Banner_Stash_redesign' %}
-{% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${Updates_Default_Banner_Stash_redesign} | id: 'cb101'}}
 <!-- favorite listing -->
 {% elsif banner_content_block_name == 'FavoriteListing_Views_Banner_redesign' %}
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %}
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listing = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'][0] %}
+{% assign multilistings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${FavoriteListing_Views_Banner_redesign} | id: 'cb102'}}
 {% elsif banner_content_block_name == 'FavoriteListing_Default_Banner_Stash_redesign' %}
-{% assign listings = eligible_data[2]['external_content_modules'][0]['listings'] %}
+{% assign listings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}
     {{content_blocks.${FavoriteListing_Default_Banner_Stash_redesign} | id: 'cb103'}}
 <!-- favorite shop -->
 {% elsif banner_content_block_name == 'FavoriteShop_Browse_Banner_redesign' %}
-{% assign shop_and_listings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2] %}
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2]['listings'] %}
+{% assign shop_and_listings = eligible_data['content_blocks'][2]['external_content_modules'][0]['shop_and_listings'][2] %}
+{% assign multilistings = eligible_data['content_blocks'][2]['external_content_modules'][0]['shop_and_listings'][2]['listings'] %}
     {{content_blocks.${FavoriteShop_Browse_Banner_redesign} | id: 'cb104'}}
 {% elsif banner_content_block_name == 'FavoriteShop_Default_Banner_Stash_redesign' %}
-{% assign shop_and_listings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2] %}
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['shop_and_listings'][2]['listings']  %}
+{% assign shop_and_listings = eligible_data['content_blocks'][2]['external_content_modules'][0]['shop_and_listings'][2] %}
+{% assign multilistings = eligible_data['content_blocks'][2]['external_content_modules'][0]['shop_and_listings'][2]['listings']  %}
     {{content_blocks.${FavoriteShop_Default_Banner_Stash_redesign} | id: 'cb105'}}
 <!-- recently favorited -->  
 {% elsif banner_content_block_name == 'RecentlyFavorited_Banner' %}
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %} 
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}    
+{% assign listing = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'][0] %} 
+{% assign multilistings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}    
     {{content_blocks.${RecentlyFavorited_Banner} | id: 'cb106'}}
 <!-- similar to your collection -->
 {% elsif banner_content_block_name == 'SimilarToYourCollections_Banner' %}
-{% assign listing = eligible_data[2]['external_content_modules'][0]['listings'][0] %} 
-{% assign multilistings = eligible_data[2]['external_content_modules'][0]['listings'] %}  
+{% assign listing = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'][0] %} 
+{% assign multilistings = eligible_data['content_blocks'][2]['external_content_modules'][0]['listings'] %}  
     {{content_blocks.${SimilarToYourCollections_Banner} | id: 'cb107'}}
 {% endif %}
 <!-- END TERTIARY -->
-<!-- BANNER MODULE --------------------------------------------------------- --> 
+<!-- BANNER MODULE --------------------------------------------------------- -->  
 {% if banner != blank %}
 {{banner}}
 {% endif %}
