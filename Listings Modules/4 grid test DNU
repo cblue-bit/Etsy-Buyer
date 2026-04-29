@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<meta name="x-apple-disable-message-reformatting">
+<title>Etsy</title>
+{{content_blocks.${VisID-CSS-Font} | id: 'cb1'}}
+{{content_blocks.${VisID_CSS}}}
+<style>
+/* Custom Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+}
+@media screen and (min-width: 460px) {  
+}
+</style>
+</head>
+<body class="body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #EFECEA; margin: 0 !important; padding: 0 !important; min-width: 100%; width: 100% !important; font-feature-settings: 'pnum' 1, 'lnum' 1; -webkit-font-feature-settings: 'pnum' 1, 'lnum' 1;-moz-font-feature-settings: 'pnum' 1, 'lnum' 1;">
+<!--- BEGIN EDIT LIQUID--->
+
+<!--- BG COLOR --->
+<!--- BG & FONT COLOR --->
+{% assign bghex = 'FAF8F5' %}
+{% assign fonthex = '312B36' %}	
+
+<!--- ASSIGN FULL OR LEAVE BLANK --->
+{% assign nav_width = "" %}
+
+<!--- CONTENT MODULE --->
+{% capture listings_headline %}
+{% endcapture %}
+
+{% capture listings_body %}
+{% endcapture %}
+
+{% assign listings_cta_link =  "https://www.etsy.com/r/themes/1409604823322?anchor_listings=1327981151" %}
+
+{% assign listings_cta_parameter = "&" %}
+
+{% assign secondary_listings_image1 = "https://braze-images.com/appboy/communication/assets/image_assets/images/69c5a008f9ef870063809c22/original.png?1774559239" %}
+
+{% capture listings_cta %}
+{% endcapture %}
+
+
+<!--- 2 COL GRID DYNAMIC --->
+<!--- Number of Listings --->
+{% assign limitsize = 4  %}
+
+
+
+<!--- END EDIT LIQUID--->
+
+<!---  START OF EMAIL CODE --->
+<!--OUTER WRAPPER -->
+<table bgcolor="#EFECEA" class="darkmode_wrapper_background" border="0" cellpadding="0" cellspacing="0" style="background-color: #EFECEA; border-collapse: collapse; border-spacing: 0; width: 100%;" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" style=" display: block;">
+			<!--[if (gte mso 9)|(IE)]>
+			<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+			<td>
+			<![endif]-->
+      <!--CONTENT -->
+			<table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="border-collapse: collapse; border-spacing: 0; max-width: 600px; width: 100%;" width="100%">
+				<tbody>
+					<tr>
+						<td class="darkmode_background" style="background-color:#FAF8F5;">
+
+<!-- NAV v1-------------------------------------------------------------------------- -->
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table width="100%"   border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;  margin: 0;  display: block;" >
+     <tr>
+        <td {% if hero_width == 'full' %}{%else%} class="{% if hero_headline_placement == 'above' %}{%else%}nav_hero_pad{%endif%}"  style="{% if hero_headline_placement == 'above' %} padding:0 0 40px; {% else%}padding:0 0 16px;{%endif%}" {%endif%}>
+         {{content_blocks.${nav_etsy-logo}}}
+        </td>
+    </tr>
+</table>
+ <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<!-- END NAV ------------------------------------------------------------------ -->													
+<!-- CONTENT MODULE ------------------------------------------------------------------ -->
+{% if listings_headline != blank or listings_body != blank%}
+<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+<table bgcolor="#{{bghex}}" class="darkmode_background" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="content_headline_pad darkmode_background darkmode_font_primary"  align="center" style="text-align:center; background-color: #{{bghex}}; padding: 0 16px 16px;">             
+       <!--[if (gte mso 9)|(IE)]><table width="536" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+        {% if listings_headline != blank %}
+         <tr>
+            <td class="darkmode_font_primary"  style=" color: #{{fonthex}}; font-family: 'ABC Otto', Georgia, serif; font-size: 24px; font-weight: 400; mso-line-height-rule: exactly; line-height: 24px;  letter-spacing:-.48px; text-align: left; {% if listings_body != blank %}padding:0 0 8px;{%endif%}">
+               <!-- EDIT Headline + link -->
+               <h2 style="margin:0; font-family: 'ABC Otto', Georgia, serif; font-size: 24px; font-weight: 400; mso-line-height-rule: exactly; line-height: 24px;  letter-spacing:-.48px; text-align:left;" class=" darkmode_font_primary "><a href="{{listings_cta_link}}{{listings_cta_parameter}}lid=nqgjkqkh8kz3&utm_content=listings" class=" darkmode_font_primary" universal="true"  style="text-decoration:none; color:#{{fonthex}};">{{listings_headline}}</a></h2>
+               <!-- END EDIT Headline + link -->
+            </td>  
+          </tr>
+          {%endif%}
+          <tr>
+            <td class="darkmode_font_primary"  style="mso-line-height-rule: exactly;  direction:ltr;color:#{{fonthex}}; font-family: 'ABC Diatype',
+            'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 20px; letter-spacing:-0.16px; text-align: left;">
+             <!-- EDIT BODY -->
+             {{listings_body}}
+             <!-- END EDIT BODY -->
+            </td>
+          </tr>  
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr> 
+   </tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--> 
+{% endif %}
+<!--- CONTENT BODY AND CTA ------------------------------------------------------------------->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; vertical-align: top;">
+  <tbody>
+    <tr>
+      <td class="content_container_pad darkmode_background" align="left" style="direction:ltr;text-align:left; padding: 0 16px 40px; background-color: #{{bghex}};">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+	        <tr>
+            <td align="center" style="padding:0;">
+              <!--- FEATURE COMPONENT  ------------------------------------------------------------------->
+
+<!--- 2 COL GRID DYNAMIC --->
+<div style="font-size:0;"> 
+  <!--[if mso]>
+<table align="left" width="568" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td valign="top" style="padding:0 16px 0 16px;">
+<![endif]-->
+
+<!--[if mso]>
+<table align="left" width="100%" cellpadding="0" cellspacing="0" border="0"> <![endif]-->
+
+ 
+
+{% for listing in (1..4) %}	
+<!--[if mso]>{{mstable}}<![endif]-->
+{% assign index = forloop.index0 %}
+{% assign col = index | modulo: 2 %}
+{% assign total = listing | size %}
+{% assign last_row_start = limitsize | minus: 2 %}
+
+{% if index >= last_row_start and col == 0 %}
+  {% assign listing_container_mobile_pad = "padding:0 6px 0 0" %}
+  {% assign listing_container_pad = "listing_container_left_bottom_pad" %}
+  {% assign mstable = "<tr><td valign='top' width='50%'>" %}
+{% elsif index >= last_row_start and col == 1 %}
+  {% assign listing_container_mobile_pad = "padding:0 0 0 6px" %}
+  {% assign listing_container_pad = "listing_container_right_bottom_pad" %}
+  {% assign mstable = "</td><td valign='top' width='50%'>" %}
+{% elsif col == 0 %}
+  {% assign listing_container_mobile_pad = "padding:0 6px 12px 0" %}
+  {% assign listing_container_pad = "listing_container_left_pad" %}
+  {% assign mstable = "</td></tr><tr><td width='50%' valign='top'>" %}
+{%else%}
+  {% assign listing_container_pad = "listing_container_right_pad" %}
+  {% assign listing_container_mobile_pad = "padding:0 0 12px 6px" %}
+  {% assign mstable = "</td><td valign='top' width='50%'>" %}
+  {% assign mstablebottom = "</td></tr></table>" %}
+{%endif%}
+
+<!--[if mso]>
+<table align="left" width="49%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td valign="top">
+<![endif]-->
+
+<table align="left" width="50%" cellpadding="0" cellspacing="0" border="0" style="width:50%; max-width:330px;">
+  <tr>
+    <td class="{{listing_container_pad}}" style="{{listing_container_mobile_pad}}">
+      <a href="https://www.etsy.com/search?lid=3st3e3eqhmx8&q={{ listing.category | strip | url_encode }}+{{ listing.title | truncate: 30 }}&anchor_listing_id={{ listing.listing_id }}&is_discounted=true&utm_content=listings" universal="true">
+        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/69e27e24428c2a006426a632/original.png?1776451107"
+             width="256"
+             style="-ms-interpolation-mode:bicubic; border-radius:8px; display:block; width:100%; height:auto; object-fit:cover; object-position:center; outline:none; text-decoration:none;"
+             alt="">
+      </a>
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>   
+         <tr>
+            <td style="padding:8px 0 2px 0;">
+                <!--[if (gte mso 9)|(IE)]><table width="250" align="center" border="0" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <tbody>
+             {% if  listing_title  != blank %}
+         <tr>
+            <td class="darkmode_font_primary" style="color:#{{fonthex}}; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; mso-line-height-rule: exactly; line-height: 20px; letter-spacing:-0.16px; text-align: left; padding: 0 0 2px;">
+            <!-- EDIT Listing Title text + link -->
+            <a href="#" universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{fonthex}};">
+            {{listing_title | truncate: 41 }}</a>
+            <!-- END EDIT Listing Title text + link -->
+            </td>
+         </tr>
+         {%endif%}
+          {% if  listing_shop_name  != blank %}
+          <tr>
+           <td style="padding: 0 0 2px;">
+            <table align="left" border="0" cellpadding="0" cellspacing="0">
+              <tr valign="middle">
+                <td class="darkmode_font_primary" style="color:#{{fonthex}}; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; mso-line-height-rule: exactly; line-height: 16px;" align="center">
+                <!-- EDIT Shop Name text + link -->
+                <a href="#" universal="true" class="darkmode_font_primary" style="text-decoration: none; color: #{{fonthex}}; white-space: nowrap;">{{listing_shop_name}}</a>
+                <!-- EDIT Shop Name text + link -->
+                </td>
+                <td class="darkmode_font_primary" align="center">
+							  <!--[if mso]><div style="margin-bottom: 4px;"><![endif]--> 
+                <a href="#" universal="true"><img src="https://braze-images.com/appboy/communication/assets/image_assets/images/693ab190696cdd0063bba4b5/original.png?1765454223" width="16" height="16" border="0" alt="" style="display: block; padding: 0 0 0 2.67px;"></a> 
+                <!--[if mso]></div><![endif]-->
+							</td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         {%endif%}
+         {% if  listing_average_rating  != blank %}
+         <tr>
+            <td class="darkmode_font_primary" style="color:#{{fonthex}}; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; mso-line-height-rule: exactly; line-height: 16px;  text-align: left; padding: 0 0 2px;">
+            <!-- EDIT Listing Average text + link -->
+            <a href="#" universal="true" class="darkmode_font_primary" style="text-decoration:none; color:#{{fonthex}};">{{listing_average_rating | round: 1}} &#x2605; ({{listing_reviews | strip }}) </a>
+            <!-- END EDIT Listing Average text + link -->
+            </td>
+         </tr>
+         {%endif%}
+          {% if  listing_price  != blank %}
+         <tr>
+            <td class="darkmode_font_primary" style="color:#{{fonthex}}; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; mso-line-height-rule: exactly; line-height: 16px; text-align: left; padding: 0 0 2px;">
+            <!-- EDIT Listing Price text + link -->
+            <a href="#" universal="true" class="darkmode_font_secondary" style="text-decoration:none; color: #665E5C;"> {% if listing_sale_price != blank %}<span class="darkmode_font_A3D277" style="color:#4E7728; font-weight: 700; padding:0 4px 0 0;" >{{listing_sale_price}}</span> <span style="text-decoration: line-through; padding:0 4px 0 0;">{{listing_price}}</span> {% if {{custom_attribute.${canonical_country}}} != 'GB' %} ({{listing_percent_off | strip }}){%endif%}{% else %} {{listing_price}}{% endif %}
+            </a>
+            <!-- END EDIT Listing Price text + link -->
+            </td>
+         </tr>
+         {%endif%}
+           {% if  listing_misc_signal  != blank %}
+         <tr>
+            <td class="darkmode_font_secondary" style="color:#665E5C; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; mso-line-height-rule: exactly; line-height: 16px;  text-align: left;padding:0 0 2px;">
+            <!-- EDIT Misc Signal text + link -->
+            <a href="#" universal="true" class="darkmode_font_secondary" style="text-decoration:none; color:#665E5C;">
+            {{listing_misc_signal}}</a>
+            <!-- END EDIT Misc Signal text + link -->
+            </td>
+         </tr>
+         {%endif%}
+      </tbody>
+      </table>
+      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                          </td>
+         </tr>
+      </tbody>
+      </table> 
+               
+   </td>
+  </tr>
+</table>
+
+<!--[if mso]>
+    </td>
+  </tr>
+</table>
+<![endif]-->
+
+ 
+            
+           <!--[if mso]>{{mstablebottom}}<![endif]-->
+            {% endfor %} 
+              <!--[if mso]></td></tr></table><![endif]-->
+</div> 
+<!--- END 2 COL GRID DYNAMIC --->
+            <!--- END FEATURE COMPONENT  ------------------------------------------------------------------->
+            </td>
+          </tr>
+          {% if listings_cta != blank %}
+          <tr>
+          <td align="left"><!--[if (gte mso 9)|(IE)]><table width="536" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+          <div class="spacer" style="mso-line-height-rule:exactly;line-height:24px;height:24px;">&nbsp;</div> 
+           <!-- EDIT CTA + link -->
+            <a target="_blank" rel="noopener" href="{{listings_cta_link}}{{listings_cta_parameter}}lid=lu1idkf1h28p&utm_content=listings" class="darkmode_button_secondary"  style="background-color: #{{bghex}}; font-size: 16px; line-height: 16px; font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; letter-spacing: -0.16px; text-decoration: none; padding: 15px 32px; color: #{{fonthex}}; border: 1px solid #{{fonthex}}; border-radius: 24px; display: inline-block; mso-padding-alt: 0;" universal="true">
+            <!--[if mso]><i style="mso-font-width:100%;mso-text-raise:30pt" hidden>&emsp;</i><span style="mso-text-raise:50%;"><![endif]--><span style="mso-text-raise: 15pt;">{{listings_cta}}</span>
+            <!--[if mso]></span><i style="mso-font-width:100%;" hidden>&emsp;&#8203;</i><![endif]--></a>
+          <!-- END EDIT CTA + link -->
+          <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            </td>            
+          </tr>
+          {% endif %}
+        </tbody>
+      </table>
+      </td>
+    </tr>   
+  </tbody>
+</table>
+<!--- CLOSE CONTENT BODY AND CTA  ------------------------------------------------------------------->
+<!-- CLOSE CONTENT MODULE ------------------------------------------------------------------ -->		
+<!-- FOOTER ------------------------------------------------------------------ -->
+
+{{content_blocks.${Global_Footer_Buyer_v3_Experiment} | id: 'cb15'}}
+	
+<!-- END FOOTER ------------------------------------------------------------------ -->
+									</td>
+								</tr>
+							</tbody>
+						</table><!--CLOSE CONTENT -->
+					</td>
+					</tr>
+				</tbody>
+			</table>	<!--CLOSE OUTER WRAPPER -->		
+</body></html>
